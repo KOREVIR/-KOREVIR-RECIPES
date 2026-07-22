@@ -168,3 +168,34 @@ font-weight:bold;
 background:white;
 
 }
+/* ===========================
+   HERO SECTION
+=========================== */
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+h1{
+    font-size:64px;
+    color:#f4b400;
+    margin-bottom:10px;
+    letter-spacing:2px;
+    font-weight:700;
+}
+
+.subtitle{
+    font-size:26px;
+    color:white;
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+.description{
+    max-width:700px;
+    margin:0 auto 35px;
+    color:#cfcfcf;
+    font-size:18px;
+    line-height:1.8;
+}
