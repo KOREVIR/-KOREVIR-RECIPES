@@ -1,3 +1,12 @@
+// ===== AMAZON FONKSİYONU =====
+function showAmazon() {
+    const AMAZON_LINK = '#'; // Linkin gelince buraya yaz
+    if (AMAZON_LINK === '#') {
+        alert('🍽️ KOREVIR Wooden Spoons are coming soon to Amazon AU!\n\nBe the first to know when we launch. Follow us for updates!');
+    } else {
+        window.open(AMAZON_LINK, '_blank');
+    }
+}
 // ===== KOREVIR RECIPES - MAIN SCRIPT =====
 
 // ===== AMAZON LINK (Tek bir yerde!) =====
