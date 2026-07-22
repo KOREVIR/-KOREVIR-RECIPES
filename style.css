@@ -1,489 +1,615 @@
-/* ==========================================
+/* =====================================
    KOREVIR RECIPES
-   Premium Theme
-========================================== */
+===================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    background:#0d0d0d;
-    color:#ffffff;
-    font-family:'Poppins',sans-serif;
-    line-height:1.7;
+
+font-family:'Poppins',sans-serif;
+
+background:#0d0d0d;
+
+color:#ffffff;
+
+line-height:1.7;
+
 }
 
 img{
-    max-width:100%;
-    display:block;
+
+display:block;
+
+max-width:100%;
+
 }
 
 a{
-    text-decoration:none;
-    color:inherit;
+
+text-decoration:none;
+
+color:inherit;
+
 }
 
-/* ==========================================
+/* =====================================
    HERO
-========================================== */
+===================================== */
 
 .hero{
 
-    width:100%;
+padding:90px 20px;
 
-    padding:90px 20px 70px;
+text-align:center;
 
-    text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.82)),
+url("assets/images/hero.jpg");
 
-    background:linear-gradient(180deg,#141414 0%,#0d0d0d 100%);
+background-size:cover;
+
+background-position:center;
 
 }
 
 .hero-content{
 
-    max-width:900px;
+max-width:900px;
 
-    margin:auto;
+margin:auto;
 
 }
 
 .hero h1{
 
-    font-size:68px;
+font-size:64px;
 
-    color:#f4b400;
+font-weight:800;
 
-    font-weight:800;
+letter-spacing:3px;
 
-    letter-spacing:2px;
+color:#f4b400;
 
-    margin-bottom:10px;
+margin-bottom:15px;
 
 }
 
 .subtitle{
 
-    font-size:28px;
+font-size:28px;
 
-    font-weight:600;
+font-weight:600;
 
-    margin-bottom:20px;
+margin-bottom:20px;
 
 }
 
 .description{
 
-    max-width:720px;
+max-width:760px;
 
-    margin:auto;
+margin:auto;
 
-    color:#cfcfcf;
+margin-bottom:40px;
 
-    font-size:18px;
+color:#d7d7d7;
 
-    line-height:1.8;
+font-size:18px;
 
-    margin-bottom:45px;
+line-height:1.8;
 
 }
 
-/* ==========================================
+/* =====================================
    SEARCH
-========================================== */
+===================================== */
 
 #search{
 
-    width:600px;
+width:100%;
 
-    max-width:95%;
+max-width:650px;
 
-    padding:18px 24px;
+padding:18px 24px;
 
-    border:none;
+border:none;
 
-    border-radius:50px;
+outline:none;
 
-    background:#1b1b1b;
+border-radius:50px;
 
-    color:white;
+background:#1d1d1d;
 
-    font-size:18px;
+color:white;
 
-    outline:none;
+font-size:18px;
 
-    transition:.3s;
-
-    box-shadow:0 0 25px rgba(244,180,0,.15);
-
-}
-
-#search::placeholder{
-
-    color:#8f8f8f;
-
-}
-
-#search:focus{
-
-    box-shadow:0 0 30px rgba(244,180,0,.45);
-
-}
-/* ==========================================
-   CATEGORIES
-========================================== */
-
-.categories{
-
-    max-width:1200px;
-
-    margin:40px auto;
-
-    padding:0 20px;
-
-    display:flex;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:15px;
-
-}
-
-.categories button{
-
-    background:#1b1b1b;
-
-    color:#f4b400;
-
-    border:1px solid rgba(244,180,0,.25);
-
-    padding:14px 24px;
-
-    border-radius:50px;
-
-    font-size:15px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-.categories button:hover{
-
-    background:#f4b400;
-
-    color:#111;
-
-    transform:translateY(-4px);
-
-    box-shadow:0 10px 20px rgba(244,180,0,.25);
-
-}
-
-/* ==========================================
-   RECIPES
-========================================== */
-
-.recipes{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    padding:20px;
-
-}
-
-/* ==========================================
-   RECIPE CARD
-========================================== */
-
-.recipe-card{
-
-    display:flex;
-
-    align-items:center;
-
-    background:#181818;
-
-    border-radius:25px;
-
-    overflow:hidden;
-
-    border:1px solid rgba(255,255,255,.05);
-
-    box-shadow:0 20px 40px rgba(0,0,0,.45);
-
-    transition:.35s;
-
-    margin-bottom:40px;
-
-}
-
-.recipe-card:hover{
-
-    transform:translateY(-8px);
-
-    box-shadow:0 30px 60px rgba(244,180,0,.18);
-
-}
-
-.recipe-card img{
-
-    width:380px;
-
-    height:380px;
-
-    object-fit:cover;
-
-    flex-shrink:0;
-
-}
-
-.recipe-info{
-
-    padding:40px;
-
-    flex:1;
-
-}
-
-.recipe-info h2{
-
-    font-size:38px;
-
-    color:#f4b400;
-
-    margin-bottom:18px;
-
-}
-
-.recipe-info p{
-
-    font-size:18px;
-
-    color:#d5d5d5;
-
-    line-height:1.8;
-
-    margin:20px 0;
-
-}
-/* ==========================================
-   RECIPE META
-========================================== */
-
-.recipe-meta{
-
-display:flex;
-
-flex-wrap:wrap;
-
-gap:15px;
-
-margin-bottom:25px;
-
-}
-
-.recipe-meta span{
-
-background:#222;
-
-border:1px solid rgba(244,180,0,.25);
-
-color:#f4b400;
-
-padding:10px 18px;
-
-border-radius:30px;
-
-font-size:15px;
-
-font-weight:500;
-
-}
-
-/* ==========================================
-   BUTTON
-========================================== */
-
-.recipe-info a{
-
-display:inline-block;
-
-background:#f4b400;
-
-color:#111;
-
-padding:16px 32px;
-
-border-radius:12px;
-
-font-weight:700;
+border:2px solid #2d2d2d;
 
 transition:.3s;
 
 }
 
-.recipe-info a:hover{
+#search:focus{
 
-background:#ffffff;
+border-color:#f4b400;
 
-transform:translateY(-3px);
-
-box-shadow:0 10px 20px rgba(255,255,255,.15);
+box-shadow:0 0 20px rgba(244,180,0,.35);
 
 }
 
-/* ==========================================
-   FOOTER
-========================================== */
-
-footer{
-
-margin-top:80px;
-
-padding:35px;
-
-text-align:center;
-
-border-top:1px solid rgba(255,255,255,.08);
-
-color:#999;
-
-font-size:14px;
-
-}
-/* ==========================================
-   RESPONSIVE DESIGN
-========================================== */
-
-@media (max-width:900px){
-
-.hero{
-
-padding:60px 20px;
-
-}
-
-.hero h1{
-
-font-size:42px;
-
-}
-
-.subtitle{
-
-font-size:22px;
-
-}
-
-.description{
-
-font-size:16px;
-
-}
-
-.recipe-card{
-
-flex-direction:column;
-
-}
-
-.recipe-card img{
-
-width:100%;
-
-height:260px;
-
-}
-
-.recipe-info{
-
-padding:25px;
-
-}
-
-.recipe-info h2{
-
-font-size:30px;
-
-}
-
-.recipe-meta{
-
-flex-direction:column;
-
-align-items:flex-start;
-
-}
-
-#search{
-
-width:100%;
-
-}
+/* =====================================
+   CATEGORY BUTTONS
+===================================== */
 
 .categories{
 
-gap:10px;
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+padding:40px 20px;
 
 }
 
 .categories button{
 
-padding:12px 18px;
+background:#1b1b1b;
 
-font-size:14px;
+color:#f4b400;
+
+padding:14px 24px;
+
+border:none;
+
+border-radius:40px;
+
+font-size:15px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
 
 }
 
+.categories button:hover{
+
+background:#f4b400;
+
+color:#111111;
+
 }
 
-@media (max-width:500px){
+.categories button.active{
+
+background:#f4b400;
+
+color:#111111;
+
+}
+/* =====================================
+   KOREVIR RECIPES
+===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#0d0d0d;
+
+color:#ffffff;
+
+line-height:1.7;
+
+}
+
+img{
+
+display:block;
+
+max-width:100%;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero{
+
+padding:90px 20px;
+
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.82)),
+url("assets/images/hero.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.hero-content{
+
+max-width:900px;
+
+margin:auto;
+
+}
 
 .hero h1{
 
-font-size:34px;
+font-size:64px;
+
+font-weight:800;
+
+letter-spacing:3px;
+
+color:#f4b400;
+
+margin-bottom:15px;
 
 }
 
 .subtitle{
 
-font-size:18px;
+font-size:28px;
+
+font-weight:600;
+
+margin-bottom:20px;
 
 }
 
 .description{
 
+max-width:760px;
+
+margin:auto;
+
+margin-bottom:40px;
+
+color:#d7d7d7;
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+/* =====================================
+   SEARCH
+===================================== */
+
+#search{
+
+width:100%;
+
+max-width:650px;
+
+padding:18px 24px;
+
+border:none;
+
+outline:none;
+
+border-radius:50px;
+
+background:#1d1d1d;
+
+color:white;
+
+font-size:18px;
+
+border:2px solid #2d2d2d;
+
+transition:.3s;
+
+}
+
+#search:focus{
+
+border-color:#f4b400;
+
+box-shadow:0 0 20px rgba(244,180,0,.35);
+
+}
+
+/* =====================================
+   CATEGORY BUTTONS
+===================================== */
+
+.categories{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+padding:40px 20px;
+
+}
+
+.categories button{
+
+background:#1b1b1b;
+
+color:#f4b400;
+
+padding:14px 24px;
+
+border:none;
+
+border-radius:40px;
+
 font-size:15px;
 
-}
+font-weight:600;
 
-.recipe-info h2{
+cursor:pointer;
 
-font-size:26px;
-
-}
-
-.recipe-info p{
-
-font-size:16px;
+transition:.3s;
 
 }
 
+.categories button:hover{
+
+background:#f4b400;
+
+color:#111111;
+
 }
 
+.categories button.active{
+
+background:#f4b400;
+
+color:#111111;
+
+}
+/* =====================================
+   KOREVIR RECIPES
+===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#0d0d0d;
+
+color:#ffffff;
+
+line-height:1.7;
+
+}
+
+img{
+
+display:block;
+
+max-width:100%;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero{
+
+padding:90px 20px;
+
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.82)),
+url("assets/images/hero.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.hero-content{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.hero h1{
+
+font-size:64px;
+
+font-weight:800;
+
+letter-spacing:3px;
+
+color:#f4b400;
+
+margin-bottom:15px;
+
+}
+
+.subtitle{
+
+font-size:28px;
+
+font-weight:600;
+
+margin-bottom:20px;
+
+}
+
+.description{
+
+max-width:760px;
+
+margin:auto;
+
+margin-bottom:40px;
+
+color:#d7d7d7;
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+/* =====================================
+   SEARCH
+===================================== */
+
+#search{
+
+width:100%;
+
+max-width:650px;
+
+padding:18px 24px;
+
+border:none;
+
+outline:none;
+
+border-radius:50px;
+
+background:#1d1d1d;
+
+color:white;
+
+font-size:18px;
+
+border:2px solid #2d2d2d;
+
+transition:.3s;
+
+}
+
+#search:focus{
+
+border-color:#f4b400;
+
+box-shadow:0 0 20px rgba(244,180,0,.35);
+
+}
+
+/* =====================================
+   CATEGORY BUTTONS
+===================================== */
+
+.categories{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+padding:40px 20px;
+
+}
+
+.categories button{
+
+background:#1b1b1b;
+
+color:#f4b400;
+
+padding:14px 24px;
+
+border:none;
+
+border-radius:40px;
+
+font-size:15px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.categories button:hover{
+
+background:#f4b400;
+
+color:#111111;
+
+}
+
+.categories button.active{
+
+background:#f4b400;
+
+color:#111111;
+
+}
