@@ -2,33 +2,48 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>KOREVIR RECIPES</title>
+<title>KOREVIR Recipes</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header>
+<header class="hero">
+
+<div class="hero-content">
 
 <h1>KOREVIR RECIPES</h1>
-  <p class="subtitle">Premium Australian Recipe Collection</p>
+
+<p class="subtitle">
+Premium Australian Recipe Collection
+</p>
 
 <p class="description">
-Discover delicious Australian recipes specially selected for your KOREVIR Kitchen.
+Discover Australia's most loved recipes, beautifully crafted for your KOREVIR Kitchen.
+From comforting classics to modern favorites, cook with confidence using easy step-by-step instructions.
 </p>
 
 <input
 type="text"
 id="search"
-placeholder="Search recipes...">
+placeholder="🔍 Search recipes...">
+
+</div>
 
 </header>
 
-<nav class="categories">
+<section class="categories">
 
 <button>All Recipes</button>
 
@@ -46,29 +61,55 @@ placeholder="Search recipes...">
 
 <button>Appetizers</button>
 
-</nav>
+</section>
 
-<main>
+<main class="recipes">
 
 <div class="recipe-card">
 
 <img src="images/1.png" alt="Chicken Parmigiana">
 
+<div class="recipe-info">
+
 <h2>Chicken Parmigiana</h2>
 
+<div class="recipe-meta">
+
+<span>⏱ Prep 20 min</span>
+
+<span>🍳 Cook 30 min</span>
+
+<span>👨‍👩‍👧 Serves 4</span>
+
+</div>
+
 <p>
-Classic Italian-Australian chicken with rich tomato sauce and melted cheese.
+
+A crispy golden chicken breast topped with rich tomato sauce and melted mozzarella cheese. One of Australia's most iconic comfort foods.
+
 </p>
 
 <a href="recipes/chicken-parmigiana.html">
 
-View Recipe →
+View Full Recipe →
 
 </a>
 
 </div>
 
+</div>
+
 </main>
+
+<footer>
+
+<p>
+
+© 2026 KOREVIR • Premium Recipe Collection
+
+</p>
+
+</footer>
 
 <script src="script.js"></script>
 
