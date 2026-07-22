@@ -59,7 +59,7 @@ categoryButtons.forEach(button => {
         button.classList.add("active");
 
         activeCategory = button.dataset.category;
-
+console.log(button.dataset.category);
         filterRecipes();
 
     });
