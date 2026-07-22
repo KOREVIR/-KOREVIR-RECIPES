@@ -4,7 +4,6 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>KOREVIR Recipes</title>
@@ -17,21 +16,7 @@
 
 <header class="hero">
 
-<a class="recipe-card" href="recipes/chicken-parmigiana.html">
-
-    <img src="assets/images/chicken-parmigiana.png" alt="Chicken Parmigiana">
-
-    <div class="recipe-content">
-
-        <h3>Chicken Parmigiana</h3>
-
-        <p>
-            Crispy chicken breast topped with rich tomato sauce and melted mozzarella cheese.
-        </p>
-
-    </div>
-
-</a>
+<div class="overlay">
 
 <h1>KOREVIR RECIPES</h1>
 
@@ -47,7 +32,7 @@ From comforting classics to modern favourites, cook with confidence using easy s
 <input
 type="text"
 id="search"
-placeholder="🔍 Search recipes...">
+placeholder="Search recipes...">
 
 </div>
 
@@ -55,7 +40,7 @@ placeholder="🔍 Search recipes...">
 
 <nav class="categories">
 
-<button>All Recipes</button>
+<button class="active">All Recipes</button>
 
 <button>Main Dishes</button>
 
@@ -75,15 +60,15 @@ placeholder="🔍 Search recipes...">
 
 <main class="recipes">
 
-<div class="recipe-card">
+<a class="recipe-card"
+href="recipes/chicken-parmigiana.html"
+data-category="Main Dishes">
 
-<a class="recipe-card" href="recipes/chicken-parmigiana.html">
+<img
+src="assets/images/chicken-parmigiana.png"
+alt="Chicken Parmigiana">
 
-    ...
-
-</a>
-
-<div class="recipe-info">
+<div class="recipe-content">
 
 <h2>Chicken Parmigiana</h2>
 
@@ -98,36 +83,13 @@ placeholder="🔍 Search recipes...">
 </div>
 
 <p>
-
-A crispy golden chicken breast topped with rich tomato sauce and melted mozzarella cheese.
-One of Australia's most iconic comfort foods.
-
+A crispy golden chicken breast topped with rich tomato sauce and melted mozzarella cheese. One of Australia's most iconic comfort foods.
 </p>
 
-<a href="recipes/chicken-parmigiana.html">
-
+<span class="view-recipe">
 View Full Recipe →
+</span>
+
+</div>
 
 </a>
-
-</div>
-
-</div>
-
-</main>
-
-<footer>
-
-<p>
-
-© 2026 KOREVIR • Premium Recipe Collection
-
-</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
