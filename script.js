@@ -451,7 +451,7 @@ const RECIPES = [
         cook: '30 min',
         serves: 6,
         description: 'A warm and creamy Australian pumpkin soup made with simple ingredients and packed with flavour.',
-       image: 'assets/images/pumpkin-soup.png',
+       image: 'assets/images/pumpkin-soup.jpg.png,
         ingredients: [
             '1 kg pumpkin, peeled, deseeded and chopped',
             '1 brown onion, chopped',
