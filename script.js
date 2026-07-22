@@ -1,25 +1,48 @@
-document.addEventListener("DOMContentLoaded", function () {
+// ===============================
+// KOREVIR Recipes
+// Search + Category Filter
+// ===============================
 
-const search = document.getElementById("search");
+const searchInput = document.getElementById("search");
+const recipeCards = document.querySelectorAll(".recipe-card");
+const categoryButtons = document.querySelectorAll(".categories button");
 
-if(search){
+let activeCategory = "All Recipes";
 
-search.addEventListener("keyup", function(){
+// -------------------------------
+// SEARCH
+// -------------------------------
 
-const value = this.value.toLowerCase();
+function filterRecipes() {
 
-const cards = document.querySelectorAll(".recipe-card");
+    const searchText = searchInput.value.toLowerCase();
 
-cards.forEach(card=>{
+    recipeCards.forEach(card => {
 
-const text = card.innerText.toLowerCase();
+        const title = card.querySelector("h2").textContent.toLowerCase();
+        const description = card.querySelector("p").textContent.toLowerCase();
+        const category = card.dataset.category;
 
-card.style.display = text.includes(value) ? "block" : "none";
+        const matchesSearch =
+            title.includes(searchText) ||
+            description.includes(searchText);
 
-});
+        const matchesCategory =
+            activeCategory === "All Recipes" ||
+            category === activeCategory;
 
-});
+        if (matchesSearch && matchesCategory) {
+
+            card.style.display = "flex";
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
 
 }
 
-});
+searchInput.addEventListener("keyup", filterRecipes);
