@@ -1,299 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>KOREVIR Recipes</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOREVIR Recipes - 20 Authentic Australian Recipes</title>
+    <meta name="description" content="Discover 20 premium Australian recipes from KOREVIR. Perfect for cooking with our handcrafted wooden spoons. Free recipes for every home cook.">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header class="hero">
-
-<div class="hero-content">
-
-<h1>KOREVIR RECIPES</h1>
-
-<p class="subtitle">
-
-Premium Australian Recipe Collection
-
-</p>
-
-<p class="description">
-
-Discover Australia's favourite recipes created for your KOREVIR Kitchen.
-Easy to follow, beautifully presented and completely free.
-
-</p>
-
-<input
-type="text"
-id="search"
-placeholder="🔍 Search recipes...">
-
-</div>
-
-</header>
-
-<nav class="categories">
-
-<button class="active" data-category="All Recipes">
-
-All Recipes
-
-</button>
-
-<button data-category="Main Dishes">
-
-Main Dishes
-
-</button>
-
-<button data-category="Desserts">
-
-Desserts
-
-</button>
-
-<button data-category="Breakfast">
-
-Breakfast
-
-</button>
-
-<button data-category="Soups">
-
-Soups
-
-</button>
-
-<button data-category="Salads">
-
-Salads
-
-</button>
-
-<button data-category="Drinks">
-
-Drinks
-
-</button>
-
-</nav>
-
-<main class="recipes">
-
-<a
-class="recipe-card"
-href="recipes/chicken-parmigiana.html"
-data-category="Main Dishes">
-
-<img
-src="assets/images/chicken-parmigiana.jpg"
-alt="Chicken Parmigiana">
-
-<div class="recipe-info">
-
-<h2>
-
-Chicken Parmigiana
-
-</h2>
-
-<div class="recipe-meta">
-
-<span>⏱ Prep 20 min</span>
-
-<span>🍳 Cook 30 min</span>
-
-<span>👨‍👩‍👧 Serves 4</span>
-
-</div>
-
-<p>
-
-A crispy golden chicken breast topped with rich tomato sauce and melted mozzarella cheese.
-
-</p>
-
-<span class="view-recipe">
-
-View Full Recipe →
-
-</span>
-
-</div>
-
-</a>
-<a
-class="recipe-card"
-href="recipes/beef-lasagna.html"
-data-category="Main Dishes">
-
-<img
-src="assets/images/beef-lasagna.jpg"
-alt="Beef Lasagna">
-
-<div class="recipe-info">
-
-<h2>
-
-Beef Lasagna
-
-</h2>
-
-<div class="recipe-meta">
-
-<span>⏱ Prep 30 min</span>
-
-<span>🍳 Cook 50 min</span>
-
-<span>👨‍👩‍👧 Serves 6</span>
-
-</div>
-
-<p>
-
-Layers of rich beef ragù, creamy béchamel and melted cheese baked until golden perfection.
-
-</p>
-
-<span class="view-recipe">
-
-View Full Recipe →
-
-</span>
-
-</div>
-
-</a>
-
-<a
-class="recipe-card"
-href="recipes/fish-and-chips.html"
-data-category="Main Dishes">
-
-<img
-src="assets/images/fish-and-chips.jpg"
-alt="Fish and Chips">
-
-<div class="recipe-info">
-
-<h2>
-
-Fish &amp; Chips
-
-</h2>
-
-<div class="recipe-meta">
-
-<span>⏱ Prep 20 min</span>
-
-<span>🍳 Cook 20 min</span>
-
-<span>👨‍👩‍👧 Serves 4</span>
-
-</div>
-
-<p>
-
-Australia's favourite crispy battered fish served with golden chips and tartare sauce.
-
-</p>
-
-<span class="view-recipe">
-
-View Full Recipe →
-
-</span>
-
-</div>
-
-</a>
-
-<a
-class="recipe-card"
-href="recipes/pavlova.html"
-data-category="Desserts">
-
-<img
-src="assets/images/pavlova.jpg"
-alt="Pavlova">
-
-<div class="recipe-info">
-
-<h2>
-
-Pavlova
-
-</h2>
-
-<div class="recipe-meta">
-
-<span>⏱ Prep 25 min</span>
-
-<span>🍳 Cook 90 min</span>
-
-<span>👨‍👩‍👧 Serves 8</span>
-
-</div>
-
-<p>
-
-A light and airy meringue dessert topped with whipped cream and fresh seasonal fruit.
-
-</p>
-
-<span class="view-recipe">
-
-View Full Recipe →
-
-</span>
-
-</div>
-
-</a>
-</main>
-
-<footer>
-
-<div class="footer-content">
-
-<h3>KOREVIR</h3>
-
-<p>
-
-Premium Australian Recipe Collection
-
-</p>
-
-<p>
-
-Cook with confidence using your KOREVIR Kitchen Utensils.
-New recipes are added regularly.
-
-</p>
-
-<p class="copyright">
-
-© 2026 KOREVIR. All Rights Reserved.
-
-</p>
-
-</div>
-
-</footer>
-
-<script src="script.js"></script>
-
+    <!-- HEADER - Sabit -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <h1>KOREVIR</h1>
+                <span class="logo-tag">Recipes</span>
+            </div>
+            <nav class="header-nav">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#" class="btn-amazon-header" onclick="showAmazon()">
+                    🛒 Shop
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO BÖLÜMÜ -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">🍽️ 20 AUSTRALIAN RECIPES</span>
+                <h1>Cook with <span class="highlight">KOREVIR</span></h1>
+                <p class="hero-description">
+                    Premium Australian recipes created for your KOREVIR Kitchen.
+                    Easy to follow, beautifully presented, and completely free.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#recipes" class="btn-primary">Explore Recipes ↓</a>
+                    <a href="#" class="btn-secondary" onclick="showAmazon()">
+                        🛒 Shop KOREVIR Spoons
+                        <span class="coming-badge">Coming Soon</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-placeholder">
+                    <!-- Ürün fotoğrafın gelince buraya ekle -->
+                    <span>🍴</span>
+                    <p>KOREVIR Wooden Spoons</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARAMA & FİLTRE -->
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" id="search" placeholder="🔍 Search 20 recipes...">
+            <div class="category-filters" id="categoryFilters">
+                <button class="filter-btn active" data-category="all">All Recipes</button>
+                <button class="filter-btn" data-category="Main Dishes">Main Dishes</button>
+                <button class="filter-btn" data-category="Desserts">Desserts</button>
+                <button class="filter-btn" data-category="Breakfast">Breakfast</button>
+                <button class="filter-btn" data-category="Soups">Soups</button>
+                <button class="filter-btn" data-category="Salads">Salads</button>
+                <button class="filter-btn" data-category="Drinks">Drinks</button>
+                <button class="filter-btn" data-category="Snacks">Snacks</button>
+            </div>
+            <div class="results-count" id="resultsCount">Showing 20 recipes</div>
+        </div>
+    </section>
+
+    <!-- TARİF KARTLARI -->
+    <main class="recipes-grid" id="recipesGrid">
+        <!-- JavaScript ile doldurulacak -->
+    </main>
+
+    <!-- TARİF DETAY MODAL -->
+    <div class="modal" id="recipeModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">✕</button>
+            <div class="modal-body" id="modalBody">
+                <!-- JavaScript ile doldurulacak -->
+            </div>
+        </div>
+    </div>
+
+    <!-- HAKKIMIZDA -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <span class="about-badge">About KOREVIR</span>
+                <h2>Handcrafted with <span class="highlight">Passion</span></h2>
+                <p>
+                    KOREVIR brings together the finest Australian recipes and 
+                    handcrafted wooden spoons. Every recipe is tested, perfected, 
+                    and designed to inspire home cooks across Australia.
+                </p>
+                <p>
+                    Our wooden spoons are made from sustainable Australian timber, 
+                    designed to last a lifetime. Because great food deserves 
+                    great tools.
+                </p>
+                <a href="#" class="btn-primary" onclick="showAmazon()">
+                    🛒 Discover Our Spoons
+                    <span class="coming-badge">Coming Soon</span>
+                </a>
+            </div>
+            <div class="about-image">
+                <div class="about-image-placeholder">
+                    <span>🌿</span>
+                    <p>Sustainable Australian Timber</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <h3>KOREVIR</h3>
+                <p>Premium Australian Recipes</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#recipes">Recipes</a>
+                <a href="#about">About</a>
+                <a href="#" onclick="showAmazon()">Shop Amazon AU</a>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 KOREVIR. All Rights Reserved.</p>
+                <p class="footer-qr">Scan the QR code on your KOREVIR card</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
