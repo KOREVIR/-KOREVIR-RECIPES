@@ -13,9 +13,9 @@ const RECIPES = [
         cook: '30 min',
         serves: 4,
         description: 'A crispy golden chicken breast topped with rich tomato sauce and melted mozzarella cheese.',
-      image: 'assets/images/chicken-parmigiana.jpg',
+        image: 'assets/images/chicken-parmigiana.jpg',
         ingredients: ['4 chicken breast fillets', '1 cup plain flour', '2 eggs, beaten', '1 1/2 cups breadcrumbs', '1/2 cup grated Parmesan cheese', '2 cups tomato passata', '1 tsp garlic, minced', '1 tsp dried oregano', '1 cup shredded mozzarella cheese', '2 tbsp olive oil', 'Salt & pepper to taste'],
-       method: ['Preheat oven to 200°C. Season chicken, coat in flour, egg, breadcrumbs. Fry until golden. Top with sauce and cheese. Bake 20-25 minutes.'],
+        method: ['Preheat oven to 200°C. Season chicken, coat in flour, egg, breadcrumbs. Fry until golden. Top with sauce and cheese. Bake 20-25 min.']
     },
     // 2
     {
@@ -277,7 +277,6 @@ const RECIPES = [
         ingredients: ['500g prawns', '4 tbsp butter', '4 garlic cloves', '1 tbsp olive oil', '1 tsp chilli flakes', '1 tbsp lemon juice', '2 tbsp parsley', 'Lemon wedges'],
         method: ['Heat oil and 2 tbsp butter. Sauté garlic, chilli. Add prawns, cook 2-3 min each side. Add remaining butter, lemon juice. Season, garnish with parsley.']
     },
-    // 22 - 50 (kısaltılmış placeholder)
     // 22
     {
         id: 'chicken-avocado',
@@ -657,6 +656,144 @@ const RECIPES = [
     }
 ];
 
-// ===== RENDER, FILTER, MODAL FUNCTIONS =====
-// (Aynı mevcut fonksiyonlar - kısaltmak için burada tekrar etmiyorum, ama kullanıcıya tam dosyayı veriyorum)
-// Not: Gerçek cevapta tüm fonksiyonlar tam olarak verilecek.
+// ============================================================
+// ===== FONKSİYONLAR (RENDER, FİLTRELE, MODAL, AMAZON) =====
+// ============================================================
+
+// ===== RENDER RECIPES =====
+function renderRecipes(recipes) {
+    const grid = document.getElementById('recipesGrid');
+    if (!grid) return;
+    
+    grid.innerHTML = recipes.map(recipe => `
+        <div class="recipe-card" data-id="${recipe.id}" onclick="openModal('${recipe.id}')">
+            <img src="./${recipe.image}" alt="${recipe.title}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22320%22 height=%22220%22%3E%3Crect fill=%22%23fdf8f0%22 width=%22320%22 height=%22220%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23d4a24c%22 font-size=%2240%22%3E🍽️%3C/text%3E%3C/svg%3E'">
+            <div class="recipe-info">
+                <h2>${recipe.title}</h2>
+                <div class="recipe-meta">
+                    <span>⏱ Prep ${recipe.prep}</span>
+                    <span>🍳 Cook ${recipe.cook}</span>
+                    <span>👨‍👩‍👧 Serves ${recipe.serves}</span>
+                </div>
+                <div class="recipe-footer">
+                    <span class="view-recipe" onclick="event.stopPropagation(); openModal('${recipe.id}')">View Full Recipe →</span>
+                    <span class="amazon-tag">
+                        🛒 <a href="#" onclick="event.stopPropagation(); showAmazon();">Shop KOREVIR</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    `).join('');
+    
+    const count = document.getElementById('resultsCount');
+    if (count) {
+        count.textContent = `Showing ${recipes.length} recipe${recipes.length > 1 ? 's' : ''}`;
+    }
+}
+
+// ===== OPEN MODAL =====
+function openModal(recipeId) {
+    const recipe = RECIPES.find(r => r.id === recipeId);
+    if (!recipe) return;
+    
+    const modal = document.getElementById('recipeModal');
+    const body = document.getElementById('modalBody');
+    if (!modal || !body) return;
+    
+    body.innerHTML = `
+        <h2>${recipe.title}</h2>
+        <div class="modal-meta">
+            <span>⏱ Prep ${recipe.prep}</span>
+            <span>🍳 Cook ${recipe.cook}</span>
+            <span>👨‍👩‍👧 Serves ${recipe.serves}</span>
+        </div>
+        <img src="./${recipe.image}" alt="${recipe.title}" class="modal-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22300%22%3E%3Crect fill=%22%23fdf8f0%22 width=%22700%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23d4a24c%22 font-size=%2260%22%3E🍽️%3C/text%3E%3C/svg%3E'">
+        <h3>📋 Ingredients</h3>
+        <ul>${recipe.ingredients.map(i => `<li>${i}</li>`).join('')}</ul>
+        <h3>👨‍🍳 Method</h3>
+        <ol>${recipe.method.map((step, index) => `<li>${step}</li>`).join('')}</ol>
+        <div class="modal-shop">
+            <p>🍽️ Make this recipe perfect with <strong>KOREVIR</strong> wooden spoons</p>
+            <a href="#" class="btn-primary" onclick="showAmazon();">
+                🛒 Shop KOREVIR on Amazon AU
+                <span class="coming-badge">Coming Soon</span>
+            </a>
+        </div>
+    `;
+    
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+// ===== CLOSE MODAL =====
+function closeModal() {
+    const modal = document.getElementById('recipeModal');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// ===== SEARCH & FILTER =====
+function filterRecipes() {
+    const searchTerm = document.getElementById('search')?.value.toLowerCase().trim() || '';
+    const activeCategory = document.querySelector('.filter-btn.active')?.dataset.category || 'all';
+    
+    const filtered = RECIPES.filter(recipe => {
+        const matchesSearch = recipe.title.toLowerCase().includes(searchTerm) ||
+                             recipe.description.toLowerCase().includes(searchTerm) ||
+                             recipe.category.toLowerCase().includes(searchTerm);
+        const matchesCategory = activeCategory === 'all' || recipe.category === activeCategory;
+        return matchesSearch && matchesCategory;
+    });
+    
+    renderRecipes(filtered);
+}
+
+// ===== AMAZON SHOW =====
+function showAmazon() {
+    if (AMAZON_LINK === '#') {
+        alert('🍽️ KOREVIR Wooden Spoons are coming soon to Amazon AU!\n\nBe the first to know when we launch. Follow us for updates!');
+    } else {
+        window.open(AMAZON_LINK, '_blank');
+    }
+}
+
+// ===== EVENT LISTENERS & INIT =====
+document.addEventListener('DOMContentLoaded', function() {
+    // Modal Close
+    const closeBtn = document.getElementById('closeModal');
+    const modal = document.getElementById('recipeModal');
+    
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (modal) modal.addEventListener('click', function(e) { if (e.target === this) closeModal(); });
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+    
+    // Search
+    const searchInput = document.getElementById('search');
+    if (searchInput) searchInput.addEventListener('input', filterRecipes);
+    
+    // Category Filters
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            filterRecipes();
+        });
+    });
+    
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+    
+    // Initial Render
+    renderRecipes(RECIPES);
+});
