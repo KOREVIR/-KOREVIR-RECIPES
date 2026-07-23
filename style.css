@@ -57,7 +57,7 @@ body {
 }
 
 .logo-img {
-    height: 28px;  /* LOGO KÜÇÜLDÜ */
+    height: 28px;
     width: auto;
 }
 
@@ -194,16 +194,6 @@ body {
     padding: 20px;
     min-height: 300px;
     box-shadow: var(--shadow);
-}
-.hero-image-placeholder img {
-    max-width: 80%;
-    height: auto;
-}
-.hero-image-placeholder p {
-    font-size: 16px;
-    margin-top: 12px;
-    font-weight: 600;
-    color: var(--dark-light);
 }
 
 /* ===== SEARCH ===== */
@@ -386,6 +376,90 @@ body {
 }
 .about-image-placeholder p { font-size: 18px; font-weight: 600; color: var(--dark); margin-top: 12px; }
 
+/* ===== CARE SECTION (YENİ BAKIM BÖLÜMÜ) ===== */
+.care-section {
+    background: var(--cream);
+    padding: 60px 20px 80px;
+    border-top: 2px solid var(--gold-light);
+}
+
+.care-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.care-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.care-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: white;
+    padding: 4px 18px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.care-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+.care-header .highlight { color: var(--gold); }
+
+.care-subtitle {
+    font-size: 18px;
+    color: var(--dark-light);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.care-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.care-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 28px 24px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+    border-top: 3px solid var(--gold);
+}
+
+.care-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+.care-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.care-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.care-card p {
+    font-size: 15px;
+    color: var(--dark-light);
+    line-height: 1.6;
+}
+
 /* ===== FOOTER ===== */
 .footer { background: var(--dark); color: rgba(255,255,255,0.8); padding: 40px 20px; }
 .footer-inner { max-width: 1200px; margin: 0 auto; }
@@ -431,6 +505,8 @@ body {
     .hero-text h1 { font-size: 32px; }
     .hero-description { font-size: 16px; }
     .about-container { grid-template-columns: 1fr; gap: 30px; }
+    .care-grid { grid-template-columns: 1fr; }
+    .care-header h2 { font-size: 28px; }
     .header-inner { flex-wrap: wrap; gap: 12px; }
     .logo-text h1 { font-size: 20px; }
     .header-nav a { font-size: 13px; }
@@ -452,4 +528,5 @@ body {
     .modal-content { padding: 16px; }
     .modal-body .modal-image { height: 200px; }
     .logo-img { height: 22px; }
+    .care-card { padding: 20px; }
 }
