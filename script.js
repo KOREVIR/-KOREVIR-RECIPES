@@ -14,7 +14,7 @@ const RECIPES = [
         cook: '30 min',
         serves: 4,
         description: 'A crispy golden chicken breast topped with rich tomato sauce and melted mozzarella cheese.',
-        image: 'assets/images/chicken-parmigiana.jpg',
+        image: 'assets/images/pumpkin-soup.png',
         ingredients: [
             '4 chicken breast fillets',
             '1 cup plain flour',
