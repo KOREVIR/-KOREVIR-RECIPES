@@ -6,37 +6,39 @@ const AMAZON_TEXT = '🛒 Shop KOREVIR on Amazon AU';
 
 // ===== 20 TARİF =====
 const RECIPES = [
-    {
-        id: 'chicken-parmigiana',
-        title: 'Chicken Parmigiana',
-        category: 'Main Dishes',
-        prep: '20 min',
-        cook: '30 min',
-        serves: 4,
-        description: 'A crispy golden chicken breast topped with rich tomato sauce and melted mozzarella cheese.',
-        image: 'assets/images/pumpkin-soup.png',
-        ingredients: [
-            '4 chicken breast fillets',
-            '1 cup plain flour',
-            '2 eggs, beaten',
-            '1 1/2 cups breadcrumbs',
-            '1/2 cup grated Parmesan cheese',
-            '2 cups tomato passata',
-            '1 tsp garlic, minced',
-            '1 tsp dried oregano',
-            '1 cup shredded mozzarella cheese',
-            '2 tbsp olive oil',
-            'Salt & pepper to taste'
-        ],
-        method: [
-            'Preheat oven to 200°C (fan-forced). Line a baking tray with parchment paper.',
-            'Season chicken with salt and pepper. Coat in flour, dip in egg, then coat in a mixture of breadcrumbs and Parmesan.',
-            'Heat olive oil in a large skillet over medium-high heat. Cook chicken for 3-4 minutes each side until golden.',
-            'Spread tomato passata in a baking dish. Place chicken on top, spoon extra sauce over each piece.',
-            'Sprinkle mozzarella cheese over chicken.',
-            'Bake for 20-25 minutes until cheese is melted and bubbly.'
-        ]
-    },
+   ,
+{
+    id: 'mushroom-risotto',
+    title: 'Mushroom Risotto',
+    category: 'Main Dishes',
+    prep: '15 min',
+    cook: '25 min',
+    serves: 4,
+    description: 'Creamy Italian-style risotto with earthy mushrooms, Parmesan cheese, and a hint of garlic. Perfect comfort food.',
+    image: 'assets/images/mushroom-risotto.jpg',
+    ingredients: [
+        '1.5L vegetable or chicken stock',
+        '2 tbsp olive oil',
+        '1 onion, finely chopped',
+        '2 garlic cloves, minced',
+        '300g mushrooms, sliced (cremini or button)',
+        '1 1/2 cups Arborio rice',
+        '1/2 cup dry white wine (optional)',
+        '1/2 cup grated Parmesan cheese',
+        '2 tbsp unsalted butter',
+        'Salt & pepper to taste',
+        'Fresh parsley, chopped (for garnish)'
+    ],
+    method: [
+        'Bring stock to a simmer in a saucepan. Keep warm over low heat.',
+        'Heat olive oil in a large pan over medium heat. Add onion and cook for 4-5 minutes until soft. Add garlic and cook for 1 minute.',
+        'Add mushrooms and cook for 5-6 minutes until golden and liquid has evaporated.',
+        'Add rice and stir for 1-2 minutes until translucent. Add wine (if using) and cook until absorbed.',
+        'Add stock one ladle at a time, stirring frequently. Wait until absorbed before adding more. Continue for 18-20 minutes until rice is creamy and tender.',
+        'Remove from heat. Stir in Parmesan cheese and butter. Season with salt and pepper.',
+        'Garnish with fresh parsley and serve immediately.'
+    ]
+}
     {
         id: 'meat-pie',
         title: 'Meat Pie',
