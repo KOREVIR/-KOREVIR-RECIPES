@@ -47,6 +47,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
 }
 
 .logo-text {
@@ -173,19 +185,26 @@ body {
 }
 
 .hero-image-placeholder {
-    width: 100%;
-    max-width: 400px;
-    aspect-ratio: 1;
-    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+    background: #f5f0eb;
     border-radius: var(--radius);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 60px;
+    padding: 20px;
+    min-height: 300px;
+    box-shadow: var(--shadow);
 }
-.hero-image-placeholder p { font-size: 16px; margin-top: 12px; font-weight: 600; }
+.hero-image-placeholder img {
+    max-width: 80%;
+    height: auto;
+}
+.hero-image-placeholder p {
+    font-size: 16px;
+    margin-top: 12px;
+    font-weight: 600;
+    color: var(--dark-light);
+}
 
 /* ===== SEARCH ===== */
 .search-section { max-width: 1200px; margin: 0 auto; padding: 0 20px 30px; }
@@ -428,8 +447,9 @@ body {
 }
 @media (max-width: 480px) {
     .hero-text h1 { font-size: 26px; }
-    .hero-image-placeholder { font-size: 40px; }
+    .hero-image-placeholder { font-size: 40px; min-height: 200px; }
     .recipe-card img { height: 180px; }
     .modal-content { padding: 16px; }
     .modal-body .modal-image { height: 200px; }
+    .logo-img { height: 30px; }
 }
