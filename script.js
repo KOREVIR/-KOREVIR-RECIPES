@@ -1,19 +1,10 @@
-// ===== AMAZON FONKSİYONU =====
-function showAmazon() {
-    const AMAZON_LINK = '#'; // Linkin gelince buraya yaz
-    if (AMAZON_LINK === '#') {
-        alert('🍽️ KOREVIR Wooden Spoons are coming soon to Amazon AU!\n\nBe the first to know when we launch. Follow us for updates!');
-    } else {
-        window.open(AMAZON_LINK, '_blank');
-    }
-}
 // ===== KOREVIR RECIPES - MAIN SCRIPT =====
 
-// ===== AMAZON LINK (Tek bir yerde!) =====
-const AMAZON_LINK = '#'; // Linkin gelince buraya yapıştır
+// ===== AMAZON LINK =====
+const AMAZON_LINK = '#';
 const AMAZON_TEXT = '🛒 Shop KOREVIR on Amazon AU';
 
-// ===== 20 TARİF (PDF'ten tam listesi) =====
+// ===== 20 TARİF =====
 const RECIPES = [
     {
         id: 'chicken-parmigiana',
@@ -451,7 +442,7 @@ const RECIPES = [
         cook: '30 min',
         serves: 6,
         description: 'A warm and creamy Australian pumpkin soup made with simple ingredients and packed with flavour.',
-       image: 'assets/images/pumpkin-soup.png',
+        image: 'assets/images/pumpkin-soup.jpg',
         ingredients: [
             '1 kg pumpkin, peeled, deseeded and chopped',
             '1 brown onion, chopped',
@@ -616,78 +607,75 @@ const RECIPES = [
             'Pour over the chilled caramel layer and spread evenly. Refrigerate for at least 2 hours or until set.',
             'Lift out using the baking paper and cut into 20 slices. Store in an airtight container in the fridge.'
         ]
+    },
+    {
+        id: 'prawn-cocktail',
+        title: 'Prawn Cocktail',
+        category: 'Main Dishes',
+        prep: '15 min',
+        cook: '3 min',
+        serves: 4,
+        description: 'A retro classic done right. Juicy prawns with a creamy, tangy sauce, crisp lettuce and a hint of lemon.',
+        image: 'assets/images/prawn-cocktail.jpg',
+        ingredients: [
+            '500g cooked prawns, peeled & deveined',
+            '1 tbsp lemon juice',
+            '1/2 tsp salt',
+            '1/4 tsp black pepper',
+            '1/2 cup mayonnaise',
+            '2 tbsp tomato sauce (ketchup)',
+            '1 tbsp lemon juice (for sauce)',
+            '1 tsp Worcestershire sauce',
+            '1 tsp brandy (optional)',
+            '1/2 tsp paprika',
+            'Salt & black pepper to taste',
+            '1 small cos lettuce or iceberg lettuce, shredded',
+            'Lemon wedges',
+            'Fresh parsley, chopped'
+        ],
+        method: [
+            'If prawns are not cooked, bring a pot of salted water to the boil. Add prawns and cook for 2-3 minutes or until pink and opaque. Drain and rinse under cold water. Pat dry.',
+            'Toss prawns with lemon juice, salt and black pepper. Set aside.',
+            'In a bowl, whisk together mayonnaise, tomato sauce, lemon juice, Worcestershire sauce, brandy (if using) and paprika. Season with salt and black pepper to taste.',
+            'Refrigerate the sauce for at least 30 minutes to allow the flavours to develop.',
+            'To serve, spoon a layer of shredded lettuce into serving glasses or bowls.',
+            'Add a generous spoonful of sauce on top of the lettuce.',
+            'Arrange prawns over the sauce.',
+            'Garnish with lemon wedges and chopped parsley.',
+            'Serve immediately, chilled.'
+        ]
     }
-    ,
-{
-    id: 'prawn-cocktail',
-    title: 'Prawn Cocktail',
-    category: 'Main Dishes',
-    prep: '15 min',
-    cook: '3 min',
-    serves: 4,
-    description: 'A retro classic done right. Juicy prawns with a creamy, tangy sauce, crisp lettuce and a hint of lemon.',
-    image: 'assets/images/prawn-cocktail.jpg',
-    ingredients: [
-        '500g cooked prawns, peeled & deveined',
-        '1 tbsp lemon juice',
-        '1/2 tsp salt',
-        '1/4 tsp black pepper',
-        '1/2 cup mayonnaise',
-        '2 tbsp tomato sauce (ketchup)',
-        '1 tbsp lemon juice (for sauce)',
-        '1 tsp Worcestershire sauce',
-        '1 tsp brandy (optional)',
-        '1/2 tsp paprika',
-        'Salt & black pepper to taste',
-        '1 small cos lettuce or iceberg lettuce, shredded',
-        'Lemon wedges',
-        'Fresh parsley, chopped'
-    ],
-    method: [
-        'If prawns are not cooked, bring a pot of salted water to the boil. Add prawns and cook for 2-3 minutes or until pink and opaque. Drain and rinse under cold water. Pat dry.',
-        'Toss prawns with lemon juice, salt and black pepper. Set aside.',
-        'In a bowl, whisk together mayonnaise, tomato sauce, lemon juice, Worcestershire sauce, brandy (if using) and paprika. Season with salt and black pepper to taste.',
-        'Refrigerate the sauce for at least 30 minutes to allow the flavours to develop.',
-        'To serve, spoon a layer of shredded lettuce into serving glasses or bowls.',
-        'Add a generous spoonful of sauce on top of the lettuce.',
-        'Arrange prawns over the sauce.',
-        'Garnish with lemon wedges and chopped parsley.',
-        'Serve immediately, chilled.'
-    ]
-}
 ];
-
-// ===== 4 TANE DAHA EKLE (PDF'teki eksikler) =====
-// Prawn Cocktail, Avocado Toast, etc. şimdilik 16 tane yeterli,
-// PDF'te 20 tarif var ama hepsini ekledim. Yukarıda 16 tane var, 
-// aslında 20'ye tamamlamak için 4 tane daha eklemelisin.
-// Ben şimdilik mevcut 16 tarifle devam ediyorum.
 
 // ===== RENDER RECIPES =====
 function renderRecipes(recipes) {
     const grid = document.getElementById('recipesGrid');
+    if (!grid) return;
+    
     grid.innerHTML = recipes.map(recipe => `
         <div class="recipe-card" data-id="${recipe.id}" onclick="openModal('${recipe.id}')">
             <img src="${recipe.image}" alt="${recipe.title}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22320%22 height=%22220%22%3E%3Crect fill=%22%23fdf8f0%22 width=%22320%22 height=%22220%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23d4a24c%22 font-size=%2240%22%3E🍽️%3C/text%3E%3C/svg%3E'">
-           <div class="recipe-info">
-    <h2>${recipe.title}</h2>
-    <div class="recipe-meta">
-        <span>⏱ Prep ${recipe.prep}</span>
-        <span>🍳 Cook ${recipe.cook}</span>
-        <span>👨‍👩‍👧 Serves ${recipe.serves}</span>
-    </div>
-    <div class="recipe-footer">
-        <span class="view-recipe">View Full Recipe →</span>
-        <span class="amazon-tag">
-            🛒 <a href="#" onclick="event.stopPropagation(); showAmazon();">Shop KOREVIR</a>
-        </span>
-    </div>
-</div>
+            <div class="recipe-info">
+                <h2>${recipe.title}</h2>
+                <div class="recipe-meta">
+                    <span>⏱ Prep ${recipe.prep}</span>
+                    <span>🍳 Cook ${recipe.cook}</span>
+                    <span>👨‍👩‍👧 Serves ${recipe.serves}</span>
+                </div>
+                <div class="recipe-footer">
+                    <span class="view-recipe">View Full Recipe →</span>
+                    <span class="amazon-tag">
+                        🛒 <a href="#" onclick="event.stopPropagation(); showAmazon();">Shop KOREVIR</a>
+                    </span>
+                </div>
+            </div>
         </div>
     `).join('');
     
-    document.getElementById('resultsCount').textContent = 
-        `Showing ${recipes.length} recipe${recipes.length > 1 ? 's' : ''}`;
+    const count = document.getElementById('resultsCount');
+    if (count) {
+        count.textContent = `Showing ${recipes.length} recipe${recipes.length > 1 ? 's' : ''}`;
+    }
 }
 
 // ===== OPEN MODAL =====
@@ -697,6 +685,7 @@ function openModal(recipeId) {
     
     const modal = document.getElementById('recipeModal');
     const body = document.getElementById('modalBody');
+    if (!modal || !body) return;
     
     body.innerHTML = `
         <h2>${recipe.title}</h2>
@@ -731,34 +720,57 @@ function openModal(recipeId) {
 }
 
 // ===== CLOSE MODAL =====
-document.getElementById('closeModal').addEventListener('click', closeModal);
-document.getElementById('recipeModal').addEventListener('click', function(e) {
-    if (e.target === this) closeModal();
-});
-
 function closeModal() {
-    document.getElementById('recipeModal').classList.remove('active');
-    document.body.style.overflow = 'auto';
+    const modal = document.getElementById('recipeModal');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
 }
 
-// ESC tuşu ile kapat
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeModal();
-});
-
-// ===== SEARCH & FILTER =====
-document.getElementById('search').addEventListener('input', filterRecipes);
-document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        filterRecipes();
+// Event listeners for modal
+document.addEventListener('DOMContentLoaded', function() {
+    const closeBtn = document.getElementById('closeModal');
+    const modal = document.getElementById('recipeModal');
+    
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
+    
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+    }
+    
+    // ESC key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
     });
+    
+    // ===== SEARCH & FILTER =====
+    const searchInput = document.getElementById('search');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    
+    if (searchInput) {
+        searchInput.addEventListener('input', filterRecipes);
+    }
+    
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            filterRecipes();
+        });
+    });
+    
+    // ===== INIT =====
+    renderRecipes(RECIPES);
 });
 
 function filterRecipes() {
-    const searchTerm = document.getElementById('search').value.toLowerCase().trim();
-    const activeCategory = document.querySelector('.filter-btn.active').dataset.category;
+    const searchTerm = document.getElementById('search')?.value.toLowerCase().trim() || '';
+    const activeCategory = document.querySelector('.filter-btn.active')?.dataset.category || 'all';
     
     const filtered = RECIPES.filter(recipe => {
         const matchesSearch = recipe.title.toLowerCase().includes(searchTerm) ||
@@ -792,6 +804,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-// ===== INIT =====
-renderRecipes(RECIPES);
