@@ -160,7 +160,7 @@ body {
 
 .btn-primary {
     display: inline-block;
-    background: var(--dark);
+    background: var(--gold);
     color: white;
     padding: 14px 32px;
     border-radius: 50px;
@@ -169,6 +169,13 @@ body {
     transition: var(--transition);
     border: none;
     cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #B8923E;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 162, 76, 0.3);
+}
 }
 
 .btn-primary {
