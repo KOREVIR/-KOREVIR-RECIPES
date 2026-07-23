@@ -631,21 +631,20 @@ function renderRecipes(recipes) {
     grid.innerHTML = recipes.map(recipe => `
         <div class="recipe-card" data-id="${recipe.id}" onclick="openModal('${recipe.id}')">
             <img src="${recipe.image}" alt="${recipe.title}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22320%22 height=%22220%22%3E%3Crect fill=%22%23fdf8f0%22 width=%22320%22 height=%22220%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23d4a24c%22 font-size=%2240%22%3E🍽️%3C/text%3E%3C/svg%3E'">
-            <div class="recipe-info">
-                <h2>${recipe.title}</h2>
-                <div class="recipe-meta">
-                    <span>⏱ Prep ${recipe.prep}</span>
-                    <span>🍳 Cook ${recipe.cook}</span>
-                    <span>👨‍👩‍👧 Serves ${recipe.serves}</span>
-                </div>
-                <p>${recipe.description}</p>
-                <div class="recipe-footer">
-                    <span class="view-recipe">View Full Recipe →</span>
-                    <span class="amazon-tag">
-                        🛒 <a href="#" onclick="event.stopPropagation(); showAmazon();">Shop KOREVIR</a>
-                    </span>
-                </div>
-            </div>
+           <div class="recipe-info">
+    <h2>${recipe.title}</h2>
+    <div class="recipe-meta">
+        <span>⏱ Prep ${recipe.prep}</span>
+        <span>🍳 Cook ${recipe.cook}</span>
+        <span>👨‍👩‍👧 Serves ${recipe.serves}</span>
+    </div>
+    <div class="recipe-footer">
+        <span class="view-recipe">View Full Recipe →</span>
+        <span class="amazon-tag">
+            🛒 <a href="#" onclick="event.stopPropagation(); showAmazon();">Shop KOREVIR</a>
+        </span>
+    </div>
+</div>
         </div>
     `).join('');
     
