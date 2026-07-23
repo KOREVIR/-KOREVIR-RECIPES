@@ -12,7 +12,7 @@ const RECIPES = [
         cook: '30 min',
         serves: 4,
         description: 'A crispy golden chicken breast topped with rich tomato sauce and melted mozzarella cheese.',
-        image: 'assets/images/chicken-parmigiana.jpg',
+        image: 'assets/images/chicken-parmigiana.png',
         ingredients: ['4 chicken breast fillets', '1 cup plain flour', '2 eggs, beaten', '1 1/2 cups breadcrumbs', '1/2 cup grated Parmesan cheese', '2 cups tomato passata', '1 tsp garlic, minced', '1 tsp dried oregano', '1 cup shredded mozzarella cheese', '2 tbsp olive oil', 'Salt & pepper to taste'],
         method: ['Preheat oven to 200°C. Season chicken, coat in flour, egg, breadcrumbs. Fry until golden. Top with sauce and cheese. Bake 20-25 min.']
     },
@@ -24,7 +24,7 @@ const RECIPES = [
         cook: '25 min',
         serves: 6,
         description: 'A classic Aussie-style meat pie with a rich, savoury filling wrapped in golden, flaky pastry.',
-        image: 'assets/images/meat-pie.jpg',
+        image: 'assets/images/meat-pie.png',
         ingredients: ['500g beef mince', '1 onion, finely chopped', '1 garlic clove', '1 carrot, diced', '1 celery stalk', '2 tbsp tomato paste', '1 tbsp Worcestershire sauce', '1 cup beef stock', '1 tsp dried thyme', '2 sheets puff pastry', '1 egg, beaten'],
         method: ['Cook onion, garlic, carrot, celery. Add beef mince and brown. Stir in tomato paste, stock, Worcestershire sauce, thyme. Simmer 10-15 min. Cool. Fill pastry, top with lid, brush with egg. Bake 200°C 20-25 min.']
     },
@@ -36,7 +36,7 @@ const RECIPES = [
         cook: '15 min',
         serves: 4,
         description: 'A light and flavourful Australian favourite with tender barramundi and a zesty lemon butter sauce.',
-        image: 'assets/images/barramundi.jpg',
+        image: 'assets/images/barramundi.png',
         ingredients: ['4 barramundi fillets', 'Salt & pepper', '1 tbsp olive oil', '60g unsalted butter', '2 garlic cloves', 'Juice of 1 lemon', 'Zest of 1 lemon', '2 tbsp capers', '1 tbsp fresh parsley'],
         method: ['Season fish. Pan-fry skin-side down 4-5 min, flip 2-3 min. Remove. In same pan, melt butter, garlic, lemon juice, zest, capers. Return fish, spoon sauce. Garnish with parsley.']
     },
@@ -48,7 +48,7 @@ const RECIPES = [
         cook: '35 min',
         serves: 12,
         description: "Australia's iconic sponge cake squares coated in chocolate sauce and rolled in desiccated coconut.",
-        image: 'assets/images/lamingtons.jpg',
+        image: 'assets/images/lamingtons.png',
         ingredients: ['125g butter', '1 cup caster sugar', '2 tsp vanilla', '4 eggs', '1 1/4 cups self-raising flour', '1/2 cup milk', '1 cup caster sugar (sauce)', '1/2 cup cocoa', '125g butter (sauce)', '1 cup milk (sauce)', '2 cups desiccated coconut'],
         method: ['Beat butter, sugar, vanilla. Add eggs. Fold in flour, milk. Bake 180°C 30-35 min. Cool. Make sauce: sugar, cocoa, butter, milk. Heat until smooth. Cut cake into squares. Dip in sauce, roll in coconut.']
     },
@@ -60,7 +60,7 @@ const RECIPES = [
         cook: '10 min',
         serves: 4,
         description: 'A quick and healthy stir-fry with fresh vegetables in a savoury soy-ginger sauce.',
-        image: 'assets/images/vegetable-stir-fry.jpg',
+        image: 'assets/images/vegetable-stir-fry.png',
         ingredients: ['2 tbsp vegetable oil', '1 onion, sliced', '2 garlic cloves', '1 tbsp ginger', '1 capsicum, sliced', '1 carrot, julienned', '1 broccoli, florets', '4 tbsp soy sauce', '1 tbsp oyster sauce', '1 tsp sesame oil'],
         method: ['Heat oil. Sauté onion, garlic, ginger. Add vegetables, stir-fry 3-4 min. Add soy sauce, oyster sauce, sesame oil. Cook 1-2 min. Serve hot.']
     },
@@ -72,7 +72,7 @@ const RECIPES = [
         cook: '90 min',
         serves: 8,
         description: 'A light and airy meringue with a crisp crust and soft, marshmallow centre, topped with whipped cream and fresh fruits.',
-        image: 'assets/images/pavlova.jpg',
+        image: 'assets/images/pavlova.png',
         ingredients: ['4 egg whites', '1 cup caster sugar', '1 tsp vinegar', '1 tsp cornstarch', '1 tsp vanilla', '300ml thickened cream', '2 tbsp icing sugar', 'Fresh fruits (strawberries, blueberries, kiwi, passionfruit)'],
         method: ['Beat egg whites to soft peaks. Gradually add sugar. Fold in vinegar, cornstarch, vanilla. Bake 120°C 75-90 min. Cool. Top with whipped cream and fruits.']
     },
@@ -84,7 +84,7 @@ const RECIPES = [
         cook: '20 min',
         serves: 4,
         description: "Australia's favourite crispy battered fish served with golden chips and tartare sauce.",
-        image: 'assets/images/fish-and-chips.jpg',
+        image: 'assets/images/fish-and-chips.png',
         ingredients: ['600g white fish', '1 cup plain flour', '1/2 cup cornflour', '1 tsp baking powder', '1 cup sparkling water', '4 large potatoes', 'Oil for frying', '1/2 cup mayonnaise', '1 tbsp gherkins', '1 tsp capers', '1 tsp lemon juice'],
         method: ['Cut potatoes into chips. Fry at 160°C 5-6 min, then 180°C 4-5 min. Batter fish with flour, cornflour, baking powder, water. Fry 4-5 min. Serve with tartare sauce.']
     },
@@ -96,7 +96,7 @@ const RECIPES = [
         cook: '20 min',
         serves: 4,
         description: 'A classic Aussie beef burger with juicy beef patty, melted cheese, fresh veggies and tangy beetroot.',
-        image: 'assets/images/aussie-burger.jpg',
+        image: 'assets/images/aussie-burger.png',
         ingredients: ['500g beef mince', '1 tbsp BBQ sauce', '1 tsp Worcestershire sauce', '1 tsp garlic powder', '4 burger buns', '4 cheese slices', 'Lettuce, tomato, onion, beetroot', '4 tbsp burger sauce', '4 potatoes (for chips)'],
         method: ['Mix mince with sauces, season. Form patties. Grill 3-4 min each side, add cheese. Toast buns. Assemble with lettuce, tomato, onion, beetroot, patty. Serve with chips.']
     },
@@ -108,7 +108,7 @@ const RECIPES = [
         cook: '25 min',
         serves: 12,
         description: 'A classic Aussie sausage roll with seasoned beef sausage meat wrapped in golden, flaky pastry.',
-        image: 'assets/images/sausage-roll.jpg',
+        image: 'assets/images/sausage-roll.png',
         ingredients: ['500g beef mince', '1 onion, chopped', '1 garlic clove', '1 tbsp Worcestershire sauce', '1 tbsp tomato sauce', '1 tsp thyme', '2 sheets puff pastry', '1 egg, beaten', 'Sesame seeds'],
         method: ['Cook onion, garlic. Add beef, brown. Stir in sauces, thyme. Cool. Cut pastry, fill, seal with egg. Brush with egg, sprinkle sesame. Bake 200°C 20-25 min.']
     },
@@ -120,7 +120,7 @@ const RECIPES = [
         cook: '3 min',
         serves: 4,
         description: 'A retro classic done right. Juicy prawns with a creamy, tangy sauce, crisp lettuce and a hint of lemon.',
-        image: 'assets/images/prawn-cocktail.jpg',
+        image: 'assets/images/prawn-cocktail.png',
         ingredients: ['500g cooked prawns', '1 tbsp lemon juice', '1/2 cup mayonnaise', '2 tbsp tomato sauce', '1 tsp Worcestershire sauce', '1/2 tsp paprika', 'Shredded lettuce', 'Lemon wedges', 'Parsley'],
         method: ['Toss prawns with lemon juice. Mix mayonnaise, tomato sauce, Worcestershire sauce, paprika. Chill. Serve over lettuce with sauce, garnish with lemon and parsley.']
     },
@@ -132,7 +132,7 @@ const RECIPES = [
         cook: '15 min',
         serves: 4,
         description: 'A true Aussie classic. Golden, crispy and perfectly seasoned. Tender chicken in a crunchy coating.',
-        image: 'assets/images/chicken-schnitzel.jpg',
+        image: 'assets/images/chicken-schnitzel.png',
         ingredients: ['4 chicken breast fillets', '1/2 cup plain flour', '2 eggs', '1 1/2 cups breadcrumbs', '1/2 cup panko', '1 tsp garlic powder', '1 tsp paprika', 'Oil for cooking', 'Lemon wedges'],
         method: ['Pound chicken to even thickness. Coat in flour, egg, breadcrumb mixture. Pan-fry 3-4 min each side. Serve with lemon wedges.']
     },
@@ -144,7 +144,7 @@ const RECIPES = [
         cook: '20 min',
         serves: 12,
         description: 'Crispy on the outside, soft and fluffy on the inside. A true Aussie favourite, perfect as a side or snack.',
-        image: 'assets/images/potato-cakes.jpg',
+        image: 'assets/images/potato-cakes.png',
         ingredients: ['1 kg potatoes', '1/2 cup plain flour', '1/4 cup cornflour', '1 egg', '1/2 tsp salt', '1/4 tsp pepper', '1 cup breadcrumbs', 'Oil for frying'],
         method: ['Boil and mash potatoes. Mix with flour, cornflour, egg, salt, pepper. Shape into patties. Coat in flour, egg, breadcrumbs. Shallow fry 3-4 min each side.']
     },
@@ -156,7 +156,7 @@ const RECIPES = [
         cook: '90 min',
         serves: 6,
         description: 'A timeless classic. Tender, juicy lamb infused with garlic and rosemary, roasted to perfection.',
-        image: 'assets/images/roast-lamb.jpg',
+        image: 'assets/images/roast-lamb.png',
         ingredients: ['1.5 kg lamb leg', '4 garlic cloves', '2 tbsp rosemary', '2 tbsp olive oil', '1 tsp salt', '1/2 tsp pepper', '1 onion', '1/2 cup stock'],
         method: ['Rub lamb with garlic, rosemary, oil, salt, pepper. Place on onion in roasting pan. Roast 200°C 20 min, then 165°C for 1-1.25 hours. Rest 15 min before carving.']
     },
@@ -168,7 +168,7 @@ const RECIPES = [
         cook: '18 min',
         serves: 4,
         description: 'Crispy, golden and full of flavour. Delicate white fish topped with a crunchy macadamia crust.',
-        image: 'assets/images/macadamia-fish.jpg',
+        image: 'assets/images/macadamia-fish.png',
         ingredients: ['600g white fish', '1 tbsp olive oil', '1 tbsp lemon juice', '1 cup macadamias, chopped', '1/2 cup panko', '1/4 cup Parmesan', '1 tbsp parsley', '1 tsp lemon zest', '2 tbsp mayonnaise'],
         method: ['Season fish. Mix macadamias, panko, Parmesan, parsley, zest, mayonnaise. Press onto fish. Bake 200°C 15-18 min.']
     },
@@ -180,7 +180,7 @@ const RECIPES = [
         cook: '30 min',
         serves: 6,
         description: 'A warm and creamy Australian pumpkin soup made with simple ingredients and packed with flavour.',
-        image: 'assets/images/pumpkin-soup.jpg',
+        image: 'assets/images/pumpkin-soup.png',
         ingredients: ['1 kg pumpkin', '1 onion', '2 garlic cloves', '2 tbsp olive oil', '4 cups vegetable stock', '1 cup cream (optional)', 'Salt & pepper', '1/4 tsp nutmeg'],
         method: ['Sauté onion, garlic. Add pumpkin, stock. Simmer 20 min. Blend until smooth. Stir in cream, season with salt, pepper, nutmeg.']
     },
@@ -192,7 +192,7 @@ const RECIPES = [
         cook: '55 min',
         serves: 10,
         description: 'Moist, flavourful and perfectly sweet. A classic homemade favourite that\'s loved across Australia.',
-        image: 'assets/images/banana-bread.jpg',
+        image: 'assets/images/banana-bread.png',
         ingredients: ['3 ripe bananas', '1/3 cup oil or butter', '1/4 cup white sugar', '2 eggs', '1 tsp vanilla', '1 3/4 cups plain flour', '1 tsp baking soda', '1/2 tsp salt', '1/2 tsp cinnamon'],
         method: ['Mash bananas. Mix with oil, sugar, eggs, vanilla. Fold in flour, baking soda, salt, cinnamon. Bake 175°C 50-60 min.']
     },
@@ -204,7 +204,7 @@ const RECIPES = [
         cook: '10 min',
         serves: 4,
         description: 'Lean, tender and packed with protein. A true Aussie delicacy - full of flavour and perfect on the grill.',
-        image: 'assets/images/kangaroo-steak.jpg',
+        image: 'assets/images/kangaroo-steak.png',
         ingredients: ['4 kangaroo steaks', '2 tbsp olive oil', '2 garlic cloves', '1 tbsp Worcestershire sauce', '1 tbsp lemon juice', '1 tsp salt', '1/2 tsp pepper', '1 tsp rosemary'],
         method: ['Marinate steaks 30 min. Grill 2-3 min each side for medium-rare. Rest 5 min. Serve with lemon wedges.']
     },
@@ -216,7 +216,7 @@ const RECIPES = [
         cook: '20 min',
         serves: 12,
         description: "An iconic Aussie favourite! Soft, fluffy scrolls with a rich Vegemite and cheesy filling.",
-        image: 'assets/images/vegemite-scrolls.jpg',
+        image: 'assets/images/vegemite-scrolls.png',
         ingredients: ['3 cups plain flour', '1 tbsp sugar', '2 tsp yeast', '1 tsp salt', '1 cup warm milk', '2 tbsp butter', '3-4 tbsp Vegemite', '1 cup cheddar cheese'],
         method: ['Make dough, rise 1 hour. Roll out, spread Vegemite, sprinkle cheese. Roll up, cut into 12. Bake 180°C 18-20 min.']
     },
@@ -228,7 +228,7 @@ const RECIPES = [
         cook: '50 min',
         serves: 20,
         description: 'A bold and flavourful relish made with native Australian ingredients. Perfect with BBQ meats.',
-        image: 'assets/images/bush-tomato-relish.jpg',
+        image: 'assets/images/bush-tomato-relish.png',
         ingredients: ['500g bush tomatoes', '1 capsicum', '1 onion', '2 garlic cloves', '1 chilli (optional)', '1/2 cup vinegar', '1/2 cup brown sugar', '1/4 cup olive oil', '1 tsp salt', '1 tsp mustard seeds'],
         method: ['Cook onion, garlic, chilli. Add tomatoes, capsicum, vinegar, sugar, salt, mustard seeds. Simmer 40-50 min until thick. Jar and seal.']
     },
@@ -240,7 +240,7 @@ const RECIPES = [
         cook: '20 min',
         serves: 20,
         description: 'A classic Aussie treat with three irresistible layers - crunchy biscuit base, gooey caramel centre and smooth chocolate topping.',
-        image: 'assets/images/chocolate-caramel-slice.jpg',
+        image: 'assets/images/chocolate-caramel-slice.png',
         ingredients: ['250g tea biscuits', '125g butter', '2 tbsp coconut', '395g condensed milk', '125g butter (caramel)', '2 tbsp golden syrup', '200g milk chocolate', '50g dark chocolate', '1 tsp oil'],
         method: ['Base: crush biscuits, mix with butter, press. Chill. Caramel: heat condensed milk, butter, syrup until thick. Pour over base. Chill. Topping: melt chocolates with oil. Pour over. Chill. Cut into slices.']
     },
@@ -252,7 +252,7 @@ const RECIPES = [
         cook: '10 min',
         serves: 4,
         description: 'Juicy prawns sautéed in rich garlic butter with a hint of lemon. Quick, simple, and full of flavour.',
-        image: 'assets/images/garlic-butter-prawns.jpg',
+        image: 'assets/images/garlic-butter-prawns.png',
         ingredients: ['500g prawns', '4 tbsp butter', '4 garlic cloves', '1 tbsp olive oil', '1 tsp chilli flakes', '1 tbsp lemon juice', '2 tbsp parsley', 'Lemon wedges'],
         method: ['Heat oil and 2 tbsp butter. Sauté garlic, chilli. Add prawns, cook 2-3 min each side. Add remaining butter, lemon juice. Season, garnish with parsley.']
     },
@@ -264,7 +264,7 @@ const RECIPES = [
         cook: '0 min',
         serves: 4,
         description: 'Fresh and healthy chicken salad with creamy avocado and a zesty dressing.',
-        image: 'assets/images/chicken-avocado.jpg',
+        image: 'assets/images/chicken-avocado.png',
         ingredients: ['2 chicken breasts, cooked', '2 avocados', '1 cup cherry tomatoes', '1/2 red onion', '1/4 cup olive oil', '2 tbsp lemon juice', 'Salt & pepper'],
         method: ['Chop chicken, avocado, tomatoes, onion. Mix dressing. Toss and serve.']
     },
@@ -276,7 +276,7 @@ const RECIPES = [
         cook: '12 min',
         serves: 4,
         description: 'Perfectly grilled snapper with a hint of lemon and herbs.',
-        image: 'assets/images/grilled-snapper.jpg',
+        image: 'assets/images/grilled-snapper.png',
         ingredients: ['4 snapper fillets', '2 tbsp olive oil', '2 garlic cloves', '1 lemon', 'Fresh herbs', 'Salt & pepper'],
         method: ['Season fish. Grill 5-6 min each side. Serve with lemon wedges.']
     },
@@ -288,7 +288,7 @@ const RECIPES = [
         cook: '15 min',
         serves: 6,
         description: 'Aussie-style beef patties with herbs and spices.',
-        image: 'assets/images/beef-risoles.jpg',
+        image: 'assets/images/beef-risoles.png',
         ingredients: ['500g beef mince', '1 onion', '1 carrot', '1 egg', '1/2 cup breadcrumbs', '2 tbsp BBQ sauce', 'Salt & pepper'],
         method: ['Mix all ingredients. Shape into patties. Fry 4-5 min each side.']
     },
@@ -300,7 +300,7 @@ const RECIPES = [
         cook: '10 min',
         serves: 6,
         description: 'Crispy golden corn fritters, perfect for breakfast or brunch.',
-        image: 'assets/images/corn-fritters.jpg',
+        image: 'assets/images/corn-fritters.png',
         ingredients: ['2 cups corn kernels', '1 cup plain flour', '2 eggs', '1/2 cup milk', '1 tsp baking powder', 'Salt & pepper', 'Oil for frying'],
         method: ['Mix all ingredients. Drop spoonfuls into hot oil. Fry until golden.']
     },
@@ -312,7 +312,7 @@ const RECIPES = [
         cook: '30 min',
         serves: 8,
         description: 'Traditional Australian bush bread, simple and hearty.',
-        image: 'assets/images/damper-bread.jpg',
+        image: 'assets/images/damper-bread.png',
         ingredients: ['3 cups self-raising flour', '1 tsp salt', '1 tbsp butter', '1 cup milk', '1/2 cup water'],
         method: ['Mix flour, salt. Rub in butter. Add milk and water to form dough. Bake 200°C 25-30 min.']
     },
@@ -324,7 +324,7 @@ const RECIPES = [
         cook: '15 min',
         serves: 24,
         description: 'Classic Australian ANZAC biscuits, chewy and full of oats and coconut.',
-        image: 'assets/images/anzac-biscuits.jpg',
+        image: 'assets/images/anzac-biscuits.png',
         ingredients: ['1 cup rolled oats', '1 cup plain flour', '1 cup coconut', '3/4 cup sugar', '125g butter', '2 tbsp golden syrup', '1 tsp baking soda', '2 tbsp water'],
         method: ['Mix dry ingredients. Melt butter, syrup, soda, water. Combine. Drop spoonfuls onto tray. Bake 160°C 15 min.']
     },
@@ -336,7 +336,7 @@ const RECIPES = [
         cook: '15 min',
         serves: 4,
         description: 'Juicy beef burgers with caramelised onions.',
-        image: 'assets/images/beef-burgers.jpg',
+        image: 'assets/images/beef-burgers.png',
         ingredients: ['500g beef mince', '1 onion', '1 egg', '1/4 cup breadcrumbs', '4 buns', 'Lettuce, tomato, cheese'],
         method: ['Mix mince, onion, egg, breadcrumbs. Form patties. Grill 4-5 min each side. Assemble burgers.']
     },
@@ -348,7 +348,7 @@ const RECIPES = [
         cook: '5 min',
         serves: 4,
         description: 'Crispy salt and pepper squid with a zesty dipping sauce.',
-        image: 'assets/images/salt-pepper-squid.jpg',
+        image: 'assets/images/salt-pepper-squid.png',
         ingredients: ['500g squid rings', '1 cup cornflour', '1 tsp salt', '1 tsp pepper', 'Oil for frying', 'Lemon wedges'],
         method: ['Toss squid in cornflour, salt, pepper. Deep fry 2-3 min. Serve with lemon.']
     },
@@ -360,7 +360,7 @@ const RECIPES = [
         cook: '10 min',
         serves: 4,
         description: 'Grilled chicken skewers with a creamy peanut satay sauce.',
-        image: 'assets/images/chicken-satay.jpg',
+        image: 'assets/images/chicken-satay.png',
         ingredients: ['500g chicken thigh', '1/4 cup soy sauce', '2 tbsp peanut butter', '1 tbsp curry powder', '1/2 cup coconut milk', 'Skewers'],
         method: ['Marinate chicken 30 min. Grill skewers 5-6 min. Serve with satay sauce.']
     },
@@ -372,7 +372,7 @@ const RECIPES = [
         cook: '20 min',
         serves: 4,
         description: 'Sticky honey soy chicken with garlic and ginger.',
-        image: 'assets/images/honey-soy-chicken.jpg',
+        image: 'assets/images/honey-soy-chicken.png',
         ingredients: ['4 chicken thighs', '1/4 cup soy sauce', '2 tbsp honey', '2 garlic cloves', '1 tbsp ginger', '1 tbsp oil'],
         method: ['Mix sauce. Cook chicken in oil, add sauce, simmer until sticky.']
     },
@@ -384,7 +384,7 @@ const RECIPES = [
         cook: '2 hours',
         serves: 4,
         description: 'Slow-cooked BBQ pork ribs, tender and full of smoky flavour.',
-        image: 'assets/images/bbq-pork-ribs.jpg',
+        image: 'assets/images/bbq-pork-ribs.png',
         ingredients: ['1.5 kg pork ribs', '1 cup BBQ sauce', '2 tbsp brown sugar', '2 garlic cloves', '1 tsp paprika'],
         method: ['Marinate ribs. Slow cook 2 hours. Finish on grill with extra sauce.']
     },
@@ -396,7 +396,7 @@ const RECIPES = [
         cook: '10 min',
         serves: 4,
         description: 'Hearty steak sandwich with caramelised onions and cheese.',
-        image: 'assets/images/steak-sandwich.jpg',
+        image: 'assets/images/steak-sandwich.png',
         ingredients: ['4 beef steaks', '4 bread rolls', '1 onion', '4 cheese slices', 'BBQ sauce'],
         method: ['Grill steaks. Sauté onions. Assemble sandwiches with cheese and sauce.']
     },
@@ -408,7 +408,7 @@ const RECIPES = [
         cook: '0 min',
         serves: 4,
         description: 'Fresh chicken and avocado wraps, perfect for lunch.',
-        image: 'assets/images/chicken-avocado-roll.jpg',
+        image: 'assets/images/chicken-avocado-roll.png',
         ingredients: ['2 chicken breasts', '2 avocados', '4 tortillas', 'Lettuce', 'Mayonnaise'],
         method: ['Shred chicken. Mash avocado. Fill wraps with chicken, avocado, lettuce, mayo.']
     },
@@ -420,7 +420,7 @@ const RECIPES = [
         cook: '30 min',
         serves: 6,
         description: 'Rich and creamy seafood chowder with prawns, fish and mussels.',
-        image: 'assets/images/seafood-chowder.jpg',
+        image: 'assets/images/seafood-chowder.png',
         ingredients: ['500g seafood mix', '1 onion', '2 garlic', '4 cups fish stock', '1 cup cream', '2 potatoes', 'Salt & pepper'],
         method: ['Sauté onion, garlic. Add stock, potatoes. Simmer 20 min. Add seafood, cream. Cook 5 min.']
     },
@@ -432,7 +432,7 @@ const RECIPES = [
         cook: '20 min',
         serves: 4,
         description: 'Rich and creamy pasta with mushrooms and Parmesan.',
-        image: 'assets/images/creamy-mushroom-pasta.jpg',
+        image: 'assets/images/creamy-mushroom-pasta.png',
         ingredients: ['500g pasta', '300g mushrooms', '2 garlic', '1 cup cream', '1/2 cup Parmesan', '2 tbsp butter', 'Parsley'],
         method: ['Cook pasta. Sauté mushrooms, garlic. Add cream, Parmesan, butter. Toss with pasta.']
     },
@@ -444,7 +444,7 @@ const RECIPES = [
         cook: '10 min',
         serves: 4,
         description: 'Classic Aussie bacon and egg roll, perfect for breakfast.',
-        image: 'assets/images/bacon-egg-roll.jpg',
+        image: 'assets/images/bacon-egg-roll.png',
         ingredients: ['4 bread rolls', '8 bacon slices', '4 eggs', 'BBQ sauce', 'Butter'],
         method: ['Cook bacon and eggs. Toast rolls. Assemble with sauce.']
     },
@@ -456,7 +456,7 @@ const RECIPES = [
         cook: '35 min',
         serves: 6,
         description: 'Greek-style spinach and feta pie in flaky pastry.',
-        image: 'assets/images/spinach-feta-pie.jpg',
+        image: 'assets/images/spinach-feta-pie.png',
         ingredients: ['500g spinach', '200g feta', '3 eggs', '1 onion', '2 sheets pastry', 'Salt & pepper'],
         method: ['Sauté onion, spinach. Mix with feta, eggs. Fill pastry. Bake 200°C 30-35 min.']
     },
@@ -468,7 +468,7 @@ const RECIPES = [
         cook: '4 hours',
         serves: 6,
         description: 'Fall-apart tender slow cooked lamb with vegetables.',
-        image: 'assets/images/slow-cooked-lamb.jpg',
+        image: 'assets/images/slow-cooked-lamb.png',
         ingredients: ['1.5 kg lamb shoulder', '2 onions', '4 carrots', '4 cups stock', 'Herbs', 'Garlic'],
         method: ['Season lamb. Brown. Place in slow cooker with vegetables, stock, herbs. Cook 4 hours.']
     },
@@ -480,7 +480,7 @@ const RECIPES = [
         cook: '30 min',
         serves: 4,
         description: 'Oven-baked chicken with garlic and fresh herbs.',
-        image: 'assets/images/garlic-herb-chicken.jpg',
+        image: 'assets/images/garlic-herb-chicken.png',
         ingredients: ['4 chicken breasts', '4 garlic cloves', '2 tbsp herbs', '2 tbsp olive oil', 'Salt & pepper'],
         method: ['Mix garlic, herbs, oil. Coat chicken. Bake 200°C 25-30 min.']
     },
@@ -492,7 +492,7 @@ const RECIPES = [
         cook: '0 min',
         serves: 10,
         description: 'No-bake mango cheesecake with a buttery biscuit base.',
-        image: 'assets/images/mango-cheesecake.jpg',
+        image: 'assets/images/mango-cheesecake.png',
         ingredients: ['200g biscuits', '100g butter', '500g cream cheese', '1 cup cream', '1/2 cup sugar', '2 mangoes'],
         method: ['Base: crush biscuits, mix with butter. Filling: beat cream cheese, cream, sugar. Fold in mango puree. Chill.']
     },
@@ -504,7 +504,7 @@ const RECIPES = [
         cook: '0 min',
         serves: 12,
         description: 'Tangy passionfruit slice with a coconut biscuit base.',
-        image: 'assets/images/passionfruit-slice.jpg',
+        image: 'assets/images/passionfruit-slice.png',
         ingredients: ['200g biscuits', '100g butter', '1 cup icing sugar', '1/2 cup passionfruit pulp', '1 cup coconut'],
         method: ['Base: crush biscuits, mix with butter. Topping: beat sugar, passionfruit, coconut. Spread over base. Chill.']
     },
@@ -516,7 +516,7 @@ const RECIPES = [
         cook: '40 min',
         serves: 8,
         description: 'Classic apple crumble with a golden oat topping.',
-        image: 'assets/images/apple-crumble.jpg',
+        image: 'assets/images/apple-crumble.png',
         ingredients: ['6 apples', '1/2 cup sugar', '1 cup flour', '1 cup oats', '125g butter', '1 tsp cinnamon'],
         method: ['Slice apples, place in dish. Mix flour, oats, butter, sugar, cinnamon. Sprinkle over apples. Bake 180°C 35-40 min.']
     },
@@ -528,7 +528,7 @@ const RECIPES = [
         cook: '35 min',
         serves: 8,
         description: 'Rich and sticky date pudding with caramel sauce.',
-        image: 'assets/images/sticky-date-pudding.jpg',
+        image: 'assets/images/sticky-date-pudding.png',
         ingredients: ['200g dates', '1 cup water', '125g butter', '1 cup sugar', '2 eggs', '1 1/2 cups flour', '1 tsp baking soda'],
         method: ['Cook dates in water. Cream butter, sugar. Add eggs. Fold in flour, baking soda, dates. Bake 180°C 30-35 min. Serve with caramel sauce.']
     },
@@ -540,7 +540,7 @@ const RECIPES = [
         cook: '5 min',
         serves: 4,
         description: 'Refreshing Australian lemon myrtle tea with honey.',
-        image: 'assets/images/lemon-myrtle-tea.jpg',
+        image: 'assets/images/lemon-myrtle-tea.png',
         ingredients: ['4 cups water', '2 tbsp lemon myrtle leaves', 'Honey to taste', 'Lemon slices'],
         method: ['Steep leaves in hot water 5 min. Strain, sweeten with honey, garnish with lemon.']
     },
@@ -552,7 +552,7 @@ const RECIPES = [
         cook: '10 min',
         serves: 4,
         description: 'Perfectly grilled salmon with lemon and dill.',
-        image: 'assets/images/grilled-salmon.jpg',
+        image: 'assets/images/grilled-salmon.png',
         ingredients: ['4 salmon fillets', '2 tbsp olive oil', '1 lemon', 'Fresh dill', 'Salt & pepper'],
         method: ['Season salmon. Grill 5-6 min each side. Serve with lemon and dill.']
     },
@@ -564,7 +564,7 @@ const RECIPES = [
         cook: '20 min',
         serves: 4,
         description: 'Tender chicken and pasta tossed in a creamy pesto sauce.',
-        image: 'assets/images/chicken-pesto-pasta.jpg',
+        image: 'assets/images/chicken-pesto-pasta.png',
         ingredients: ['500g pasta', '2 chicken breasts', '1/2 cup pesto', '1/2 cup cream', 'Parmesan cheese'],
         method: ['Cook pasta. Sauté chicken. Add pesto, cream. Toss with pasta. Top with Parmesan.']
     },
@@ -576,7 +576,7 @@ const RECIPES = [
         cook: '0 min',
         serves: 6,
         description: 'Creamy Australian-style coleslaw with cabbage and carrot.',
-        image: 'assets/images/classic-coleslaw.jpg',
+        image: 'assets/images/classic-coleslaw.png',
         ingredients: ['1/2 cabbage', '2 carrots', '1/2 cup mayonnaise', '2 tbsp vinegar', '1 tbsp sugar', 'Salt & pepper'],
         method: ['Shred cabbage and carrots. Mix dressing. Toss to combine.']
     },
@@ -588,7 +588,7 @@ const RECIPES = [
         cook: '15 min',
         serves: 4,
         description: 'Garlic prawn linguine with a touch of chilli and lemon.',
-        image: 'assets/images/prawn-linguine.jpg',
+        image: 'assets/images/prawn-linguine.png',
         ingredients: ['500g linguine', '500g prawns', '4 garlic cloves', '1 chilli', '1/2 cup olive oil', 'Lemon juice', 'Parsley'],
         method: ['Cook pasta. Sauté garlic, chilli, prawns. Toss with pasta, oil, lemon juice, parsley.']
     },
@@ -600,7 +600,7 @@ const RECIPES = [
         cook: '30 min',
         serves: 16,
         description: 'Fudgy brownies loaded with crunchy macadamia nuts.',
-        image: 'assets/images/macadamia-brownies.jpg',
+        image: 'assets/images/macadamia-brownies.png',
         ingredients: ['200g chocolate', '150g butter', '1 cup sugar', '3 eggs', '1 cup flour', '1 cup macadamias'],
         method: ['Melt chocolate and butter. Add sugar, eggs, flour, macadamias. Bake 180°C 25-30 min.']
     }
