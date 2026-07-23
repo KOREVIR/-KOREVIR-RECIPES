@@ -171,10 +171,15 @@ body {
     cursor: pointer;
 }
 
+.btn-primary {
+    background: var(--gold);  /* Altın sarısı */
+    color: white;
+}
+
 .btn-primary:hover {
-    background: var(--gold);
+    background: #B8923E;  /* Altının koyu tonu */
     transform: translateY(-3px);
-    box-shadow: var(--shadow-hover);
+}
 }
 
 .btn-secondary {
