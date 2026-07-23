@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KOREVIR Recipes - 50 Authentic Australian Recipes</title>
-    <meta name="description" content="Discover 50 premium Australian recipes from KOREVIR. Perfect for cooking with our handcrafted wooden spoons.">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOREVIR Recipes - 50 Australian Recipes</title>
+    <meta name="description" content="Discover 50 premium Australian recipes from KOREVIR. Perfect for cooking with our handcrafted wooden spoons." />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
     <!-- HEADER -->
     <header class="header">
         <div class="header-inner">
-         <div class="logo">
-    <img src="assets/images/korevir-logo.png" alt="KOREVIR" style="height:50px; width:auto;">
-   <div class="logo">
-    <img src="assets/images/korevir-logo.png" alt="KOREVIR" class="logo-img">
-    <div class="logo-text">
-        <h1>KOREVIR</h1>
-        <span class="logo-tagline">QUALITY·INNOVATION·TRUST</span>
-        <span class="logo-sub">Recipes</span>
-    </div>
-</div>
+            <div class="logo">
+                <img src="assets/images/korevir-logo.png" alt="KOREVIR" class="logo-img" />
+                <div class="logo-text">
+                    <h1>KOREVIR</h1>
+                    <span class="logo-tagline">QUALITY·INNOVATION·TRUST</span>
+                    <span class="logo-sub">Recipes</span>
+                </div>
+            </div>
             <nav class="header-nav">
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
@@ -50,7 +48,7 @@
             </div>
             <div class="hero-image">
                 <div class="hero-image-placeholder">
-                    <span>🍴</span>
+                    <img src="assets/images/korevir-logo.png" alt="KOREVIR Wooden Spoons" style="max-width:60%;" />
                     <p>KOREVIR Wooden Spoons</p>
                 </div>
             </div>
@@ -60,7 +58,7 @@
     <!-- SEARCH & FILTER -->
     <section class="search-section" id="recipes">
         <div class="search-container">
-            <input type="text" id="search" placeholder="🔍 Search 50 recipes...">
+            <input type="text" id="search" placeholder="🔍 Search 50 recipes..." />
             <div class="category-filters" id="categoryFilters">
                 <button class="filter-btn active" data-category="all">All Recipes</button>
                 <button class="filter-btn" data-category="Main Dishes">Main Dishes</button>
@@ -75,17 +73,13 @@
     </section>
 
     <!-- RECIPES GRID -->
-    <main class="recipes-grid" id="recipesGrid">
-        <!-- JavaScript ile doldurulacak -->
-    </main>
+    <main class="recipes-grid" id="recipesGrid"></main>
 
     <!-- MODAL -->
     <div class="modal" id="recipeModal">
         <div class="modal-content">
             <button class="modal-close" id="closeModal">✕</button>
-            <div class="modal-body" id="modalBody">
-                <!-- JavaScript ile doldurulacak -->
-            </div>
+            <div class="modal-body" id="modalBody"></div>
         </div>
     </div>
 
@@ -94,7 +88,7 @@
         <div class="about-container">
             <div class="about-text">
                 <span class="about-badge">About KOREVIR</span>
-                <h2>From Our <span class="highlight">Hands</span> to Your <span class="highlight">Table</span></h2>
+                <h2>From Our <span class="highlight">Hands</span> to Your Table</h2>
                 <p>
                     KOREVIR brings together the finest Australian recipes and
                     handcrafted wooden spoons. Every recipe is tested, perfected,
@@ -123,13 +117,12 @@
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-brand">
-    <img src="assets/images/korevir-logo.png" alt="KOREVIR" style="height:40px; width:auto; margin-bottom:8px; filter: brightness(0) invert(1);">
-    <div class="footer-logo">
-        <h3>KOREVIR</h3>
-        <span class="footer-tagline">QUALITY·INNOVATION·TRUST</span>
-        <p>Premium Australian Recipes</p>
-    </div>
-</div>
+                <div class="footer-logo">
+                    <h3>KOREVIR</h3>
+                    <span class="footer-tagline">QUALITY·INNOVATION·TRUST</span>
+                    <p>Premium Australian Recipes</p>
+                </div>
+            </div>
             <div class="footer-links">
                 <a href="#home">Home</a>
                 <a href="#recipes">Recipes</a>
@@ -146,8 +139,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-<section class="qr-section" style="text-align:center; padding:40px 20px; background:var(--cream);">
-    <h2 style="color:var(--gold);">Scan & Cook</h2>
-    <p style="color:var(--dark-light);">Scan the QR code on your KOREVIR packaging to access 50 premium recipes instantly.</p>
-    <img src="assets/images/qr-code.png" alt="Scan to access KOREVIR recipes" style="width:200px; height:200px; margin-top:20px; border-radius:16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-</section>
