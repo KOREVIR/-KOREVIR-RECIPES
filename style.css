@@ -735,3 +735,52 @@ body {
         height: 200px;
     }
 }
+/* ===== LOGO ===== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+.logo-text h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--dark);
+    letter-spacing: 1px;
+    margin: 0;
+    line-height: 1;
+}
+
+.logo-text .logo-tag {
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ===== HEADER RENK ===== */
+.header {
+    background: rgba(255,255,255,0.98);
+    border-bottom: 3px solid var(--gold);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+}
+
+/* ===== HERO LOGO ===== */
+.hero-badge {
+    background: var(--gold);
+    color: white;
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
+}
