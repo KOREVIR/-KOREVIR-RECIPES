@@ -57,9 +57,8 @@ body {
 }
 
 .logo-img {
-    height: 28px;  /* 40'tan 28'e düşür */
+    height: 28px;  /* LOGO KÜÇÜLDÜ */
     width: auto;
-}
 }
 
 .logo-text {
@@ -452,5 +451,5 @@ body {
     .recipe-card img { height: 180px; }
     .modal-content { padding: 16px; }
     .modal-body .modal-image { height: 200px; }
-    .logo-img { height: 30px; }
+    .logo-img { height: 22px; }
 }
