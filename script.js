@@ -617,6 +617,44 @@ const RECIPES = [
             'Lift out using the baking paper and cut into 20 slices. Store in an airtight container in the fridge.'
         ]
     }
+    ,
+{
+    id: 'prawn-cocktail',
+    title: 'Prawn Cocktail',
+    category: 'Main Dishes',
+    prep: '15 min',
+    cook: '3 min',
+    serves: 4,
+    description: 'A retro classic done right. Juicy prawns with a creamy, tangy sauce, crisp lettuce and a hint of lemon.',
+    image: 'assets/images/prawn-cocktail.jpg',
+    ingredients: [
+        '500g cooked prawns, peeled & deveined',
+        '1 tbsp lemon juice',
+        '1/2 tsp salt',
+        '1/4 tsp black pepper',
+        '1/2 cup mayonnaise',
+        '2 tbsp tomato sauce (ketchup)',
+        '1 tbsp lemon juice (for sauce)',
+        '1 tsp Worcestershire sauce',
+        '1 tsp brandy (optional)',
+        '1/2 tsp paprika',
+        'Salt & black pepper to taste',
+        '1 small cos lettuce or iceberg lettuce, shredded',
+        'Lemon wedges',
+        'Fresh parsley, chopped'
+    ],
+    method: [
+        'If prawns are not cooked, bring a pot of salted water to the boil. Add prawns and cook for 2-3 minutes or until pink and opaque. Drain and rinse under cold water. Pat dry.',
+        'Toss prawns with lemon juice, salt and black pepper. Set aside.',
+        'In a bowl, whisk together mayonnaise, tomato sauce, lemon juice, Worcestershire sauce, brandy (if using) and paprika. Season with salt and black pepper to taste.',
+        'Refrigerate the sauce for at least 30 minutes to allow the flavours to develop.',
+        'To serve, spoon a layer of shredded lettuce into serving glasses or bowls.',
+        'Add a generous spoonful of sauce on top of the lettuce.',
+        'Arrange prawns over the sauce.',
+        'Garnish with lemon wedges and chopped parsley.',
+        'Serve immediately, chilled.'
+    ]
+}
 ];
 
 // ===== 4 TANE DAHA EKLE (PDF'teki eksikler) =====
