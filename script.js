@@ -1,4 +1,4 @@
-// ===== KOREVIR RECIPES - 50 RECIPES (UZATILMIŞ METHOD) =====
+// ===== KOREVIR RECIPES - 50 RECIPES (DETAYLI YAPILIŞLAR) =====
 
 const AMAZON_LINK = '#';
 const AMAZON_TEXT = '🛒 Shop KOREVIR on Amazon AU';
@@ -14,8 +14,33 @@ const RECIPES = [
         serves: 4,
         description: 'A crispy golden chicken breast topped with rich tomato sauce and melted mozzarella cheese.',
         image: 'assets/images/chicken-parmigiana.png',
-        ingredients: ['4 chicken breast fillets', '1 cup plain flour', '2 eggs, beaten', '1 1/2 cups breadcrumbs', '1/2 cup grated Parmesan cheese', '2 cups tomato passata', '1 tsp garlic, minced', '1 tsp dried oregano', '1 cup shredded mozzarella cheese', '2 tbsp olive oil', 'Salt & pepper to taste'],
-        method: ['Preheat your oven to 200°C (fan-forced) and line a baking tray with parchment paper.', 'Place each chicken breast between two sheets of baking paper and gently pound to an even thickness of about 2cm. Season both sides generously with salt and pepper.', 'Set up three shallow bowls: one with flour, one with beaten eggs, and one with breadcrumbs mixed with Parmesan cheese.', 'Coat each chicken breast first in flour (shake off excess), then dip into the egg, and finally press into the breadcrumb mixture until fully coated.', 'Heat olive oil in a large oven-safe skillet over medium-high heat. Fry the chicken for 3-4 minutes each side until golden brown. You may need to do this in batches.', 'Spread a layer of tomato passata in the bottom of a baking dish. Place the fried chicken on top and spoon the remaining sauce over each piece.', 'Sprinkle shredded mozzarella cheese generously over the top of each chicken breast.', 'Bake in the preheated oven for 20-25 minutes, or until the cheese is melted, bubbly, and golden.', 'Remove from the oven and let rest for 5 minutes. Garnish with fresh basil leaves if desired and serve hot with pasta or a green salad.']
+        ingredients: [
+            '4 chicken breast fillets (about 180g each)',
+            '1 cup plain flour (for dredging)',
+            '2 large eggs, beaten with a splash of water',
+            '1 1/2 cups fine breadcrumbs',
+            '1/2 cup grated Parmesan cheese (freshly grated)',
+            '2 cups tomato passata (smooth tomato puree)',
+            '1 tsp garlic, minced',
+            '1 tsp dried oregano (or 1 tbsp fresh)',
+            '1 cup shredded mozzarella cheese (low moisture)',
+            '2 tbsp extra virgin olive oil (for frying)',
+            'Sea salt & freshly cracked black pepper to taste',
+            'Fresh basil leaves for garnish (optional)'
+        ],
+        method: [
+            'Preheat your oven to 200°C (fan-forced) and line a large baking tray with parchment paper. This ensures the chicken doesn\'t stick.',
+            'Place each chicken breast between two large sheets of baking paper and gently pound with a rolling pin to an even thickness of about 2cm. This step is crucial for even cooking and tender meat.',
+            'Season both sides of the chicken generously with sea salt and freshly cracked black pepper.',
+            'Set up your dredging station: Plate 1 with plain flour, Plate 2 with the beaten eggs, and Plate 3 with a mixture of breadcrumbs and grated Parmesan cheese. Mix the breadcrumbs and cheese well.',
+            'Coat each chicken breast first in flour, shaking off any excess. Then dip into the egg wash, allowing the excess to drip off. Finally, press firmly into the breadcrumb mixture, ensuring every part is evenly coated.',
+            'Heat the olive oil in a large, oven-safe skillet over medium-high heat. Wait until the oil shimmers and a breadcrumb dropped in sizzles immediately.',
+            'Carefully place the breaded chicken into the hot skillet. Fry for 3-4 minutes per side, or until golden brown and crispy. You may need to do this in batches to avoid overcrowding the pan.',
+            'Transfer the fried chicken to the prepared baking tray. Spread a generous layer of tomato passata over each breast, then sprinkle with the minced garlic and dried oregano.',
+            'Top each breast with a generous handful of shredded mozzarella cheese, covering the sauce completely.',
+            'Bake in the preheated oven for 20-25 minutes, or until the cheese is fully melted, bubbly, and starting to brown in spots.',
+            'Remove from the oven and let rest for 5 minutes. Garnish with fresh basil leaves if desired. Serve hot alongside a crisp green salad, spaghetti, or creamy mashed potatoes.'
+        ]
     },
     // 2
     {
@@ -27,8 +52,36 @@ const RECIPES = [
         serves: 6,
         description: 'A classic Aussie-style meat pie with a rich, savoury filling wrapped in golden, flaky pastry.',
         image: 'assets/images/meat-pie.png',
-        ingredients: ['500g beef mince', '1 onion, finely chopped', '1 garlic clove, minced', '1 carrot, finely diced', '1 celery stalk, finely diced', '2 tbsp tomato paste', '1 tbsp Worcestershire sauce', '1 cup beef stock', '1 tsp dried thyme', 'Salt & pepper to taste', '2 sheets puff pastry, thawed', '1 egg, beaten (for egg wash)'],
-        method: ['Heat a splash of oil in a large frying pan over medium heat. Add the onion, garlic, carrot and celery and cook for 5-6 minutes until softened and fragrant.', 'Add the beef mince to the pan and cook, breaking it up with a wooden spoon, until it is well browned all over (about 6-8 minutes).', 'Stir in the tomato paste and cook for 1 minute until it darkens slightly. Add the Worcestershire sauce, beef stock, thyme, salt and pepper.', 'Bring the mixture to a simmer, then reduce the heat to low and cook for 10-15 minutes, stirring occasionally, until the sauce has thickened. Remove from heat and allow to cool completely (this is important so the pastry doesn\'t go soggy).', 'Preheat your oven to 200°C (fan-forced). Lightly grease a large baking tray or line it with baking paper.', 'Cut the puff pastry sheets into 6 equal rectangles (or use individual pie tins). If using a large pie dish, line the base and sides with one pastry sheet.', 'Spoon the cooled meat filling into the pastry cases, filling them almost to the top. Brush the edges of the pastry with a little beaten egg.', 'Place the remaining pastry sheets on top as lids. Press the edges together firmly to seal, then trim any excess. Cut a small slit in the top of each pie to allow steam to escape.', 'Brush the tops generously with beaten egg and sprinkle with a little extra salt if desired.', 'Bake for 20-25 minutes, or until the pastry is puffed, golden brown, and crisp. Serve hot with tomato sauce or gravy.']
+        ingredients: [
+            '500g premium beef mince (at least 15% fat for flavour)',
+            '1 large brown onion, finely chopped',
+            '2 garlic cloves, crushed',
+            '1 large carrot, finely diced',
+            '1 celery stalk, finely diced',
+            '2 tbsp tomato paste (concentrate)',
+            '1 tbsp Worcestershire sauce (or soy sauce)',
+            '1 cup (250ml) beef stock (preferably home-made or good quality)',
+            '1 tsp dried thyme (or 2 tsp fresh)',
+            'Salt and freshly ground pepper to taste',
+            '2 sheets puff pastry (just thawed)',
+            '1 egg, lightly beaten (for egg wash)'
+        ],
+        method: [
+            'Heat a generous splash of vegetable or olive oil in a large, heavy-based frying pan over medium heat. The pan must be large enough to hold all the filling.',
+            'Add the finely chopped onion, minced garlic, diced carrot, and celery. Cook for 5-6 minutes, stirring frequently, until the vegetables have softened and are translucent but not browned.',
+            'Increase the heat to high and add the beef mince. Cook for 6-8 minutes, breaking it up with a wooden spoon. Keep stirring until the mince is well browned and any liquid has evaporated. This develops deep flavor.',
+            'Stir in the tomato paste and cook for 1-2 minutes until it darkens slightly and becomes fragrant. This removes the raw taste of the paste.',
+            'Pour in the Worcestershire sauce and beef stock. Add the dried thyme, salt, and a generous crack of black pepper.',
+            'Bring the mixture to a steady simmer, then reduce the heat to low. Allow it to bubble away for 10-15 minutes, stirring occasionally, until the sauce has reduced and thickened to a rich gravy consistency.',
+            'Remove the filling from the heat and let it cool completely to room temperature. This is a vital step; a hot filling will melt the pastry and make it soggy.',
+            'Preheat your oven to 200°C (fan-forced). Lightly grease a large baking tray or line it with baking paper.',
+            'Cut the puff pastry sheets into 6 equal rectangles (or use individual pie tins). If using one large dish, line the base with one sheet.',
+            'Spoon the cooled meat filling generously into the pastry cases. Brush the edges of the pastry with the beaten egg to act as glue.',
+            'Place the remaining pastry sheets on top to form the lids. Press the edges firmly with a fork to seal completely. Trim any excess pastry.',
+            'Cut a small slit in the top of each pie to allow steam to escape during baking, preventing a soggy bottom.',
+            'Generously brush the tops with the remaining beaten egg. Sprinkle with a little salt and pepper for extra crunch.',
+            'Bake for 20-25 minutes, or until the pastry is puffed, deeply golden, and the crust is crisp. Serve immediately with tomato sauce or rich brown gravy.'
+        ]
     },
     // 3
     {
@@ -40,8 +93,29 @@ const RECIPES = [
         serves: 4,
         description: 'A light and flavourful Australian favourite with tender barramundi and a zesty lemon butter sauce.',
         image: 'assets/images/barramundi-with-lemon-butter.png',
-        ingredients: ['4 barramundi fillets (skin on)', 'Salt & pepper to taste', '1 tbsp olive oil', '60g unsalted butter', '2 garlic cloves, minced', 'Juice of 1 lemon', 'Zest of 1 lemon', '2 tbsp capers, drained', '1 tbsp fresh parsley, chopped'],
-        method: ['Pat the barramundi fillets thoroughly dry with paper towels – this is key to getting crispy skin. Season both sides with salt and pepper.', 'Heat the olive oil in a large non-stick skillet over medium-high heat. When the oil is shimmering, place the fish skin-side down in the pan.', 'Cook for 4-5 minutes without moving it, until the skin is golden and crispy. Carefully flip the fish and cook for another 2-3 minutes on the other side.', 'Remove the fish to a plate and keep warm. Reduce the heat to medium.', 'Add the butter to the pan and allow it to melt. Once foaming, add the minced garlic and cook for 30 seconds until fragrant, scraping up any browned bits from the bottom.', 'Stir in the lemon juice, lemon zest and capers. Let the sauce bubble gently for 1-2 minutes until it thickens slightly. Taste and adjust seasoning.', 'Return the fish to the pan and spoon the lemon butter sauce over the fillets. Heat through for 1 minute.', 'Garnish with fresh parsley and serve immediately with steamed vegetables or jasmine rice.']
+        ingredients: [
+            '4 barramundi fillets (skin on, about 180g each)',
+            'Sea salt & freshly ground white pepper',
+            '1 tbsp light olive oil or grapeseed oil',
+            '60g unsalted butter, cubed',
+            '2 cloves garlic, finely minced',
+            'Juice of 1 large lemon (about 3 tbsp)',
+            'Zest of 1 lemon (grated)',
+            '2 tbsp capers (in brine, drained and rinsed)',
+            '1 tbsp fresh flat-leaf parsley, finely chopped'
+        ],
+        method: [
+            'Start by patting the barramundi fillets absolutely dry with paper towels. This is the single most important step for achieving a crispy, crackling skin.',
+            'Season the flesh side of the fish lightly with salt, and season the skin side generously with salt and pepper. Press the seasoning into the skin.',
+            'Heat the olive oil in a large, heavy non-stick skillet over medium-high heat until the oil is very hot and just beginning to smoke.',
+            'Place the fish into the pan, skin-side down, pressing gently with a spatula for 10 seconds to ensure even contact. Cook without moving for 4-5 minutes, or until the skin is golden and crisp.',
+            'Carefully flip the fish using a fish slice. Reduce the heat to medium and cook the flesh side for a further 2-3 minutes, or until the fish is opaque and flakes easily.',
+            'Remove the fish to a warm plate, cover loosely with foil, and set aside while you make the sauce.',
+            'Return the pan to medium heat. Add the unsalted butter cubes and allow them to melt and foam. Add the minced garlic and cook for 30 seconds, until it smells fragrant.',
+            'Squeeze in the lemon juice, add the lemon zest, and stir in the capers. Allow the sauce to bubble for 1-2 minutes until it thickens slightly and the capers have warmed through.',
+            'Return the fish to the pan and spoon the gorgeous lemon-butter caper sauce generously over the top. Warm through for 1 minute.',
+            'Sprinkle with fresh parsley and serve immediately with steamed asparagus, green beans, or a bowl of fluffy jasmine rice.'
+        ]
     },
     // 4
     {
@@ -53,8 +127,35 @@ const RECIPES = [
         serves: 12,
         description: "Australia's iconic sponge cake squares coated in chocolate sauce and rolled in desiccated coconut.",
         image: 'assets/images/lamingtons.png',
-        ingredients: ['125g unsalted butter, softened', '1 cup caster sugar', '2 tsp vanilla extract', '4 eggs', '1 1/4 cups self-raising flour, sifted', '1/2 cup milk', '1 cup caster sugar (for chocolate sauce)', '1/2 cup unsweetened cocoa powder', '125g unsalted butter (for chocolate sauce)', '1 cup milk (for chocolate sauce)', '1 tsp vanilla extract (for chocolate sauce)', '2 cups desiccated coconut'],
-        method: ['Preheat your oven to 180°C (fan-forced). Grease and line a 20cm square cake tin with baking paper.', 'In a large bowl, beat the softened butter, caster sugar and vanilla together until light, pale and creamy (about 3-4 minutes).', 'Add the eggs one at a time, beating well after each addition until fully incorporated.', 'Gently fold in the sifted flour and milk alternately, starting and ending with flour. Mix until just combined – do not overmix.', 'Pour the batter into the prepared tin and smooth the surface with a spatula.', 'Bake for 30-35 minutes, or until a skewer inserted into the centre comes out clean. Allow the cake to cool completely in the tin before turning out onto a wire rack.', 'Once completely cool, use a serrated knife to cut the cake into 12 even squares.', 'To make the chocolate sauce: combine the sugar, cocoa powder, butter and milk in a medium saucepan over medium heat. Stir constantly until the butter has melted and the mixture is smooth. Bring to a gentle boil, then remove from heat and stir in the vanilla.', 'Pour the warm chocolate sauce into a shallow dish. Place the desiccated coconut in another shallow dish.', 'Using two forks, dip each cake square into the chocolate sauce, allowing the excess to drip off, then roll immediately in the coconut to coat evenly.', 'Place the coated Lamingtons on a wire rack to set for about 30 minutes before serving.']
+        ingredients: [
+            '125g unsalted butter (room temperature)',
+            '1 cup (220g) caster sugar',
+            '2 tsp vanilla bean paste or extract',
+            '4 large eggs (room temperature)',
+            '1 1/4 cups (160g) self-raising flour, sifted',
+            '1/2 cup (125ml) milk',
+            '1 cup (220g) caster sugar (for chocolate sauce)',
+            '1/2 cup (50g) Dutch-process cocoa powder (unsweetened)',
+            '125g unsalted butter (for chocolate sauce)',
+            '1 cup (250ml) milk (for chocolate sauce)',
+            '1 tsp vanilla extract (for chocolate sauce)',
+            '2 cups (200g) desiccated coconut (fine or coarse)'
+        ],
+        method: [
+            'Preheat your oven to 180°C (fan-forced). Thoroughly grease a 20cm square cake tin and line the base and sides with baking paper, leaving an overhang for easy removal.',
+            'In a large mixing bowl, beat the softened butter, caster sugar, and vanilla together using an electric mixer on medium speed. Cream for 3-4 minutes until light, pale, and fluffy.',
+            'Add the eggs one at a time, beating well for 1 minute after each addition. Stop and scrape down the sides of the bowl halfway through.',
+            'Using a large metal spoon, gently fold in the sifted flour in three additions, alternating with the milk (starting and ending with flour). Mix until just combined; avoid overmixing or the cake will be tough.',
+            'Pour the batter into the prepared tin and smooth the top with an offset spatula to level the surface.',
+            'Bake for 30-35 minutes, or until a thin skewer inserted into the centre comes out clean and the top springs back when touched.',
+            'Allow the cake to cool completely in the tin for at least 30 minutes, then turn out onto a wire rack to cool fully. Cooling completely is essential for clean cutting.',
+            'Once cool, use a serrated knife to trim the browned edges and cut the cake into 12 even squares.',
+            'To make the chocolate sauce: combine sugar, cocoa powder, butter, and milk in a medium saucepan. Heat over medium heat, stirring constantly until the butter melts and the mixture is smooth and glossy.',
+            'Bring to a gentle simmer, then remove from heat. Stir in the vanilla extract. Pour the warm sauce into a shallow bowl and let it cool slightly for 5 minutes.',
+            'Pour the desiccated coconut into a separate shallow dish.',
+            'Using two forks, dip each cake square quickly into the chocolate sauce, ensuring all sides are coated. Allow the excess to drip off, then immediately roll in the coconut to coat evenly.',
+            'Place the finished Lamingtons on a wire rack to set for about 30 minutes before serving. Store in an airtight container.'
+        ]
     },
     // 5
     {
@@ -66,8 +167,19 @@ const RECIPES = [
         serves: 2,
         description: 'A true Aussie classic – crispy toast with a thin layer of salty, savoury Vegemite. Simple, iconic, and delicious.',
         image: 'assets/images/vegemite-on-toast.png',
-        ingredients: ['4 slices of bread (white or wholemeal)', 'Butter or margarine, softened', 'Vegemite (to taste)'],
-        method: ['Place the bread slices in a toaster or under a grill and toast until golden brown and crisp to your liking.', 'Remove the toast from the toaster and spread with a generous layer of butter while the toast is still warm – this helps the butter melt and creates a creamy base.', 'Using a butter knife, take a very thin layer of Vegemite (about 1/4 to 1/2 teaspoon per slice) and spread it thinly over the butter. Remember: a little goes a long way!', 'Spread it evenly all the way to the edges. If you prefer a milder flavour, use less Vegemite; for a stronger taste, add a little more.', 'Cut the toast in half diagonally and serve immediately. Perfect with a cup of tea or coffee.']
+        ingredients: [
+            '4 slices of high-quality white or wholemeal bread (thick-sliced)',
+            'Unsalted butter, softened (or salted butter if preferred)',
+            'Vegemite (or similar yeast spread)'
+        ],
+        method: [
+            'Place your slices of bread into the toaster or under a preheated oven grill. Toast until they are evenly golden brown and crisp to your liking.',
+            'Remove the hot toast from the toaster and immediately spread a generous, even layer of softened butter over the hot surface. The heat will melt the butter beautifully into the porous bread.',
+            'Using a clean knife, take a very small amount of Vegemite (about 1/4 to 1/2 teaspoon per slice). Spread it very thinly over the butter. The rule is: a little goes a very long way!',
+            'Work the Vegemite all the way to the edges of the toast to ensure every bite is perfect.',
+            'For a lighter flavour, use less; for a stronger, more authentic flavour, you can increase the amount slightly.',
+            'Cut the toast in half diagonally (or into soldiers) and serve immediately with a hot cup of tea or flat white coffee.'
+        ]
     },
     // 6
     {
@@ -79,8 +191,29 @@ const RECIPES = [
         serves: 8,
         description: 'A light and airy meringue with a crisp crust and soft, marshmallow centre, topped with whipped cream and fresh fruits.',
         image: 'assets/images/pavlova.png',
-        ingredients: ['4 egg whites, at room temperature', '1 cup caster sugar', '1 tsp white vinegar', '1 tsp cornstarch', '1 tsp vanilla extract', '300ml thickened cream, chilled', '1 tsp vanilla extract (for topping)', '2 tbsp icing sugar, sifted', 'Fresh fruits: strawberries, blueberries, kiwi, passionfruit, raspberries'],
-        method: ['Preheat your oven to 120°C (fan-forced). Line a baking tray with baking paper and draw a 20cm circle as a guide.', 'In a large, clean, dry mixing bowl (ensure no trace of grease), beat the egg whites with an electric mixer on medium speed until soft peaks form.', 'Gradually add the caster sugar, one tablespoon at a time, beating well after each addition. Continue until the mixture is thick, glossy and the sugar has dissolved completely (rub a small amount between your fingers – it should feel smooth).', 'Gently fold in the vinegar, cornstarch and vanilla extract using a large metal spoon.', 'Spoon the meringue onto the prepared tray, staying within the drawn circle. Use a spatula to shape it into a round with a slight dip in the centre (this will hold the topping).', 'Bake for 75-90 minutes, or until the outside is crisp and the meringue lifts easily from the paper. It should sound hollow when tapped on the bottom.', 'Turn the oven off and leave the pavlova inside with the door slightly ajar to cool completely. This prevents cracking.', 'Just before serving, whip the thickened cream with vanilla and icing sugar until soft peaks form.', 'Top the cooled pavlova generously with the whipped cream and arrange the fresh fruits on top. Slice and serve immediately.']
+        ingredients: [
+            '4 large egg whites (at room temperature)',
+            '1 cup (220g) caster sugar (superfine)',
+            '1 tsp white vinegar (or lemon juice)',
+            '1 tsp cornflour (cornstarch)',
+            '1 tsp vanilla bean paste',
+            '300ml thickened cream (min 35% fat), well chilled',
+            '1 tsp vanilla extract (for cream)',
+            '2 tbsp icing sugar (confectioners sugar), sifted',
+            'Fresh fruits: strawberries, blueberries, kiwi, passionfruit, raspberries'
+        ],
+        method: [
+            'Preheat your oven to a low 120°C (fan-forced). Line a large baking tray with baking paper and draw a 20cm diameter circle on the paper to use as a guide.',
+            'Ensure your mixing bowl and whisk are completely clean and free of any grease. Place the egg whites into the bowl and beat on medium speed with an electric mixer until soft peaks form (the peaks should flop over slightly).',
+            'Gradually add the caster sugar, one tablespoon at a time, while the mixer is running. Beat well for 1 minute after each addition to ensure the sugar dissolves completely.',
+            'Test the mixture by rubbing a little between your fingers; it should feel completely smooth, not gritty. The meringue should be thick, glossy, and hold stiff peaks.',
+            'Gently fold in the vinegar, cornflour, and vanilla using a large metal spoon. Fold carefully to keep as much air as possible in the mixture.',
+            'Spoon the meringue onto the prepared tray inside the drawn circle. Use a spatula to shape it into a nest or disc with a slight dip in the centre, creating walls around the edge.',
+            'Bake for 75-90 minutes. The outside should be crisp and dry to the touch, and the meringue should lift easily off the paper. Turn the oven off and leave the pavlova inside with the door ajar to cool completely.',
+            'Just before serving, whip the chilled thickened cream with vanilla extract and icing sugar until firm peaks form (be careful not to over-whip into butter).',
+            'Generously pile the whipped cream into the centre of the cooled pavlova. Decorate with the fresh fruits, arranging them beautifully.',
+            'Slice and serve immediately to enjoy the perfect contrast of crispy exterior and soft marshmallow centre.'
+        ]
     },
     // 7
     {
@@ -92,8 +225,33 @@ const RECIPES = [
         serves: 4,
         description: "Australia's favourite crispy battered fish served with golden chips and tartare sauce.",
         image: 'assets/images/fish-and-chips.png',
-        ingredients: ['600g white fish fillets (cod, hoki or barramundi)', '1 cup plain flour', '1/2 cup cornflour', '1 tsp baking powder', '1/2 tsp salt', '1/2 tsp black pepper', '1 cup cold sparkling water', 'Oil for deep frying (vegetable or canola)', '4 large potatoes, peeled and cut into thick chips', '1 tsp salt (for chips)', '1/2 cup mayonnaise', '1 tbsp gherkins, finely chopped', '1 tsp capers, finely chopped', '1 tsp lemon juice'],
-        method: ['Start by making the chips: heat oil in a deep fryer or large heavy-bottomed pot to 160°C. Pat the potato chips dry with paper towels.', 'Fry the chips in batches for 5-6 minutes until soft but not coloured. Remove and drain on paper towel. Increase the oil temperature to 180°C.', 'For the fish: pat the fish fillets dry and season lightly with salt and pepper on both sides.', 'In a mixing bowl, whisk together the flour, cornflour, baking powder, salt and pepper. Gradually pour in the sparkling water while whisking until you have a smooth, thick batter (the consistency of pouring cream).', 'Dip each fish fillet into the batter, allowing excess to drip off. Carefully lower into the hot oil (180°C) and fry for 4-5 minutes, turning once, until deep golden and crispy. Drain on paper towel.', 'Return the chips to the oil and fry at 180°C for 4-5 minutes until golden and crispy. Drain on paper towel and season with salt.', 'For the tartare sauce: combine mayonnaise, gherkins, capers and lemon juice in a small bowl. Mix well.', 'Serve the fish and chips hot with tartare sauce, lemon wedges and a sprinkle of salt.']
+        ingredients: [
+            '600g firm white fish fillets (cod, hoki, or barramundi)',
+            '1 cup (150g) plain flour',
+            '1/2 cup (60g) cornflour',
+            '1 tsp baking powder',
+            '1/2 tsp fine salt',
+            '1/2 tsp white pepper',
+            '1 cup (250ml) ice-cold sparkling water (very important)',
+            'Vegetable or canola oil, for deep frying',
+            '4 large floury potatoes (e.g., Sebago or Russet), peeled',
+            '1 tsp salt (for chips)',
+            '1/2 cup (120g) whole-egg mayonnaise',
+            '1 tbsp dill pickles or gherkins, finely chopped',
+            '1 tsp capers, rinsed and chopped',
+            '1 tsp lemon juice'
+        ],
+        method: [
+            'First, prepare the chips. Cut the peeled potatoes into 1.5cm thick chips. Rinse in a bowl of cold water for 5 minutes to remove excess starch, then pat absolutely dry with a clean tea towel.',
+            'Heat the oil in a deep fryer or large heavy pot to 160°C. Fry the chips in batches for 5-6 minutes until they are soft and cooked through but have not yet browned. Remove and drain on paper towel. Increase the oil temperature to 180°C.',
+            'For the fish batter: In a large bowl, whisk together the plain flour, cornflour, baking powder, salt, and pepper. Create a well in the centre and pour in the ice-cold sparkling water. Whisk until just combined into a smooth, thin batter (do not overmix).',
+            'Pat the fish fillets dry with paper towels and season lightly with salt and pepper.',
+            'Dip each fish fillet into the batter, ensuring it is fully coated, and let the excess drip off.',
+            'Carefully lower the battered fish into the 180°C oil. Fry for 4-5 minutes, turning once, until the batter is puffed, deeply golden, and crisp. Drain on paper towel.',
+            'Return the par-cooked chips to the hot oil (180°C) and fry for a further 4-5 minutes until they are golden, crispy, and puffed. Drain well and season immediately with salt.',
+            'For the tartare sauce: combine the mayonnaise, chopped gherkins, capers, and lemon juice in a small bowl. Mix well and season to taste.',
+            'Serve the hot fish and chips immediately with the tartare sauce and plenty of lemon wedges on the side.'
+        ]
     },
     // 8
     {
@@ -105,8 +263,31 @@ const RECIPES = [
         serves: 4,
         description: 'A classic Aussie beef burger with juicy beef patty, melted cheese, fresh veggies and tangy beetroot.',
         image: 'assets/images/aussie-beef-burger.png',
-        ingredients: ['500g beef mince (80/20 blend)', '1 tbsp BBQ sauce', '1 tsp Worcestershire sauce', '1 tsp garlic powder', '1/2 tsp onion powder', 'Salt & black pepper to taste', '4 burger buns', '4 slices cheddar cheese', '4 leaves iceberg lettuce, washed and dried', '1 large tomato, sliced', '1 small red onion, thinly sliced', '4 slices canned beetroot, drained', '4 tbsp burger sauce or aioli', '4 large potatoes, peeled (for chips)'],
-        method: ['In a large bowl, combine beef mince, BBQ sauce, Worcestershire sauce, garlic powder, onion powder, salt and pepper. Mix gently with your hands until just combined – do not overwork the meat.', 'Divide the mixture into 4 equal portions and shape into patties slightly larger than the burger buns (they will shrink during cooking). Make a slight indent in the centre of each patty to prevent them from puffing up.', 'Heat a barbecue or large cast-iron pan over medium-high heat. Cook the patties for 3-4 minutes per side, or until cooked to your liking and well browned.', 'In the last minute of cooking, place a slice of cheese on each patty and allow it to melt.', 'Meanwhile, prepare the chips: cut the potatoes into thick chips, rinse in cold water and pat dry. Heat oil to 160°C, fry for 5-6 minutes until soft, then increase to 180°C and fry again for 3-4 minutes until golden. Drain and season with salt.', 'Toast the burger buns lightly on the grill or in a separate pan until golden.', 'Spread burger sauce or aioli on the bottom bun. Layer with lettuce, tomato slices, onion, beetroot, the cheesy beef patty, and finally the top bun.', 'Serve immediately with the crispy hot chips on the side.']
+        ingredients: [
+            '500g beef mince (80/20 lean-to-fat ratio for best flavour)',
+            '1 tbsp BBQ sauce',
+            '1 tsp Worcestershire sauce',
+            '1 tsp garlic powder',
+            '1/2 tsp onion powder',
+            'Salt & freshly ground black pepper',
+            '4 soft burger buns (brioche or potato buns)',
+            '4 slices cheddar or American cheese',
+            '4 leaves iceberg lettuce, washed and dried',
+            '1 large ripe tomato, sliced into rounds',
+            '1 small red onion, thinly sliced into rings',
+            '4 slices of canned beetroot (drained)',
+            '4 tbsp burger sauce (or aioli)',
+            '4 large potatoes (for chips, optional)'
+        ],
+        method: [
+            'In a large bowl, combine the beef mince, BBQ sauce, Worcestershire sauce, garlic powder, onion powder, salt, and pepper. Mix gently with your fingers until just combined. Avoid over-working the meat, as this will result in tough, dense patties.',
+            'Divide the mixture into 4 equal portions (about 125g each) and shape into round patties that are slightly larger than your buns, as they will shrink during cooking. Press a slight indent into the centre of each patty to prevent them from puffing up into a ball.',
+            'Heat a large cast-iron skillet, BBQ, or grill plate over medium-high heat until very hot. Cook the patties for 3-4 minutes per side, flipping once, until they are well-browned and have reached an internal temperature of 70°C.',
+            'Place a slice of cheese on top of each patty during the last minute of cooking and allow it to melt beautifully over the meat.',
+            'While the patties are cooking, split the burger buns in half and toast them cut-side down on the grill or in a toaster until lightly golden.',
+            'Spread the burger sauce generously on the bottom bun. Layer with the lettuce leaf, a slice of tomato, onion rings, and the beef patty (with melted cheese). Top with the sliced beetroot.',
+            'Add the top bun, press down lightly, and serve immediately. For the full experience, serve with a side of hot, crispy homemade chips.'
+        ]
     },
     // 9
     {
@@ -118,8 +299,30 @@ const RECIPES = [
         serves: 12,
         description: 'A classic Aussie sausage roll with seasoned beef sausage meat wrapped in golden, flaky pastry.',
         image: 'assets/images/sausage-roll.png',
-        ingredients: ['500g beef mince', '1 small onion, finely chopped', '1 garlic clove, minced', '1 tbsp Worcestershire sauce', '1 tbsp tomato sauce', '1 tsp dried thyme', '1/2 tsp smoked paprika (optional)', 'Salt & black pepper to taste', '2 sheets puff pastry, thawed', '1 egg, beaten (for egg wash)', 'Sesame seeds (optional)'],
-        method: ['Preheat your oven to 200°C (fan-forced) and line a large baking tray with baking paper.', 'Heat a small splash of oil in a frying pan over medium heat. Add the onion and garlic and cook for 3-4 minutes until softened. Allow to cool slightly.', 'In a large bowl, combine the beef mince, cooled onion and garlic, Worcestershire sauce, tomato sauce, thyme, paprika (if using), salt and pepper. Mix well with your hands until evenly combined.', 'Cut each puff pastry sheet in half lengthwise to create 4 long rectangles.', 'Spoon the filling along the centre of each pastry rectangle, shaping it into a long log. Brush the edges with beaten egg.', 'Fold the pastry over the filling, pressing the edges together to seal. Use a fork to crimp the edges for a neat finish.', 'Cut each roll into desired lengths (about 4 per sheet) and place seam-side down on the prepared tray.', 'Brush the tops generously with beaten egg and sprinkle with sesame seeds if using.', 'Bake for 20-25 minutes, or until the pastry is golden, puffed and cooked through. Serve hot or at room temperature.']
+        ingredients: [
+            '500g beef mince (or sausage meat)',
+            '1 small onion, very finely chopped',
+            '1 garlic clove, crushed',
+            '1 tbsp Worcestershire sauce',
+            '1 tbsp tomato sauce (ketchup)',
+            '1 tsp dried thyme',
+            '1/2 tsp smoked paprika (optional, for depth)',
+            'Salt & black pepper',
+            '2 sheets of all-butter puff pastry (thawed)',
+            '1 egg, beaten (for glazing)',
+            'Sesame seeds or poppy seeds (for sprinkling)'
+        ],
+        method: [
+            'Preheat your oven to 200°C (fan-forced). Line a large baking tray with baking paper to prevent sticking.',
+            'Heat a small splash of oil in a frying pan over medium heat. Add the onion and garlic and cook for 3-4 minutes until softened and translucent. Remove from the heat and allow to cool completely to room temperature.',
+            'In a large mixing bowl, combine the beef mince, cooled onion mixture, Worcestershire sauce, tomato sauce, thyme, smoked paprika (if using), salt, and pepper. Mix thoroughly with your hands until the mixture is well combined and slightly tacky.',
+            'Cut each puff pastry sheet in half lengthwise to create 4 long rectangles.',
+            'Place a log of the filling (about 2cm thick) along the length of the centre of each pastry rectangle.',
+            'Lightly brush the exposed pastry edges with the beaten egg. Fold the pastry over the filling to enclose it, pressing the edges together to seal. Use a fork to crimp the edges for a neat, decorative finish.',
+            'Cut each long roll into 3-4 smaller rolls (about 8-10cm each) and place them seam-side down on the prepared tray.',
+            'Generously brush the tops of each roll with the beaten egg. Sprinkle with sesame seeds or poppy seeds for added texture and flavour.',
+            'Bake for 20-25 minutes, or until the pastry is puffed, deeply golden, and cooked through. Serve hot or at room temperature with tomato sauce.'
+        ]
     },
     // 10
     {
@@ -131,8 +334,31 @@ const RECIPES = [
         serves: 4,
         description: 'A retro classic done right. Juicy prawns with a creamy, tangy sauce, crisp lettuce and a hint of lemon.',
         image: 'assets/images/prawn-cocktail.png',
-        ingredients: ['500g cooked prawns (or raw, peeled and deveined)', '1 tbsp lemon juice', '1/2 tsp salt', '1/4 tsp black pepper', '1/2 cup mayonnaise', '2 tbsp tomato sauce (ketchup)', '1 tbsp lemon juice (for sauce)', '1 tsp Worcestershire sauce', '1 tsp brandy (optional)', '1/2 tsp paprika', 'Salt & black pepper to taste', '1 small cos lettuce or iceberg, shredded', 'Lemon wedges to serve', 'Fresh parsley, chopped'],
-        method: ['If using raw prawns, bring a pot of salted water to a boil. Add the prawns and cook for 2-3 minutes until pink and opaque. Drain and rinse under cold water to stop the cooking process. Pat dry with paper towels.', 'Toss the prawns with lemon juice, salt and pepper. Set aside in the refrigerator.', 'In a small bowl, whisk together the mayonnaise, tomato sauce, lemon juice, Worcestershire sauce, brandy (if using) and paprika. Season with salt and pepper to taste.', 'Cover the sauce and refrigerate for at least 30 minutes to allow the flavours to meld.', 'To serve, spoon a layer of shredded lettuce into individual serving glasses or bowls.', 'Add a generous spoonful of the sauce on top of the lettuce, then arrange the prawns over the sauce.', 'Garnish with lemon wedges and a sprinkle of fresh parsley. Serve immediately, chilled.']
+        ingredients: [
+            '500g large green prawns (or cooked prawns, peeled)',
+            '1 tbsp lemon juice',
+            '1/2 tsp salt',
+            '1/4 tsp cayenne pepper (optional, for heat)',
+            '1/2 cup (120g) whole-egg mayonnaise',
+            '2 tbsp tomato sauce (ketchup)',
+            '1 tbsp lemon juice (for sauce)',
+            '1 tsp Worcestershire sauce',
+            '1 tsp brandy (optional, adds depth)',
+            '1/2 tsp sweet paprika',
+            'Salt & pepper to taste',
+            '1 small iceberg or cos lettuce, finely shredded',
+            'Lemon wedges and parsley for garnish'
+        ],
+        method: [
+            'If using raw prawns, bring a large pot of salted water to a rolling boil. Add the prawns and cook for exactly 2-3 minutes, or until they turn pink and opaque. Drain immediately and rinse under cold running water to stop the cooking process. Pat completely dry with paper towels.',
+            'Place the peeled prawns in a bowl and toss with lemon juice, salt, and cayenne pepper. Cover and refrigerate while you prepare the sauce.',
+            'In a separate medium bowl, whisk together the mayonnaise, tomato sauce, lemon juice, Worcestershire sauce, brandy (if using), and paprika until the sauce is smooth and uniformly pink. Season with salt and pepper to taste.',
+            'Cover the sauce and refrigerate for at least 30 minutes to allow the flavours to meld together perfectly.',
+            'To serve, divide the shredded lettuce evenly among 4 serving glasses or martini glasses.',
+            'Spoon a generous dollop of the cocktail sauce over the lettuce, ensuring it covers the base.',
+            'Arrange the chilled prawns on top of the sauce, allowing them to pile up artistically.',
+            'Garnish with a sprinkle of paprika, a wedge of lemon, and a sprig of fresh parsley. Serve immediately with extra lemon wedges on the side.'
+        ]
     },
     // 11
     {
@@ -144,8 +370,29 @@ const RECIPES = [
         serves: 4,
         description: 'A true Aussie classic. Golden, crispy and perfectly seasoned. Tender chicken in a crunchy coating.',
         image: 'assets/images/chicken-schnitzel.png',
-        ingredients: ['4 chicken breast fillets', '1/2 cup plain flour', '2 eggs', '1 1/2 cups breadcrumbs', '1/2 cup panko breadcrumbs (for extra crunch)', '1 tsp garlic powder', '1 tsp paprika', 'Salt & black pepper to taste', 'Oil for shallow frying', 'Lemon wedges to serve'],
-        method: ['Place each chicken breast between two sheets of baking paper and gently pound with a rolling pin to an even thickness of about 1cm. Season both sides with salt and pepper.', 'Set up three shallow dishes: one with flour, one with beaten eggs, and one with the combined breadcrumbs, panko, garlic powder and paprika.', 'Coat each chicken fillet first in flour, shaking off any excess, then dip into the beaten egg, and finally press firmly into the breadcrumb mixture to coat evenly.', 'Heat a large frying pan over medium heat with enough oil to cover the base (about 1/2 cm deep). The oil is ready when a breadcrumb sizzles.', 'Cook the schnitzels in batches for 3-4 minutes on each side, until golden brown and cooked through. Do not overcrowd the pan.', 'Drain on paper towels to absorb excess oil. Season with a little extra salt while still hot.', 'Serve hot with lemon wedges, and your choice of salad, coleslaw or mashed potatoes.']
+        ingredients: [
+            '4 chicken breast fillets (skinless, boneless)',
+            '1/2 cup (75g) plain flour',
+            '2 large eggs, lightly beaten',
+            '1 1/2 cups (150g) fine breadcrumbs',
+            '1/2 cup (50g) panko breadcrumbs (for extra crunch)',
+            '1 tsp garlic powder',
+            '1 tsp sweet paprika',
+            'Salt and freshly ground black pepper',
+            'Vegetable oil (for shallow frying)',
+            'Lemon wedges to serve'
+        ],
+        method: [
+            'Place each chicken breast between two sheets of baking paper. Using a meat mallet or rolling pin, gently pound them to an even thickness of about 1cm. Season generously on both sides with salt and pepper.',
+            'Set up three wide, shallow dishes: Dish 1 with flour, Dish 2 with beaten eggs, Dish 3 with a mixture of breadcrumbs, panko, garlic powder, and paprika. Mix the crumb mixture well.',
+            'Working with one piece at a time, dredge the chicken in flour, shaking off any excess. This helps the egg adhere.',
+            'Dip the floured chicken into the beaten egg, ensuring it is completely coated. Let the excess drip off.',
+            'Finally, press the chicken firmly into the breadcrumb mixture. Coat evenly on both sides, pressing the crumbs into the surface. Place on a plate and rest for 10 minutes to allow the coating to set.',
+            'Fill a large frying pan with about 1cm depth of oil and heat over medium heat. The oil is ready when a breadcrumb dropped in sizzles and bubbles immediately.',
+            'Fry the schnitzels in batches for 3-4 minutes per side, or until they are golden brown and cooked through. Do not overcrowd the pan, or the temperature will drop and they will become greasy.',
+            'Transfer the cooked schnitzels to a plate lined with paper towels to absorb any excess oil.',
+            'Sprinkle with a little extra salt immediately and serve hot with a wedge of lemon, potato salad, and a fresh green salad.'
+        ]
     },
     // 12
     {
@@ -157,8 +404,32 @@ const RECIPES = [
         serves: 12,
         description: 'Crispy on the outside, soft and fluffy on the inside. A true Aussie favourite, perfect as a side or snack.',
         image: 'assets/images/potato-cakes.png',
-        ingredients: ['1 kg potatoes, peeled and chopped', '1/2 cup plain flour', '1/4 cup cornflour', '1 egg', '1/2 tsp salt', '1/4 tsp black pepper', '1/4 tsp garlic powder (optional)', '2 tbsp chopped chives or spring onion (optional)', '1/2 cup plain flour (for coating)', '1 egg, lightly beaten (for coating)', '1 cup breadcrumbs (for coating)', 'Oil for shallow frying'],
-        method: ['Boil or steam the potatoes until tender (about 15-20 minutes). Drain well and allow to steam dry for a few minutes before mashing until smooth. Let cool slightly.', 'In a large bowl, combine the mashed potato, flour, cornflour, egg, salt, pepper, garlic powder and chives (if using). Mix until just combined into a soft dough.', 'Shape the mixture into even-sized rounds about 2cm thick. You should get about 12 cakes.', 'Set up three shallow bowls: one with flour, one with beaten egg, and one with breadcrumbs.', 'Lightly coat each potato cake in flour, then dip into the egg, and finally press into the breadcrumbs to coat evenly.', 'Heat oil in a large non-stick frying pan over medium heat. Cook the potato cakes in batches for 3-4 minutes each side, until golden brown and crispy.', 'Drain on paper towels and season with a pinch of salt. Serve hot with tomato sauce or sour cream.']
+        ingredients: [
+            '1 kg floury potatoes (e.g., Sebago or King Edward), peeled and chopped',
+            '1/2 cup (75g) plain flour',
+            '1/4 cup (30g) cornflour',
+            '1 large egg, lightly beaten',
+            '1/2 tsp fine salt',
+            '1/4 tsp white pepper',
+            '1/4 tsp garlic powder (optional)',
+            '2 tbsp chopped chives or spring onion (optional)',
+            '1/2 cup (75g) plain flour (for coating)',
+            '1 egg, beaten (for coating)',
+            '1 cup (100g) breadcrumbs (for coating)',
+            'Vegetable oil for shallow frying'
+        ],
+        method: [
+            'Place the peeled and chopped potatoes in a large pot of cold, salted water. Bring to a boil and cook for 15-20 minutes, or until the potatoes are very tender and easily pierced with a knife.',
+            'Drain the potatoes thoroughly in a colander. Return them to the hot pot and shake over low heat for 1 minute to steam dry any remaining moisture. Mash the potatoes until completely smooth and lump-free.',
+            'Set the mashed potato aside to cool until it is cool enough to handle, but still slightly warm.',
+            'In a large bowl, combine the mashed potato, plain flour, cornflour, the lightly beaten egg, salt, pepper, garlic powder, and chives. Mix until just combined into a soft, pliable dough.',
+            'Divide the mixture into 12 equal portions and shape each into a round disc about 2cm thick.',
+            'Prepare a coating station: Dish 1 with flour, Dish 2 with beaten egg, Dish 3 with breadcrumbs.',
+            'Coat each potato cake lightly in flour, then dip into the egg, and finally press into the breadcrumbs until evenly coated. Place them on a tray as you go.',
+            'Heat a generous layer of oil (about 1/2 cm deep) in a large non-stick frying pan over medium heat.',
+            'Fry the potato cakes in batches for 3-4 minutes per side, until they are a deep golden brown and crispy. Drain on paper towels.',
+            'Sprinkle with a pinch of salt and serve immediately with sour cream or sweet chilli sauce.'
+        ]
     },
     // 13
     {
@@ -170,8 +441,31 @@ const RECIPES = [
         serves: 6,
         description: 'A timeless classic. Tender, juicy lamb infused with garlic and rosemary, roasted to perfection.',
         image: 'assets/images/roast-lamb-with-rosemary.png',
-        ingredients: ['1.5 kg lamb leg (bone-in or boneless)', '4 garlic cloves, minced', '2 tbsp fresh rosemary, chopped', '2 tbsp olive oil', '1 tsp salt', '1/2 tsp black pepper', '1 tsp Dijon mustard (optional)', '1 tbsp lemon juice', '1 large onion, cut into wedges', '1 whole head of garlic, halved horizontally', 'Fresh rosemary sprigs', '1/2 cup beef or lamb stock'],
-        method: ['Preheat your oven to 200°C (fan-forced).', 'In a small bowl, combine the minced garlic, chopped rosemary, olive oil, salt, pepper, Dijon mustard (if using) and lemon juice to form a paste.', 'Pat the lamb dry with paper towels. Rub the paste all over the lamb, massaging it into the meat.', 'Place the onion wedges and garlic halves in the centre of a large roasting pan. Place the lamb on top, fat-side up. Scatter the fresh rosemary sprigs around the lamb.', 'Pour the stock into the bottom of the pan to create moisture.', 'Roast the lamb for 20 minutes at 200°C, then reduce the oven temperature to 165°C.', 'Continue roasting for about 1 to 1 1/4 hours (allow 20 minutes per 500g for medium), or until the internal temperature reaches 58-60°C for medium-rare. Baste occasionally with the pan juices.', 'Remove the lamb from the oven, transfer to a carving board, and cover loosely with foil. Rest for 15-20 minutes (this is essential for juicy meat).', 'Carve the lamb against the grain and serve with the pan juices, mint sauce or gravy, and extra rosemary sprigs.']
+        ingredients: [
+            '1.5 kg lamb leg (bone-in or boneless, fat cap on)',
+            '4 cloves garlic, cut into slivers or minced',
+            '2 tbsp fresh rosemary leaves, finely chopped',
+            '2 tbsp extra virgin olive oil',
+            '1 tsp sea salt',
+            '1/2 tsp freshly cracked black pepper',
+            '1 tsp Dijon mustard (optional, for binding)',
+            '1 tbsp lemon juice',
+            '1 large onion, cut into thick wedges',
+            '1 head of garlic, halved horizontally',
+            'Fresh rosemary sprigs',
+            '1/2 cup (125ml) lamb or beef stock'
+        ],
+        method: [
+            'Take the lamb out of the fridge 30 minutes before cooking to allow it to come to room temperature. Preheat your oven to 200°C (fan-forced).',
+            'In a small bowl, combine the minced garlic, chopped rosemary, olive oil, salt, pepper, Dijon mustard (if using), and lemon juice. Mix into a thick paste.',
+            'Using a sharp knife, make small deep incisions all over the lamb. Rub the paste all over the lamb, pushing some of the mixture into the incisions to deeply infuse the flavour.',
+            'Place the onion wedges and halved garlic bulb in the centre of a large roasting pan. Place the lamb on top, fat cap facing up. Scatter the fresh rosemary sprigs around the lamb and pour the stock into the pan (this creates steam and prevents burning).',
+            'Roast the lamb at 200°C for 20 minutes to sear the outside and create a crust.',
+            'Reduce the oven temperature to 165°C and continue roasting for about 1 hour to 1 hour 15 minutes (or 20 minutes per 500g for medium-rare). Baste the lamb with the pan juices occasionally.',
+            'The internal temperature should read 58-60°C for medium-rare, 63-65°C for medium. If you don\'t have a thermometer, check that the meat is tender and the juices run clear.',
+            'Remove the lamb from the oven, transfer to a carving board, and cover loosely with aluminium foil. Rest for 15-20 minutes. This critical step allows the juices to redistribute throughout the meat.',
+            'Carve the lamb against the grain into thick slices. Serve with the caramelized onions, pan juices, mint sauce, and your favourite roast vegetables.'
+        ]
     },
     // 14
     {
@@ -183,8 +477,30 @@ const RECIPES = [
         serves: 4,
         description: 'Crispy, golden and full of flavour. Delicate white fish topped with a crunchy macadamia crust.',
         image: 'assets/images/macadamia-crusted-fish.png',
-        ingredients: ['600g white fish fillets (barramundi, flathead or snapper)', '1 tbsp olive oil', '1 tbsp lemon juice', '1/2 tsp salt', '1/4 tsp black pepper', '1 cup macadamias, finely chopped', '1/2 cup panko breadcrumbs', '1/4 cup grated Parmesan cheese', '1 tbsp fresh parsley, finely chopped', '1 tsp lemon zest', '1/2 tsp garlic powder', '2 tbsp mayonnaise'],
-        method: ['Preheat your oven to 200°C (fan-forced). Line a baking tray with baking paper.', 'Pat the fish fillets dry with paper towels. Place them on the tray and brush lightly with olive oil and lemon juice. Season with salt and pepper.', 'In a medium bowl, combine the chopped macadamias, panko breadcrumbs, Parmesan, parsley, lemon zest and garlic powder.', 'Add the mayonnaise and stir until the mixture comes together and holds its shape when pressed.', 'Press the macadamia mixture firmly onto the top of each fish fillet, covering the surface evenly. Drizzle a little extra olive oil over the crust to help it brown.', 'Bake for 15-18 minutes, or until the fish is cooked through and flakes easily with a fork, and the crust is golden and crisp.', 'Serve immediately with lemon wedges, a green salad or steamed vegetables, and tartare sauce if desired.']
+        ingredients: [
+            '600g white fish fillets (Barramundi, Snapper, or Ling)',
+            '1 tbsp extra virgin olive oil',
+            '1 tbsp lemon juice',
+            '1/2 tsp fine salt',
+            '1/4 tsp white pepper',
+            '1 cup (100g) macadamia nuts, finely chopped',
+            '1/2 cup (50g) panko breadcrumbs',
+            '1/4 cup (25g) grated Parmesan cheese',
+            '1 tbsp fresh parsley, finely chopped',
+            '1 tsp lemon zest (zest of 1 lemon)',
+            '1/2 tsp garlic powder',
+            '2 tbsp mayonnaise (acts as a binder)'
+        ],
+        method: [
+            'Preheat your oven to 200°C (fan-forced). Line a baking tray with baking paper and place a wire rack on top (this helps the crust stay crispy).',
+            'Pat the fish fillets thoroughly dry with paper towels. Place them on the prepared tray. Brush the tops lightly with olive oil and lemon juice, then season with salt and pepper.',
+            'In a medium bowl, combine the chopped macadamias, panko breadcrumbs, Parmesan cheese, fresh parsley, lemon zest, and garlic powder.',
+            'Add the mayonnaise to the crumb mixture and stir well until the mixture comes together and holds its shape when lightly pressed. The mayonnaise provides moisture and helps the crust stick.',
+            'Press a generous amount of the macadamia crust firmly onto the top of each fish fillet, ensuring the entire surface is evenly covered. Gently pat it down to adhere.',
+            'Drizzle a tiny bit more olive oil over the crust to help it brown beautifully in the oven.',
+            'Bake the fish for 15-18 minutes, or until the fish is cooked through (it should flake easily with a fork) and the macadamia crust is a deep golden brown.',
+            'Serve immediately with a squeeze of fresh lemon, alongside a crisp green salad, steamed asparagus, or roasted sweet potato wedges.'
+        ]
     },
     // 15
     {
@@ -196,8 +512,27 @@ const RECIPES = [
         serves: 6,
         description: 'A warm and creamy Australian pumpkin soup made with simple ingredients and packed with flavour.',
         image: 'assets/images/pumpkin-soup.png',
-        ingredients: ['1 kg pumpkin, peeled, deseeded and chopped', '1 brown onion, chopped', '2 garlic cloves, minced', '2 tbsp olive oil', '4 cups (1L) vegetable stock', '1 cup (250ml) thickened cream (optional)', '1 tsp salt (or to taste)', '1/2 tsp black pepper (or to taste)', '1/4 tsp ground nutmeg (optional)'],
-        method: ['Heat the olive oil in a large heavy-based pot over medium heat. Add the onion and cook for 5-6 minutes until soft and translucent. Add the garlic and cook for a further minute until fragrant.', 'Add the chopped pumpkin to the pot and stir to coat in the oil. Cook for 2-3 minutes, stirring occasionally.', 'Pour in the vegetable stock and bring to the boil. Reduce the heat to low, cover, and simmer for 20 minutes, or until the pumpkin is tender and easily pierced with a fork.', 'Remove from the heat and use a stick blender to purée the soup until smooth and velvety. Alternatively, transfer to a blender in batches.', 'Stir in the cream (if using) and season with salt, pepper and nutmeg. Return to a gentle simmer for 2-3 minutes to heat through.', 'Taste and adjust seasoning if necessary. Serve hot with a swirl of cream, a sprinkle of pumpkin seeds, and crusty bread on the side.']
+        ingredients: [
+            '1 kg butternut or Kent pumpkin, peeled, seeded and chopped',
+            '1 large brown onion, roughly chopped',
+            '2 cloves garlic, crushed',
+            '2 tbsp olive oil',
+            '4 cups (1L) vegetable or chicken stock',
+            '1 cup (250ml) thickened cream (optional but highly recommended)',
+            '1 tsp sea salt (adjust to taste)',
+            '1/2 tsp black pepper (adjust to taste)',
+            '1/4 tsp ground nutmeg (freshly grated is best)'
+        ],
+        method: [
+            'Heat the olive oil in a large, heavy-based stockpot or Dutch oven over medium heat.',
+            'Add the chopped onion and cook for 5-6 minutes, stirring occasionally, until it becomes soft and translucent. Add the garlic and cook for a further 1 minute until fragrant.',
+            'Add the chopped pumpkin to the pot. Cook, stirring occasionally, for 3-4 minutes to allow the pumpkin to heat through and coat in the oil.',
+            'Pour in the vegetable stock and bring the mixture to a rapid boil. Once boiling, reduce the heat to low, put the lid on, and simmer for 20-25 minutes, or until the pumpkin is very tender and easily pierced with a butter knife.',
+            'Remove the pot from the heat. Using an immersion (stick) blender, purée the soup directly in the pot until it is silky smooth and velvety. Alternatively, transfer the soup in batches to a countertop blender.',
+            'Return the puréed soup to low heat. Stir in the thickened cream (if using), salt, pepper, and nutmeg. Heat gently for 2-3 minutes, stirring frequently. Do not allow the soup to boil once the cream is added.',
+            'Taste the soup and adjust the seasoning with more salt and pepper if needed.',
+            'Ladle into warm bowls and serve hot with a swirl of extra cream, a sprinkle of pumpkin seeds, and crusty buttered bread on the side.'
+        ]
     },
     // 16
     {
@@ -209,8 +544,30 @@ const RECIPES = [
         serves: 10,
         description: 'Moist, flavourful and perfectly sweet. A classic homemade favourite that\'s loved across Australia.',
         image: 'assets/images/banana-bread.png',
-        ingredients: ['3 ripe bananas, mashed (about 1 1/2 cups)', '1/3 cup vegetable oil or melted butter', '1/4 cup white sugar', '1/2 cup brown sugar, packed', '2 eggs', '1 tsp vanilla extract', '1 3/4 cups plain flour', '1 tsp baking soda', '1/2 tsp salt', '1/2 tsp ground cinnamon (optional)', '1/2 cup walnuts or chocolate chips (optional)'],
-        method: ['Preheat your oven to 175°C (fan-forced). Grease and line a 22cm x 11cm loaf tin with baking paper.', 'In a large bowl, mash the bananas well with a fork until smooth. Add the oil (or melted butter), white sugar, brown sugar, eggs and vanilla. Whisk together until well combined and smooth.', 'In a separate bowl, sift together the plain flour, baking soda, salt and cinnamon (if using).', 'Add the dry ingredients to the wet mixture and fold gently with a spatula until just combined – do not overmix. The batter will be thick and slightly lumpy; this is perfect.', 'Fold in the walnuts or chocolate chips if using.', 'Pour the batter into the prepared loaf tin and smooth the top with a spatula.', 'Bake for 50-60 minutes, or until a skewer inserted into the centre comes out clean. If the top browns too quickly, cover loosely with foil for the last 15 minutes.', 'Allow to cool in the tin for 10 minutes, then turn out onto a wire rack to cool completely. Slice and enjoy warm or at room temperature with a little butter.']
+        ingredients: [
+            '3 very ripe bananas, mashed (about 1 1/2 cups)',
+            '1/3 cup (80ml) vegetable oil or melted unsalted butter',
+            '1/4 cup (50g) white sugar',
+            '1/2 cup (100g) brown sugar, firmly packed',
+            '2 large eggs, room temperature',
+            '1 tsp vanilla bean paste',
+            '1 3/4 cups (220g) plain flour (all-purpose)',
+            '1 tsp baking soda (bicarb soda)',
+            '1/2 tsp salt',
+            '1/2 tsp ground cinnamon (optional)',
+            '1/2 cup (60g) walnuts or dark chocolate chips (optional)'
+        ],
+        method: [
+            'Preheat your oven to 175°C (fan-forced). Grease a 22cm x 11cm (standard) loaf tin with butter or oil, and line the base and sides with baking paper, leaving some overhang to easily lift out the bread later.',
+            'In a large mixing bowl, mash the bananas thoroughly with a fork until smooth and soupy. Add the oil, white sugar, brown sugar, eggs, and vanilla. Whisk vigorously until the mixture is well combined and slightly frothy.',
+            'In a separate bowl, sift together the plain flour, baking soda, salt, and cinnamon (if using).',
+            'Pour the dry ingredients into the wet mixture and, using a rubber spatula, fold gently until just combined. The batter will be thick and slightly lumpy. Do not overmix, as this will result in a tough, dense bread.',
+            'If adding walnuts or chocolate chips, fold them in at this point.',
+            'Pour the batter into the prepared loaf tin and smooth the top with a spatula. Tap the tin gently on the counter a few times to release any air bubbles.',
+            'Bake for 50-60 minutes. Check at the 45-minute mark; if the top is browning too quickly, loosely cover with foil. The bread is done when a skewer inserted into the centre comes out clean with only a few moist crumbs attached.',
+            'Allow the bread to cool in the tin for 15 minutes, then use the overhanging paper to lift it out onto a wire rack to cool completely.',
+            'Slice and serve warm or at room temperature, spread with a generous layer of salted butter.'
+        ]
     },
     // 17
     {
@@ -222,8 +579,26 @@ const RECIPES = [
         serves: 4,
         description: 'Lean, tender and packed with protein. A true Aussie delicacy – full of flavour and perfect on the grill.',
         image: 'assets/images/grilled-kangaroo-steak.png',
-        ingredients: ['4 kangaroo steaks (about 150-180g each)', '2 tbsp olive oil', '2 garlic cloves, minced', '1 tbsp Worcestershire sauce', '1 tbsp lemon juice', '1 tsp salt', '1/2 tsp black pepper', '1 tsp fresh rosemary, chopped'],
-        method: ['In a shallow dish, combine the olive oil, garlic, Worcestershire sauce, lemon juice, salt, pepper and rosemary to make a marinade.', 'Add the kangaroo steaks to the marinade and turn to coat. Cover and refrigerate for 30 minutes (do not marinate for more than 1 hour, as kangaroo is tender and can become mushy).', 'Remove the steaks from the fridge and allow them to come to room temperature for about 10 minutes before cooking.', 'Preheat your barbecue or grill pan to high heat. Brush the grates with a little oil to prevent sticking.', 'Grill the steaks for 2-3 minutes on each side for medium-rare, or longer to your preference. Kangaroo is best served medium-rare to medium for maximum tenderness.', 'Transfer the steaks to a plate, cover loosely with foil, and rest for 5 minutes – this allows the juices to redistribute.', 'Serve with lemon wedges and your choice of rocket salad or steamed vegetables.']
+        ingredients: [
+            '4 kangaroo steaks (about 150-180g each, 2-2.5cm thick)',
+            '2 tbsp light olive oil',
+            '2 cloves garlic, crushed',
+            '1 tbsp Worcestershire sauce',
+            '1 tbsp lemon juice',
+            '1 tsp flaky sea salt',
+            '1/2 tsp freshly ground black pepper',
+            '1 tsp fresh rosemary, finely chopped'
+        ],
+        method: [
+            'In a shallow, non-metallic dish, combine the olive oil, garlic, Worcestershire sauce, lemon juice, salt, pepper, and rosemary to make a thin marinade.',
+            'Add the kangaroo steaks and turn them over several times to ensure they are well coated in the marinade. Cover the dish with plastic wrap and place in the refrigerator for exactly 30 minutes. Do not marinate longer than 1 hour, as the acid in the marinade can start to break down the proteins and make the meat mushy.',
+            'Remove the steaks from the fridge 15 minutes before cooking to allow them to come to room temperature.',
+            'Preheat your BBQ, grill plate, or a heavy-based cast-iron pan to high heat (about 220°C). It must be smoking hot to get a good sear.',
+            'Remove the steaks from the marinade, shaking off any excess liquid. Season both sides generously with a little extra salt just before placing on the grill.',
+            'Grill the steaks for 2-3 minutes per side for a perfect medium-rare. Kangaroo is very lean and will become tough and dry if cooked past medium.',
+            'Transfer the cooked steaks to a warm plate, cover loosely with foil, and let them rest for 5-7 minutes. This resting period allows the juices to redistribute throughout the meat.',
+            'Slice the kangaroo steak against the grain into thick strips and serve immediately with a wedge of lemon, a fresh rocket salad, and a side of sweet potato mash.'
+        ]
     },
     // 18
     {
@@ -235,8 +610,27 @@ const RECIPES = [
         serves: 12,
         description: "An iconic Aussie favourite! Soft, fluffy scrolls with a rich Vegemite and cheesy filling.",
         image: 'assets/images/vegemite-scrolls.png',
-        ingredients: ['3 cups (375g) plain flour', '1 tbsp caster sugar', '2 tsp instant dry yeast', '1 tsp salt', '1 cup (250ml) warm milk', '2 tbsp unsalted butter, melted', '3-4 tbsp Vegemite', '1 cup (100g) grated cheddar cheese', '2 tbsp unsalted butter, softened (for spreading)'],
-        method: ['In a large mixing bowl, combine the flour, sugar, yeast and salt. Make a well in the centre and pour in the warm milk and melted butter.', 'Mix with a wooden spoon until a rough dough forms, then turn out onto a lightly floured surface. Knead for 8-10 minutes until the dough is smooth, elastic and springs back when lightly pressed.', 'Place the dough in a lightly oiled bowl, cover with a clean tea towel, and leave in a warm place to rise for 1 hour, or until doubled in size.', 'Punch the dough down and turn it out onto a floured surface. Roll it into a rectangle about 30 x 40 cm.', 'Spread the softened butter evenly over the dough, then spread the Vegemite in a thin layer over the butter. Sprinkle the grated cheese evenly over the top.', 'Roll the dough up tightly from the long side to form a log. Using a sharp knife, cut the log into 12 equal slices (about 3cm thick).', 'Place the scrolls onto a lined baking tray, cut-side up, leaving a little space between them. Cover and let them rest for 15 minutes while you preheat the oven to 180°C.', 'Bake for 18-20 minutes until golden brown and puffed. Serve warm or at room temperature.']
+        ingredients: [
+            '3 cups (375g) plain flour (bread flour is best)',
+            '1 tbsp caster sugar',
+            '2 tsp (7g) instant dry yeast',
+            '1 tsp fine salt',
+            '1 cup (250ml) warm milk (about 38°C)',
+            '2 tbsp unsalted butter, melted',
+            '3-4 tbsp Vegemite (or similar yeast spread)',
+            '1 cup (100g) tasty cheddar cheese, grated',
+            '2 tbsp unsalted butter, softened (for spreading)'
+        ],
+        method: [
+            'In a large mixing bowl, combine the flour, sugar, yeast, and salt. Make a well in the centre and pour in the warm milk and melted butter.',
+            'Mix with a wooden spoon until a rough dough forms, then turn it out onto a lightly floured surface. Knead the dough for 8-10 minutes until it becomes smooth, elastic, and springs back when you poke it lightly.',
+            'Place the kneaded dough in a lightly oiled bowl, cover it with a clean tea towel or plastic wrap, and set it aside in a warm, draft-free spot for 1 hour, or until it has doubled in size.',
+            'Punch down the risen dough to release the air, then roll it out on a floured surface into a large rectangle, about 30cm x 40cm in size.',
+            'Spread the softened butter evenly over the entire surface of the dough. Spread the Vegemite in a thin, even layer over the butter (about 1-2 tablespoons, depending on your taste). Sprinkle the grated cheese evenly over the top.',
+            'Starting from the long edge, roll the dough up tightly into a log. Use a sharp knife to cut the log into 12 equal slices, each about 3cm thick.',
+            'Place the scrolls cut-side up on a lined baking tray, leaving some space between them. Cover with a tea towel and let them rest for 15 minutes while you preheat your oven to 180°C.',
+            'Bake for 18-20 minutes, or until the scrolls are golden brown and puffed. Serve warm from the oven, or at room temperature.'
+        ]
     },
     // 19
     {
@@ -248,8 +642,29 @@ const RECIPES = [
         serves: 20,
         description: 'A bold and flavourful relish made with native Australian ingredients. Perfect with BBQ meats.',
         image: 'assets/images/australian-bush-tomato-relish.png',
-        ingredients: ['500g bush tomatoes (or cherry tomatoes), finely chopped', '1 red capsicum, finely chopped', '1 brown onion, finely chopped', '2 garlic cloves, minced', '1 red chilli, finely chopped (optional)', '1/2 cup (125ml) apple cider vinegar', '1/2 cup (100g) brown sugar', '1/4 cup (60ml) olive oil', '1 tsp salt', '1/2 tsp black pepper', '1 tsp mustard seeds', '1 tsp native lemon myrtle (optional)', '1 tsp wattleseed (optional)'],
-        method: ['Heat the olive oil in a large heavy-based saucepan over medium heat. Add the onion and cook for 5-6 minutes until soft and translucent. Add the garlic and chilli (if using) and cook for a further minute until fragrant.', 'Add the chopped tomatoes, capsicum, vinegar, brown sugar, salt, pepper, mustard seeds and any optional native spices (lemon myrtle, wattleseed). Stir well to combine.', 'Bring the mixture to a gentle boil, then reduce the heat to low and simmer uncovered for 40-50 minutes, stirring occasionally, until the relish has thickened and turned glossy.', 'For a thicker consistency, continue cooking for a further 10-15 minutes.', 'Remove from the heat and allow to cool slightly. Spoon the hot relish into sterilised jars, seal immediately, and let cool completely before storing.', 'The relish will keep in the refrigerator for up to 3 months.']
+        ingredients: [
+            '500g bush tomatoes (or ripe cherry tomatoes), finely chopped',
+            '1 red capsicum (bell pepper), finely diced',
+            '1 large brown onion, finely diced',
+            '2 cloves garlic, minced',
+            '1 red birdseye chilli, finely chopped (optional)',
+            '1/2 cup (125ml) apple cider vinegar',
+            '1/2 cup (100g) brown sugar',
+            '1/4 cup (60ml) olive oil',
+            '1 tsp fine salt',
+            '1/2 tsp black pepper',
+            '1 tsp yellow mustard seeds',
+            '1 tsp dried lemon myrtle or wattleseed (optional, for native flavour)'
+        ],
+        method: [
+            'Heat the olive oil in a large, wide-based saucepan or heavy-bottomed pot over medium heat.',
+            'Add the diced onion and cook for 5-6 minutes until soft and translucent. Add the garlic and chilli (if using) and cook for 1 minute until aromatic.',
+            'Add the chopped tomatoes, diced capsicum, apple cider vinegar, brown sugar, salt, pepper, mustard seeds, and any optional native spices. Give everything a thorough stir to combine.',
+            'Turn the heat up to high and bring the mixture to a rolling boil. Once boiling, reduce the heat to low and let it simmer uncovered for 40-50 minutes. Stir occasionally, especially near the end, to prevent it from sticking to the bottom.',
+            'The relish is ready when it has thickened to a jam-like consistency, and you can draw a line through it on the back of a spoon that doesn\'t fill in immediately.',
+            'Remove from the heat and allow it to cool slightly. Carefully spoon the hot relish into sterilised glass jars and seal immediately.',
+            'Allow the jars to cool completely at room temperature before storing in the refrigerator. The relish will keep for up to 3 months and is perfect served with grilled sausages, lamb chops, or cheese boards.'
+        ]
     },
     // 20
     {
@@ -261,8 +676,29 @@ const RECIPES = [
         serves: 20,
         description: 'A classic Aussie treat with three irresistible layers – crunchy biscuit base, gooey caramel centre and smooth chocolate topping.',
         image: 'assets/images/chocolate-caramel-slice.png',
-        ingredients: ['250g plain tea biscuits, crushed', '125g unsalted butter, melted', '2 tbsp desiccated coconut (optional)', '395g (1 can) sweetened condensed milk', '125g unsalted butter (for caramel)', '2 tbsp golden syrup', '200g milk chocolate, chopped', '50g dark chocolate, chopped', '1 tsp vegetable oil'],
-        method: ['Line a 20cm x 30cm slice tin with baking paper, allowing the paper to overhang on two sides for easy removal.', 'In a bowl, combine the crushed biscuits, melted butter and coconut (if using). Mix well until the crumbs are evenly moistened.', 'Press the mixture firmly into the base of the prepared tin, using the back of a spoon to create an even, compact layer. Refrigerate for 15 minutes to set.', 'To make the caramel: place the condensed milk, butter and golden syrup in a medium saucepan over medium heat. Stir continuously with a wooden spoon for 8-10 minutes, until the mixture thickens and turns a deep golden colour.', 'Pour the hot caramel over the chilled biscuit base and smooth the top with a spatula. Refrigerate for 1 hour, or until the caramel is firm.', 'To make the topping: melt the milk chocolate, dark chocolate and oil in a heatproof bowl over a saucepan of simmering water (or in the microwave in 30-second bursts), stirring until smooth.', 'Pour the melted chocolate over the chilled caramel layer and spread evenly. Refrigerate for at least 2 hours, or until fully set.', 'Lift out the slice using the baking paper overhang and cut into 20 even slices. Store in an airtight container in the fridge.']
+        ingredients: [
+            '250g plain tea biscuits (or digestive biscuits), crushed to fine crumbs',
+            '125g unsalted butter, melted',
+            '2 tbsp desiccated coconut (optional, for texture)',
+            '395g (1 can) sweetened condensed milk',
+            '125g unsalted butter (for caramel layer)',
+            '2 tbsp golden syrup (or corn syrup)',
+            '200g milk chocolate, broken into pieces',
+            '50g dark chocolate (70% cocoa), broken into pieces',
+            '1 tsp vegetable oil or cocoa butter'
+        ],
+        method: [
+            'Line a 20cm x 30cm slice tin (or brownie pan) with baking paper, allowing the paper to overhang on two opposite sides to easily lift the slice out later.',
+            'In a medium bowl, combine the crushed biscuits, melted butter, and coconut (if using). Mix well until all the crumbs are evenly moistened and the mixture resembles wet sand.',
+            'Press the crumb mixture firmly into the base of the prepared tin. Use the back of a metal spoon or a flat-bottomed glass to press it down into a compact, even layer. Place in the refrigerator to set while you make the caramel.',
+            'To make the caramel layer, place the sweetened condensed milk, the additional 125g butter, and golden syrup in a medium heavy-based saucepan over low heat.',
+            'Stir continuously with a wooden spoon for 8-10 minutes, until the mixture thickens, turns a rich golden caramel colour, and starts to pull away from the sides of the pan. Do not stop stirring, or it will burn.',
+            'Pour the hot caramel over the chilled biscuit base and smooth the top with a spatula. Return the tin to the fridge and chill for 1 hour, or until the caramel is firm to the touch.',
+            'For the chocolate topping, combine the milk chocolate, dark chocolate, and oil in a heatproof bowl. Set the bowl over a saucepan of simmering water (ensure the bowl doesn\'t touch the water) and stir gently until melted and smooth. Alternatively, melt in the microwave in 30-second bursts.',
+            'Pour the melted chocolate over the chilled caramel layer and spread it evenly to the edges. Tap the tin gently on the counter to remove air bubbles.',
+            'Refrigerate for at least 2 hours, or until the topping is completely set and firm.',
+            'Lift the slice out of the tin using the overhanging paper. Use a sharp knife (wiped clean between cuts) to slice it into 20 even squares. Store in an airtight container in the refrigerator.'
+        ]
     },
     // 21
     {
@@ -274,8 +710,27 @@ const RECIPES = [
         serves: 4,
         description: 'Juicy prawns sautéed in rich garlic butter with a hint of lemon. Quick, simple, and full of flavour.',
         image: 'assets/images/garlic-butter-prawns.png',
-        ingredients: ['500g large prawns, peeled and deveined (tails on)', '4 tbsp unsalted butter, cubed', '4 garlic cloves, minced', '1 tbsp olive oil', '1 tsp chilli flakes (optional)', '1 tbsp lemon juice', '2 tbsp fresh parsley, chopped', 'Salt & pepper to taste', 'Lemon wedges to serve'],
-        method: ['Pat the prawns dry with paper towels. Season with salt and pepper.', 'Heat the olive oil and 2 tablespoons of the butter in a large skillet over medium-high heat. When the butter is foaming, add the garlic and chilli flakes (if using). Sauté for 30-40 seconds until fragrant, but not coloured.', 'Add the prawns to the pan in a single layer (cook in batches if necessary). Cook for 2-3 minutes per side, until pink, opaque and just cooked through.', 'Add the remaining 2 tablespoons of butter and the lemon juice to the pan. Toss the prawns to coat in the sauce and cook for 1 more minute until the butter is melted and the sauce is glossy.', 'Season with additional salt and pepper if needed. Remove from the heat.', 'Sprinkle with fresh parsley and serve immediately with lemon wedges on the side. Great with crusty bread or rice to soak up the sauce.']
+        ingredients: [
+            '500g large king prawns, peeled and deveined (tails left on)',
+            '4 tbsp (60g) unsalted butter, cut into cubes',
+            '4 cloves garlic, finely minced',
+            '1 tbsp light olive oil',
+            '1 tsp red chilli flakes (optional, for heat)',
+            '1 tbsp fresh lemon juice',
+            '2 tbsp fresh flat-leaf parsley, finely chopped',
+            'Sea salt and freshly cracked black pepper',
+            'Lemon wedges for serving'
+        ],
+        method: [
+            'Pat the prawns completely dry with paper towels. This is essential for achieving a good sear. Season them generously with salt and pepper.',
+            'Heat the olive oil and 2 tablespoons of the butter in a large skillet over medium-high heat. Once the butter is foaming, add the garlic and chilli flakes (if using). Sauté for 30-40 seconds until fragrant, taking care not to burn the garlic.',
+            'Increase the heat to high. Add the prawns to the pan in a single layer (if necessary, cook them in batches to avoid overcrowding).',
+            'Cook the prawns for 2-3 minutes on the first side until the bottom turns pink and crispy. Flip them and cook for another 1-2 minutes on the other side, until they are pink, opaque, and just cooked through.',
+            'Reduce the heat to low. Add the remaining 2 tablespoons of butter and the lemon juice to the pan. Toss the prawns vigorously in the sauce until the butter melts and emulsifies into a beautiful, glossy sauce.',
+            'Taste and adjust the seasoning with salt and pepper. Remove from the heat.',
+            'Sprinkle the prawns with the fresh parsley and transfer to a serving platter. Pour any remaining sauce from the pan over the top.',
+            'Serve immediately with crusty bread to soak up the delicious garlic butter sauce, and a side of lemon wedges.'
+        ]
     },
     // 22
     {
@@ -287,8 +742,21 @@ const RECIPES = [
         serves: 4,
         description: 'A classic Caesar salad wrapped in a soft tortilla with grilled chicken, cos lettuce, and creamy dressing.',
         image: 'assets/images/chicken-caesar-wrap.png',
-        ingredients: ['2 chicken breasts, grilled or pan-fried and sliced', '4 large flour tortillas', '1 cos lettuce, shredded', '1/2 cup Caesar dressing (store-bought or homemade)', '1/4 cup grated Parmesan cheese', 'Salt & pepper to taste'],
-        method: ['Season the chicken slices with salt and pepper. If using leftover or store-bought grilled chicken, simply slice it into strips.', 'Warm the tortillas according to package instructions, or in a dry pan for 10 seconds each side.', 'Spread a generous amount of Caesar dressing over the centre of each tortilla, leaving a border at the edges.', 'Top with shredded lettuce, sliced chicken, and a sprinkle of Parmesan cheese.', 'Fold the sides of the tortilla over the filling, then roll up tightly from the bottom. Cut the wrap in half diagonally and serve immediately.']
+        ingredients: [
+            '2 large chicken breasts, grilled or pan-seared and cooled',
+            '4 large flour tortillas (burrito size)',
+            '1 cos lettuce, finely shredded',
+            '1/2 cup (120g) creamy Caesar dressing (store-bought or homemade)',
+            '1/4 cup (25g) finely grated Parmesan cheese',
+            'Salt and freshly ground black pepper to taste'
+        ],
+        method: [
+            'Slice the cooled grilled chicken breasts into thin strips. Season lightly with salt and pepper if needed.',
+            'Warm the tortillas according to the packet instructions, either in a dry frying pan for a few seconds each side or in the microwave covered with a damp paper towel. Warming them makes them more pliable and less likely to crack when rolling.',
+            'Spread a generous line of Caesar dressing down the centre of each tortilla. Top evenly with the shredded lettuce, followed by the sliced chicken strips, and a generous sprinkle of grated Parmesan cheese.',
+            'To roll, fold the bottom of the tortilla over the filling (about 1/3 of the way up), then fold the sides in, and roll it up tightly away from you to enclose the filling completely.',
+            'Cut each wrap in half diagonally with a sharp knife and serve immediately. These are perfect for a quick lunch or a light dinner.'
+        ]
     },
     // 23
     {
@@ -300,8 +768,24 @@ const RECIPES = [
         serves: 4,
         description: 'Perfectly grilled snapper with a hint of lemon and herbs.',
         image: 'assets/images/grilled-snapper.png',
-        ingredients: ['4 snapper fillets (or other white fish)', '2 tbsp olive oil', '2 garlic cloves, minced', '1 lemon, sliced', 'Fresh herbs (thyme, parsley or dill)', 'Salt & pepper to taste'],
-        method: ['Pat the snapper fillets dry with paper towels. Season both sides with salt and pepper.', 'In a small bowl, mix the olive oil and garlic. Brush this mixture over both sides of the fish.', 'Preheat a grill or barbecue to medium-high heat. Lightly oil the grates to prevent sticking.', 'Place the fish skin-side down on the grill. Cook for 5-6 minutes on each side, or until the fish is opaque and flakes easily with a fork.', 'During the last few minutes of cooking, place lemon slices on the grill and cook until lightly charred.', 'Serve the grilled snapper with the charred lemon slices and a sprinkle of fresh herbs.']
+        ingredients: [
+            '4 whole snapper fillets (skin on, about 180g each)',
+            '2 tbsp extra virgin olive oil',
+            '2 cloves garlic, finely minced',
+            '1 large lemon, thinly sliced',
+            'Fresh thyme or dill sprigs',
+            'Sea salt and freshly ground black pepper'
+        ],
+        method: [
+            'Pat the snapper fillets completely dry with paper towels. This step is crucial for achieving a crispy skin without sticking.',
+            'Season both sides of the fish generously with sea salt and freshly ground black pepper.',
+            'In a small bowl, combine the olive oil and minced garlic. Brush this garlic oil mixture generously over the flesh side and skin side of the fillets.',
+            'Preheat your BBQ or a heavy-based grill pan over medium-high heat. The grill must be very hot. Lightly oil the grates to prevent sticking.',
+            'Place the fish onto the grill, skin-side down. Cook for 5-6 minutes without moving it, until the skin is charred and crispy.',
+            'Using a large fish spatula, carefully flip the fish. Cook for a further 4-5 minutes, or until the flesh is opaque and flakes easily with a fork.',
+            'During the last 2 minutes of cooking, place the lemon slices on the grill to char slightly, and add the herbs to the edges of the pan to warm and release their fragrance.',
+            'Serve the grilled snapper immediately with the charred lemon slices and fresh herbs on the side, along with a fresh garden salad.'
+        ]
     },
     // 24
     {
@@ -313,8 +797,24 @@ const RECIPES = [
         serves: 6,
         description: 'Aussie-style beef patties with herbs and spices, perfect for the BBQ.',
         image: 'assets/images/beef-rissoles.png',
-        ingredients: ['500g beef mince', '1 onion, finely chopped', '1 carrot, grated', '1 egg', '1/2 cup breadcrumbs', '2 tbsp BBQ sauce', '1 tsp garlic powder', 'Salt & pepper to taste'],
-        method: ['In a large bowl, combine all the ingredients – beef mince, onion, grated carrot, egg, breadcrumbs, BBQ sauce, garlic powder, salt and pepper.', 'Mix thoroughly using your hands until everything is well combined.', 'Shape the mixture into 6 equal patties, about 2cm thick. Flatten them slightly and make a small indent in the centre of each to prevent them from puffing up during cooking.', 'Heat a large non-stick frying pan over medium-high heat. Lightly oil the pan.', 'Cook the rissoles for 4-5 minutes on each side, or until browned and cooked through. (The internal temperature should reach 70°C.)', 'Serve hot with mashed potatoes, vegetables, or in a bun as a burger.']
+        ingredients: [
+            '500g beef mince',
+            '1 large onion, finely chopped',
+            '1 carrot, peeled and grated',
+            '1 large egg, lightly beaten',
+            '1/2 cup (60g) breadcrumbs',
+            '2 tbsp BBQ sauce',
+            '1 tsp garlic powder',
+            'Salt and pepper to taste'
+        ],
+        method: [
+            'In a large mixing bowl, combine all the ingredients: beef mince, onion, carrot, egg, breadcrumbs, BBQ sauce, garlic powder, salt, and pepper.',
+            'Using your hands, mix everything together until it is uniformly combined. Do not overwork the mixture, as this can lead to tough rissoles.',
+            'Divide the mixture into 6 equal portions (about 120g each). Shape each portion into a flat, round patty about 2.5cm thick. Press a small indent into the centre of each rissole to prevent it from bulging during cooking.',
+            'Preheat a large frying pan or BBQ grill plate over medium-high heat. Lightly grease the surface with oil.',
+            'Cook the rissoles for 4-5 minutes per side, or until they are deeply browned and cooked through to an internal temperature of 70°C.',
+            'Remove from the heat and let them rest for 5 minutes before serving. These are fantastic served with mashed potatoes, steamed vegetables, or in a soft roll with salad.'
+        ]
     },
     // 25
     {
@@ -326,8 +826,27 @@ const RECIPES = [
         serves: 6,
         description: 'Crispy golden corn fritters, perfect for breakfast or brunch.',
         image: 'assets/images/corn-fritters.png',
-        ingredients: ['2 cups corn kernels (fresh, tinned or frozen)', '1 cup plain flour', '2 eggs', '1/2 cup milk', '1 tsp baking powder', '1/2 tsp salt', '1/4 tsp black pepper', '1/4 cup chopped chives or spring onion (optional)', 'Oil for frying'],
-        method: ['In a large bowl, combine the flour, baking powder, salt and pepper.', 'In a separate bowl, whisk the eggs and milk together. Add the wet ingredients to the dry ingredients and stir until just combined – the batter should be thick and lumpy.', 'Fold in the corn kernels and chives (if using). Do not overmix.', 'Heat a shallow layer of oil in a large frying pan over medium heat.', 'Drop spoonfuls of the batter into the hot oil (about 2 tablespoons per fritter). Flatten slightly with the back of the spoon.', 'Cook for 2-3 minutes per side, until golden brown and cooked through. Drain on paper towels.', 'Serve warm with sour cream, sweet chilli sauce, or a poached egg on top.']
+        ingredients: [
+            '2 cups (300g) sweetcorn kernels (drained if canned)',
+            '1 cup (150g) plain flour',
+            '2 large eggs',
+            '1/2 cup (125ml) milk',
+            '1 tsp baking powder',
+            '1/2 tsp salt',
+            '1/4 tsp white pepper',
+            '1/4 cup chopped chives or spring onions (optional)',
+            'Vegetable oil for shallow frying'
+        ],
+        method: [
+            'In a large bowl, sift together the plain flour, baking powder, salt, and pepper.',
+            'In a separate jug, whisk together the eggs and milk. Pour the wet ingredients into the dry ingredients and whisk until a thick, lumpy batter forms. Do not overmix.',
+            'Gently fold in the corn kernels and the chopped chives until they are just distributed throughout the batter.',
+            'Heat a shallow layer of vegetable oil (about 1/2cm deep) in a large non-stick frying pan over medium heat. The oil is ready when a drop of batter sizzles immediately.',
+            'Drop heaped tablespoons of the batter into the hot oil and flatten them slightly with the back of the spoon to form round fritters.',
+            'Cook for 2-3 minutes per side, until they are puffed up and a deep golden brown.',
+            'Drain the fritters on paper towels and keep warm. Repeat with the remaining batter.',
+            'Serve the corn fritters warm with a dollop of sour cream, crispy bacon, and a drizzle of sweet chilli sauce for a delicious brunch.'
+        ]
     },
     // 26
     {
@@ -339,8 +858,23 @@ const RECIPES = [
         serves: 8,
         description: 'Traditional Australian bush bread, simple and hearty.',
         image: 'assets/images/damper-bread.png',
-        ingredients: ['3 cups self-raising flour', '1 tsp salt', '1 tbsp butter, cubed', '1 cup milk', '1/2 cup water (or more as needed)'],
-        method: ['Preheat your oven to 200°C (fan-forced). Line a baking tray with baking paper.', 'In a large bowl, sift the self-raising flour and salt together. Rub the butter into the flour using your fingertips until the mixture resembles fine breadcrumbs.', 'Make a well in the centre and pour in the milk and most of the water. Mix with a flat-bladed knife until the dough begins to come together. Add extra water if the dough is too dry.', 'Turn the dough out onto a lightly floured surface and gently knead for 1-2 minutes until smooth (do not overwork it).', 'Shape the dough into a round loaf, about 5cm thick. Place onto the prepared tray and use a sharp knife to score a cross on top.', 'Bake for 25-30 minutes, or until the damper is golden brown and sounds hollow when tapped on the bottom.', 'Serve warm with butter, jam, or your favourite savoury spread.']
+        ingredients: [
+            '3 cups (375g) self-raising flour',
+            '1 tsp fine salt',
+            '1 tbsp unsalted butter, cold and cubed',
+            '1 cup (250ml) milk',
+            '1/2 cup (125ml) water (plus extra if needed)'
+        ],
+        method: [
+            'Preheat your oven to 200°C (fan-forced). Line a baking tray with baking paper.',
+            'Sift the self-raising flour and salt into a large mixing bowl. Add the cold, cubed butter and rub it into the flour using your fingertips until the mixture resembles fine breadcrumbs. This creates a flaky texture.',
+            'Make a well in the centre of the flour mixture. Pour in the milk and most of the water.',
+            'Using a flat-bladed knife, mix the liquid into the flour until it just starts to come together as a soft, shaggy dough. If the dough is too dry, add the remaining water a little at a time.',
+            'Turn the dough out onto a lightly floured surface. Gently knead for 1-2 minutes until it forms a smooth ball. Be careful not to over-knead, or the damper will become tough.',
+            'Shape the dough into a round loaf, about 6cm thick. Place it on the prepared tray. Use a sharp knife to score a deep cross (or pattern) on the top of the loaf. This helps it bake evenly.',
+            'Bake for 25-30 minutes, or until the damper is a deep golden brown and sounds hollow when tapped on the bottom.',
+            'Remove from the oven and serve warm. This bread is best enjoyed straight away, pulled apart with generous amounts of butter and golden syrup or jam.'
+        ]
     },
     // 27
     {
@@ -352,8 +886,27 @@ const RECIPES = [
         serves: 24,
         description: 'Classic Australian ANZAC biscuits, chewy and full of oats and coconut.',
         image: 'assets/images/anzac-biscuits.png',
-        ingredients: ['1 cup rolled oats', '1 cup plain flour', '1 cup desiccated coconut', '3/4 cup caster sugar', '125g unsalted butter', '2 tbsp golden syrup', '1 tsp baking soda', '2 tbsp boiling water'],
-        method: ['Preheat your oven to 160°C (fan-forced). Line two baking trays with baking paper.', 'In a large bowl, combine the rolled oats, plain flour, desiccated coconut and caster sugar.', 'In a small saucepan over low heat, melt the butter and golden syrup together. Stir until smooth.', 'In a separate small bowl, dissolve the baking soda in the boiling water. Pour this into the butter mixture – it will foam up.', 'Immediately pour the wet ingredients into the dry ingredients and stir until well combined.', 'Roll tablespoons of the mixture into balls and place them on the prepared trays, leaving room for spreading. Press down slightly with your fingers.', 'Bake for 15 minutes, or until golden brown. The biscuits will still be soft when you take them out of the oven but will firm up as they cool.', 'Cool on the trays for 5 minutes, then transfer to a wire rack to cool completely. Store in an airtight container.']
+        ingredients: [
+            '1 cup (90g) rolled oats',
+            '1 cup (150g) plain flour',
+            '1 cup (90g) desiccated coconut',
+            '3/4 cup (165g) caster sugar',
+            '125g unsalted butter',
+            '2 tbsp golden syrup',
+            '1 tsp baking soda (bicarbonate of soda)',
+            '2 tbsp boiling water'
+        ],
+        method: [
+            'Preheat your oven to 160°C (fan-forced). Line two large baking trays with baking paper.',
+            'In a large bowl, combine the rolled oats, plain flour, desiccated coconut, and caster sugar. Mix them together to evenly distribute the ingredients.',
+            'In a small saucepan over low heat, melt the butter and golden syrup together, stirring until the butter has completely melted and the mixture is smooth.',
+            'In a small bowl, dissolve the baking soda in the boiling water. Pour this into the butter mixture. It will foam up immediately – this is the leavening reaction that makes the biscuits chewy.',
+            'Immediately pour the hot butter mixture into the dry ingredients. Stir until everything is thoroughly combined and the mixture becomes a sticky dough.',
+            'Roll tablespoon-sized balls of the mixture and place them on the prepared trays, leaving at least 5cm of space between them to allow for spreading.',
+            'Flatten the balls slightly with the back of a fork.',
+            'Bake for 15 minutes, or until the biscuits are a deep golden brown. They will be soft when they come out of the oven but will firm up as they cool.',
+            'Allow the biscuits to cool on the tray for 5 minutes before transferring them to a wire rack to cool completely. Store in an airtight container.'
+        ]
     },
     // 28
     {
@@ -365,8 +918,31 @@ const RECIPES = [
         serves: 6,
         description: 'Rich, hearty beef pie with a deep, malty flavour from Guinness, wrapped in golden puff pastry.',
         image: 'assets/images/beef-and-guinness-pie.png',
-        ingredients: ['800g beef chuck, cut into 3cm cubes', '1 onion, chopped', '2 carrots, diced', '2 garlic cloves, minced', '1 can (330ml) Guinness beer', '2 tbsp tomato paste', '1 cup beef stock', '2 tbsp plain flour', '2 sheets puff pastry, thawed', '1 egg, beaten (for egg wash)', 'Salt & pepper to taste'],
-        method: ['Season the beef cubes generously with salt and pepper. Toss with flour to coat.', 'Heat a large Dutch oven or heavy-based pot over medium-high heat. Add a splash of oil and brown the beef in batches until well seared on all sides. Remove and set aside.', 'Reduce the heat to medium, add the onion, carrots and garlic to the pot. Cook for 5-6 minutes until softened, scraping up any browned bits from the bottom.', 'Return the beef to the pot. Add the tomato paste and cook for 1 minute. Pour in the Guinness and beef stock, stirring well. Bring to a boil, then reduce the heat to low, cover and simmer for 1.5 to 2 hours, or until the beef is tender.', 'Preheat your oven to 200°C (fan-forced).', 'Spoon the beef filling into a large pie dish (or individual pie tins). Allow to cool slightly.', 'Cover the filling with the puff pastry sheets, trimming to fit. Press the edges to seal and brush with beaten egg. Cut a slit in the top to allow steam to escape.', 'Bake for 25-30 minutes, or until the pastry is puffed and golden. Serve hot.']
+        ingredients: [
+            '800g beef chuck, cut into 3cm cubes',
+            '1 large onion, chopped',
+            '2 large carrots, cut into large chunks',
+            '2 cloves garlic, minced',
+            '1 can (330ml) Guinness (or other stout beer)',
+            '2 tbsp tomato paste (concentrate)',
+            '1 cup (250ml) beef stock',
+            '2 tbsp plain flour (for dusting meat)',
+            '2 sheets puff pastry (thawed)',
+            '1 egg, beaten (for egg wash)',
+            'Salt and freshly ground black pepper'
+        ],
+        method: [
+            'Season the beef cubes liberally with salt and pepper. Dredge them in plain flour to coat lightly.',
+            'Heat a splash of oil in a large Dutch oven over medium-high heat. Brown the beef in batches, searing on all sides until a rich crust forms. Do not overcrowd the pan. Remove the browned beef and set aside.',
+            'Reduce the heat to medium. Add the onion and carrots to the pot and cook for 5-6 minutes until slightly softened. Add the garlic and cook for 1 minute.',
+            'Return the beef to the pot. Stir in the tomato paste and cook for 1-2 minutes. Pour in the Guinness, scraping the bottom of the pot to deglaze all the flavorful brown bits.',
+            'Add the beef stock and bring to a simmer. Cover and reduce the heat to very low. Cook for 1.5 to 2 hours, or until the beef is incredibly tender and falls apart easily.',
+            'Preheat your oven to 200°C (fan-forced).',
+            'Spoon the beef filling into a large pie dish (or individual ramekins). Allow it to cool for 10 minutes.',
+            'Cover the filling with the puff pastry. Trim the edges, pressing to seal. Brush the top generously with the beaten egg. Cut a small steam vent in the top.',
+            'Place the pie on a baking tray to catch any drips. Bake for 25-30 minutes, until the pastry is puffed and deeply golden.',
+            'Serve the pie piping hot with creamy mashed potatoes and peas.'
+        ]
     },
     // 29
     {
@@ -378,8 +954,24 @@ const RECIPES = [
         serves: 4,
         description: 'Crispy salt and pepper squid with a zesty dipping sauce.',
         image: 'assets/images/salt-and-pepper-squid.png',
-        ingredients: ['500g squid tubes, cleaned and sliced into rings', '1 cup cornflour', '1 tsp salt', '1 tsp white pepper', '1/2 tsp five-spice powder (optional)', 'Oil for deep frying', 'Lemon wedges to serve'],
-        method: ['Pat the squid rings thoroughly dry with paper towels – this is crucial for crispy results.', 'In a large bowl or zip-lock bag, combine the cornflour, salt, pepper and five-spice powder (if using).', 'Add the squid rings to the seasoned flour and toss well to coat evenly. Shake off any excess flour.', 'Heat oil in a deep fryer or large pot to 180°C. The oil is ready when a cube of bread browns in 15 seconds.', 'Fry the squid in batches for 2-3 minutes, or until golden and crisp. Do not overcrowd the fryer – cook in small batches.', 'Remove with a slotted spoon and drain on paper towels. Season with a little extra salt while hot.', 'Serve immediately with lemon wedges and a dipping sauce (such as aioli or sweet chilli).']
+        ingredients: [
+            '500g squid tubes, cleaned and sliced into rings (1.5cm thick)',
+            '1 cup (120g) cornflour',
+            '1 tsp fine salt',
+            '1 tsp white pepper (or Szechuan pepper for a twist)',
+            '1/2 tsp five-spice powder (optional)',
+            'Vegetable oil for deep frying',
+            'Lemon wedges and sea salt flakes to serve'
+        ],
+        method: [
+            'Pat the squid rings thoroughly dry with paper towels. This is essential to get them crispy. If they are wet, they will steam and become rubbery.',
+            'In a large bowl or resealable bag, combine the cornflour, salt, white pepper, and five-spice powder (if using).',
+            'Add the squid rings to the seasoned flour and toss well to coat every piece evenly. Shake off any excess flour.',
+            'Heat the oil in a deep heavy-based pot or deep fryer to 180°C. The oil is ready when a cube of bread drops in and turns golden in 15 seconds.',
+            'Fry the squid in small batches. Overcrowding the pot will lower the oil temperature and make the squid greasy. Fry for 2-3 minutes until they are puffed, crispy, and just cooked through.',
+            'Use a slotted spoon to remove the squid and drain on paper towels. Sprinkle immediately with extra salt flakes.',
+            'Serve the salt and pepper squid instantly with lemon wedges and a side of aioli or sweet chilli sauce.'
+        ]
     },
     // 30
     {
@@ -391,8 +983,25 @@ const RECIPES = [
         serves: 4,
         description: 'Grilled chicken skewers with a creamy peanut satay sauce.',
         image: 'assets/images/chicken-satay-skewers.png',
-        ingredients: ['500g chicken thigh fillets, cut into strips', '1/4 cup soy sauce', '2 tbsp smooth peanut butter', '1 tbsp curry powder', '1/2 cup coconut milk', '1 tbsp brown sugar', '1 tbsp fish sauce (optional)', 'Skewers (soaked in water if wooden)'],
-        method: ['In a bowl, combine the soy sauce, peanut butter, curry powder, coconut milk, brown sugar and fish sauce (if using) to make a marinade.', 'Add the chicken strips to the marinade and toss to coat. Cover and refrigerate for at least 30 minutes, or up to 2 hours.', 'Soak wooden skewers in water for 20 minutes (if using) to prevent burning.', 'Thread the marinated chicken onto the skewers.', 'Preheat a grill, barbecue or grill pan over medium-high heat. Cook the skewers for 3-4 minutes per side, or until charred and cooked through.', 'Serve the satay skewers with extra peanut sauce, cucumber slices, and a wedge of lime.']
+        ingredients: [
+            '500g chicken thigh fillets, cut into 2cm strips',
+            '1/4 cup (60ml) soy sauce',
+            '2 tbsp smooth peanut butter',
+            '1 tbsp curry powder (medium or hot)',
+            '1/2 cup (125ml) coconut milk',
+            '1 tbsp brown sugar',
+            '1 tbsp fish sauce (optional, for umami)',
+            'Bamboo skewers (soaked in water for 30 minutes)'
+        ],
+        method: [
+            'In a large bowl, whisk together the soy sauce, peanut butter, curry powder, coconut milk, brown sugar, and fish sauce until a smooth, rich marinade forms.',
+            'Add the chicken strips to the marinade and toss to coat thoroughly. Cover the bowl and place it in the fridge to marinate for at least 30 minutes, or up to 2 hours for deeper flavour.',
+            'While the chicken marinates, soak the bamboo skewers in water to prevent them from burning on the grill.',
+            'Thread the marinated chicken strips onto the skewers, weaving them back and forth to secure the meat.',
+            'Preheat a BBQ, grill pan, or chargrill to medium-high heat. Ensure the grill is well oiled.',
+            'Place the skewers on the grill. Cook for 3-4 minutes on each side, basting with any leftover marinade, until the chicken is charred and cooked through.',
+            'Remove the skewers from the grill and let them rest for a few minutes. Serve with extra satay sauce, fresh cucumber slices, and a wedge of lime for squeezing over.'
+        ]
     },
     // 31
     {
@@ -404,8 +1013,24 @@ const RECIPES = [
         serves: 4,
         description: 'Sticky honey soy chicken with garlic and ginger.',
         image: 'assets/images/honey-soy-chicken.png',
-        ingredients: ['4 chicken thighs (bone-in or boneless)', '1/4 cup soy sauce', '2 tbsp honey', '2 garlic cloves, minced', '1 tbsp fresh ginger, grated', '1 tbsp rice vinegar or lemon juice', '1 tbsp oil for frying'],
-        method: ['In a small bowl, whisk together the soy sauce, honey, garlic, ginger and rice vinegar to make the sauce.', 'Heat the oil in a large frying pan over medium-high heat. Season the chicken with salt and pepper.', 'Place the chicken in the pan, skin-side down (if using bone-in thighs), and cook for 5-6 minutes until the skin is golden and crisp. Flip and cook for another 5 minutes.', 'Pour the sauce over the chicken and reduce the heat to medium. Cook for 10-12 minutes, turning occasionally, until the sauce thickens and becomes sticky, and the chicken is fully cooked (internal temperature 75°C).', 'Remove the chicken from the pan, spoon the sauce over the top, and serve with steamed rice and vegetables.']
+        ingredients: [
+            '4 chicken thighs (bone-in, skin-on preferred for flavour)',
+            '1/4 cup (60ml) soy sauce (light or all-purpose)',
+            '2 tbsp honey (or brown sugar)',
+            '2 cloves garlic, finely minced',
+            '1 tbsp fresh ginger, grated',
+            '1 tbsp rice wine vinegar or lemon juice',
+            '1 tbsp vegetable oil for frying'
+        ],
+        method: [
+            'In a small bowl, whisk together the soy sauce, honey, garlic, ginger, and vinegar to create the sticky sauce.',
+            'Pat the chicken thighs dry with paper towels. Season both sides with salt and pepper.',
+            'Heat the vegetable oil in a large oven-safe skillet or frying pan over medium-high heat.',
+            'Place the chicken thighs into the pan, skin-side down. Cook for 6-7 minutes until the skin is deeply golden and crispy. Flip and cook the other side for 4-5 minutes.',
+            'Reduce the heat to medium. Pour the honey soy sauce mixture over the chicken. Tilt the pan to coat the chicken evenly.',
+            'Allow the sauce to bubble and reduce, turning the chicken occasionally, for 8-10 minutes, until the sauce has thickened into a sticky glaze and coats the chicken beautifully.',
+            'Check that the chicken is cooked through (internal temperature of 75°C). Garnish with sliced green onions and serve immediately with steamed jasmine rice and blanched bok choy.'
+        ]
     },
     // 32
     {
@@ -417,8 +1042,27 @@ const RECIPES = [
         serves: 4,
         description: 'Slow-cooked BBQ pork ribs, tender and full of smoky flavour.',
         image: 'assets/images/bbq-pork-ribs.png',
-        ingredients: ['1.5 kg pork ribs (American or baby back)', '1 cup BBQ sauce', '2 tbsp brown sugar', '2 garlic cloves, minced', '1 tsp smoked paprika', '1 tsp onion powder', 'Salt & pepper to taste'],
-        method: ['Preheat your oven to 160°C (fan-forced).', 'Season the ribs all over with salt, pepper, smoked paprika and onion powder.', 'Place the ribs on a large baking tray lined with foil, meat-side up. Cover with another layer of foil and seal the edges to create a tight packet.', 'Bake for 1.5 to 2 hours, or until the meat is tender and starting to pull away from the bone.', 'In a small bowl, combine the BBQ sauce, brown sugar and garlic.', 'Remove the ribs from the oven, uncover, and brush generously with the BBQ sauce mixture.', 'Increase the oven temperature to 220°C (or use a grill). Return the ribs to the oven, uncovered, for 10-15 minutes until the sauce is caramelised and sticky.', 'Rest for 10 minutes before cutting into individual ribs. Serve with extra BBQ sauce.']
+        ingredients: [
+            '1.5 kg American-style pork ribs (baby back or St. Louis)',
+            '1 cup (250ml) BBQ sauce (your favourite brand)',
+            '2 tbsp brown sugar',
+            '2 cloves garlic, crushed',
+            '1 tsp smoked paprika',
+            '1 tsp onion powder',
+            'Salt and freshly ground black pepper'
+        ],
+        method: [
+            'Preheat your oven to 160°C (fan-forced).',
+            'Pat the ribs dry with paper towels. Remove the thin membrane from the bone side of the rack for maximum tenderness.',
+            'Season the ribs generously all over with salt, pepper, smoked paprika, and onion powder.',
+            'Place the ribs on a large baking tray lined with a double layer of aluminium foil. Wrap them tightly with another layer of foil, sealing the edges to create a tight parcel. This traps steam and keeps them moist.',
+            'Bake in the oven for 1.5 to 2 hours, or until the meat is extremely tender and starting to pull back from the bones.',
+            'While the ribs cook, combine the BBQ sauce, brown sugar, and garlic in a small bowl to make the glaze.',
+            'Remove the ribs from the oven, increase the temperature to 220°C (or use the grill function).',
+            'Unwrap the ribs and generously brush the top surface with the BBQ glaze.',
+            'Return the ribs to the oven (uncovered) for 10-15 minutes, until the glaze is caramelised and sticky. Watch carefully to prevent burning.',
+            'Remove from the oven, rest for 10 minutes, then slice into individual ribs and serve with extra BBQ sauce on the side.'
+        ]
     },
     // 33
     {
@@ -430,8 +1074,25 @@ const RECIPES = [
         serves: 4,
         description: 'Hearty steak sandwich with caramelised onions and cheese.',
         image: 'assets/images/steak-sandwich.png',
-        ingredients: ['4 beef steaks (sirloin or ribeye)', '4 bread rolls or slices of sourdough', '1 large onion, sliced', '4 slices cheese (Swiss, cheddar or provolone)', 'BBQ sauce or aioli', 'Butter for spreading'],
-        method: ['Season the steaks generously with salt and pepper on both sides.', 'Heat a large frypan or BBQ over high heat. Cook the steaks for 2-3 minutes per side for medium-rare, or longer to your liking. Remove and let rest on a plate.', 'Reduce the heat to medium, add the onion slices to the pan and cook for 5-6 minutes until softened and caramelised, stirring occasionally.', 'Toast the bread or rolls lightly. Spread with butter and a little BBQ sauce or aioli.', 'Slice the rested steaks thinly against the grain.', 'Assemble the sandwiches: place sliced steak on the bottom half of the bread, top with caramelised onions and a slice of cheese. Add the top half and press down gently.', 'Serve immediately, with chips or a side salad.']
+        ingredients: [
+            '4 beef sirloin steaks (about 150g each, 2cm thick)',
+            '4 crusty bread rolls or sourdough slices',
+            '1 large brown onion, thinly sliced',
+            '4 slices of Swiss, provolone, or cheddar cheese',
+            'BBQ sauce or garlic aioli',
+            'Butter, softened'
+        ],
+        method: [
+            'Season the steaks generously on both sides with salt and freshly cracked black pepper.',
+            'Preheat a heavy-based cast-iron skillet or BBQ plate over high heat until smoking hot. Add a splash of oil to the pan.',
+            'Cook the steaks for 2-3 minutes per side for medium-rare. If you prefer them more done, add an extra minute per side. Remove the steaks to a plate and let them rest.',
+            'Reduce the heat to medium. Add the sliced onion to the pan with a pinch of salt and cook for 5-6 minutes, stirring occasionally, until they soften and caramelize.',
+            'While the onions cook, slice the bread rolls in half and toast them cut-side down on the grill until golden. Spread the toasted sides with butter.',
+            'Thinly slice the rested steaks against the grain.',
+            'Assemble the sandwiches: On the bottom half of the roll, spread a spoonful of BBQ sauce or aioli. Pile on the sliced steak, top with the caramelized onions, and place a slice of cheese on top.',
+            'Place the sandwiches under a hot grill for 1 minute to melt the cheese (optional), then close with the top half of the roll.',
+            'Serve the steak sandwiches immediately with a side of hot chips or a crisp pickle.'
+        ]
     },
     // 34
     {
@@ -443,8 +1104,23 @@ const RECIPES = [
         serves: 4,
         description: 'Fresh and healthy chicken salad with creamy avocado and a zesty dressing.',
         image: 'assets/images/chicken-avocado-salad.png',
-        ingredients: ['2 chicken breasts, cooked and diced', '2 avocados, diced', '1 cup cherry tomatoes, halved', '1/2 red onion, thinly sliced', '1/4 cup olive oil', '2 tbsp lemon juice', '1 tsp Dijon mustard', 'Salt & pepper to taste'],
-        method: ['In a large salad bowl, combine the diced chicken, avocado, cherry tomatoes and red onion.', 'In a small jar or bowl, whisk together the olive oil, lemon juice, Dijon mustard, salt and pepper until emulsified.', 'Pour the dressing over the salad and toss gently to combine, being careful not to break up the avocado too much.', 'Taste and adjust seasoning. Serve immediately as a main or side salad.']
+        ingredients: [
+            '2 large cooked chicken breasts, diced (rotisserie chicken works well)',
+            '2 ripe avocados, peeled, pitted, and diced',
+            '1 punnet (250g) cherry tomatoes, halved',
+            '1/2 small red onion, finely sliced',
+            '1/4 cup (60ml) extra virgin olive oil',
+            '2 tbsp fresh lemon juice',
+            '1 tsp Dijon mustard',
+            'Sea salt and freshly cracked black pepper'
+        ],
+        method: [
+            'In a large serving bowl, gently combine the diced chicken, avocado, cherry tomatoes, and red onion.',
+            'In a small jar or bowl, make the dressing: whisk together the olive oil, lemon juice, Dijon mustard, salt, and pepper until well emulsified.',
+            'Pour the dressing over the salad ingredients. Using two large spoons, toss everything gently to coat. Be careful not to break the avocado pieces up too much, but ensure the chicken is well coated.',
+            'Taste and adjust the seasoning with more salt, pepper, or lemon juice if desired.',
+            'Serve the salad immediately as a light main course, or chill it for a refreshing side dish.'
+        ]
     },
     // 35
     {
@@ -456,8 +1132,25 @@ const RECIPES = [
         serves: 6,
         description: 'Rich and creamy seafood chowder with prawns, fish and mussels.',
         image: 'assets/images/seafood-chowder.png',
-        ingredients: ['500g seafood mix (prawns, fish chunks, mussels)', '1 onion, chopped', '2 garlic cloves, minced', '4 cups fish stock', '1 cup thickened cream', '2 potatoes, peeled and diced', '1 tsp thyme', 'Salt & pepper to taste', 'Fresh parsley for garnish'],
-        method: ['Heat a large pot over medium heat. Add a splash of oil, then sauté the onion and garlic until soft and fragrant, about 5 minutes.', 'Add the diced potatoes and thyme, and pour in the fish stock. Bring to a boil, then reduce heat and simmer for 15 minutes, or until the potatoes are tender.', 'Stir in the seafood mix and cook for 5-7 minutes, or until the prawns are pink and the fish is cooked through.', 'Reduce the heat to low and stir in the cream. Heat gently for 2-3 minutes, but do not boil.', 'Season with salt and pepper to taste. Ladle into bowls and garnish with fresh parsley. Serve with crusty bread.']
+        ingredients: [
+            '500g mixed seafood (prawns, firm white fish chunks, mussels)',
+            '1 large onion, chopped',
+            '2 cloves garlic, crushed',
+            '4 cups (1L) fish or shellfish stock',
+            '1 cup (250ml) thickened cream (35% fat)',
+            '2 large potatoes, peeled and diced',
+            '1 tsp dried thyme',
+            'Salt and freshly ground white pepper',
+            'Fresh parsley and crusty bread for serving'
+        ],
+        method: [
+            'Heat a large heavy-based pot over medium heat with a splash of oil. Add the onion and garlic and sauté for 5-6 minutes until softened and translucent.',
+            'Add the diced potatoes and thyme to the pot, then pour in the fish stock. Bring the mixture to a boil, then reduce the heat to low and simmer for 15 minutes, or until the potatoes are fork-tender.',
+            'Add the seafood to the pot. Cook for 5-7 minutes, stirring gently, until the prawns are pink, the fish is opaque, and the mussels have opened. Discard any mussels that remain closed.',
+            'Reduce the heat to the lowest setting. Pour in the thickened cream and stir gently to combine. Heat through for 2-3 minutes; do not let the soup boil, or the cream may curdle.',
+            'Season the chowder to taste with salt and white pepper.',
+            'Ladle the chowder into deep bowls, garnish with fresh parsley, and serve immediately with thick slices of crusty buttered bread.'
+        ]
     },
     // 36
     {
@@ -469,8 +1162,25 @@ const RECIPES = [
         serves: 4,
         description: 'Rich and creamy pasta with mushrooms and Parmesan.',
         image: 'assets/images/creamy-mushroom-pasta.png',
-        ingredients: ['500g pasta (fettuccine or tagliatelle)', '300g mushrooms, sliced', '2 garlic cloves, minced', '1 cup thickened cream', '1/2 cup grated Parmesan cheese', '2 tbsp unsalted butter', '2 tbsp fresh parsley, chopped', 'Salt & pepper to taste'],
-        method: ['Bring a large pot of salted water to the boil. Cook the pasta according to package instructions until al dente. Reserve 1/2 cup of pasta water before draining.', 'While the pasta cooks, heat a large skillet over medium heat. Melt the butter, then add the sliced mushrooms and garlic. Sauté for 6-8 minutes until the mushrooms are golden and their liquid has evaporated.', 'Pour in the cream and bring to a gentle simmer. Cook for 3-4 minutes until the sauce thickens slightly.', 'Stir in the grated Parmesan cheese and cook until melted and smooth. Season with salt and pepper.', 'Add the drained pasta to the sauce, along with a splash of the reserved pasta water if needed to loosen the sauce. Toss to coat the pasta evenly.', 'Garnish with fresh parsley and extra Parmesan before serving.']
+        ingredients: [
+            '500g fettuccine or tagliatelle pasta',
+            '300g portobello or button mushrooms, sliced',
+            '2 cloves garlic, minced',
+            '1 cup (250ml) thickened cream',
+            '1/2 cup (50g) freshly grated Parmesan cheese',
+            '2 tbsp unsalted butter',
+            '2 tbsp fresh parsley, chopped',
+            'Salt and freshly cracked black pepper'
+        ],
+        method: [
+            'Bring a large pot of salted water to a rolling boil. Cook the pasta according to the package instructions until al dente. Reserve 1/2 cup of the starchy pasta water before draining.',
+            'While the pasta cooks, heat a large skillet over medium heat. Melt the butter and add the sliced mushrooms. Cook for 6-8 minutes, stirring occasionally, until the mushrooms have released their liquid and have turned a deep golden brown.',
+            'Add the minced garlic to the skillet and cook for 1-2 minutes until fragrant.',
+            'Pour the cream into the pan. Bring to a gentle simmer and cook for 3-4 minutes until the sauce thickens slightly.',
+            'Add the grated Parmesan cheese and stir until it has completely melted into the sauce. Season with salt and a generous amount of black pepper.',
+            'Add the drained pasta to the creamy mushroom sauce. Toss to coat the pasta evenly, adding a splash of the reserved pasta water if the sauce is too thick.',
+            'Garnish with fresh parsley and extra Parmesan cheese. Serve immediately in warm bowls.'
+        ]
     },
     // 37
     {
@@ -482,8 +1192,21 @@ const RECIPES = [
         serves: 4,
         description: 'Classic Aussie bacon and egg roll, perfect for breakfast.',
         image: 'assets/images/bacon-and-egg-roll.png',
-        ingredients: ['4 bread rolls (soft, burger-style)', '8 bacon slices', '4 eggs', 'BBQ sauce or ketchup', 'Butter for spreading'],
-        method: ['Heat a large frying pan over medium heat. Cook the bacon until crisp, then remove and drain on paper towel.', 'In the same pan, fry the eggs to your liking – sunny-side up or over-easy.', 'Slice the rolls in half and toast them lightly in the pan or toaster. Spread with butter.', 'Place two slices of bacon on each roll base, top with a fried egg, and drizzle with BBQ sauce or ketchup.', 'Add the roll tops and press gently. Serve immediately.']
+        ingredients: [
+            '4 soft bread rolls (brioche or milk buns)',
+            '8 rashers of streaky bacon',
+            '4 large eggs',
+            'BBQ sauce or tomato ketchup',
+            'Butter, softened'
+        ],
+        method: [
+            'Heat a large frying pan over medium heat. Add the bacon rashers and cook for 3-4 minutes per side until they are crispy and golden. Remove the bacon from the pan and drain on paper towel.',
+            'Turn the heat down to medium-low. Crack the eggs into the pan (using the residual bacon fat) and fry them sunny-side up or over-easy until the whites are set and the yolks are still slightly runny. Season lightly with salt and pepper.',
+            'While the eggs are frying, slice the bread rolls in half and toast them cut-side down in the pan or under a grill until golden. Spread generously with butter.',
+            'Place two bacon rashers on the bottom half of each roll. Carefully place a fried egg on top of the bacon. Drizzle with your choice of BBQ sauce or ketchup.',
+            'Place the top half of the roll on the egg. Press down gently to break the yolk slightly, allowing it to soak into the bread.',
+            'Serve the bacon and egg rolls immediately.'
+        ]
     },
     // 38
     {
@@ -495,8 +1218,25 @@ const RECIPES = [
         serves: 6,
         description: 'Greek-style spinach and feta quiche in flaky pastry.',
         image: 'assets/images/spinach-and-feta-quiche.png',
-        ingredients: ['500g spinach, roughly chopped', '200g feta cheese, crumbled', '3 eggs', '1 onion, finely chopped', '2 sheets shortcrust or puff pastry', 'Salt & pepper to taste', '1/2 cup milk or cream (optional)'],
-        method: ['Preheat your oven to 200°C (fan-forced). Grease a deep 23cm pie dish.', 'Line the dish with one pastry sheet, pressing it into the edges and trimming any overhang.', 'In a large bowl, whisk the eggs with the milk or cream (if using). Add the chopped spinach, crumbled feta, onion, salt and pepper. Mix well.', 'Pour the filling into the pastry case.', 'If using a second pastry sheet, place it over the top and seal the edges, or leave it open as a tart. Brush the top with beaten egg for a golden finish.', 'Bake for 30-35 minutes, or until the filling is set and the pastry is golden brown.', 'Allow to cool for 10 minutes before slicing. Serve warm or at room temperature.']
+        ingredients: [
+            '500g fresh spinach, roughly chopped (or 250g frozen, thawed and squeezed)',
+            '200g Greek feta cheese, crumbled',
+            '3 large eggs',
+            '1 large onion, finely chopped',
+            '2 sheets shortcrust or puff pastry (store-bought)',
+            'Salt and pepper to taste',
+            '1/2 cup (125ml) milk or cream (optional, for extra creaminess)'
+        ],
+        method: [
+            'Preheat your oven to 200°C (fan-forced). Grease a 23cm deep pie or quiche dish.',
+            'Line the dish with one of the pastry sheets, pressing it into the edges. Trim any overhang. Prick the base lightly with a fork. If using shortcrust, you may want to blind-bake for 10 minutes.',
+            'If using fresh spinach, wilt it in a hot, dry pan for 2-3 minutes until it has reduced significantly. Squeeze out any excess moisture with a clean tea towel. If using frozen, ensure it is thoroughly thawed and squeezed dry.',
+            'In a large bowl, whisk together the eggs and milk (if using). Stir in the cooked spinach, crumbled feta, onion, salt, and pepper. Mix well until combined.',
+            'Pour the spinach mixture into the prepared pastry case, spreading it evenly.',
+            'If using a second pastry sheet, place it over the top and seal the edges, or simply bake it as an open tart. Brush the top with a little beaten egg for a golden shine.',
+            'Bake for 30-35 minutes, or until the filling is puffed, set, and the pastry is a deep golden brown.',
+            'Let the quiche cool in the dish for 10 minutes before slicing. Serve warm or at room temperature with a side salad.'
+        ]
     },
     // 39
     {
@@ -508,8 +1248,28 @@ const RECIPES = [
         serves: 6,
         description: 'Fall-apart tender slow cooked beef stew with hearty vegetables.',
         image: 'assets/images/slow-cooked-beef-stew.png',
-        ingredients: ['1.5 kg beef chuck, cut into 4cm cubes', '2 onions, chopped', '4 carrots, peeled and sliced', '4 cups beef stock', '3 garlic cloves, minced', '2 tbsp tomato paste', '2 bay leaves', '1 tsp dried thyme', 'Salt & pepper to taste'],
-        method: ['Season the beef generously with salt and pepper. Heat a large Dutch oven over medium-high heat, add oil, and brown the beef in batches until well seared. Set aside.', 'Reduce the heat to medium, add onions and carrots, and cook for 5 minutes until softened. Add garlic and cook for 1 minute.', 'Stir in the tomato paste and cook for 1 minute. Return the beef to the pot.', 'Pour in the beef stock, add bay leaves and thyme. Bring to a simmer, then cover and reduce the heat to low.', 'Cook for 3-4 hours, or until the beef is very tender and the sauce has thickened. Stir occasionally.', 'Taste and adjust seasoning. Remove the bay leaves before serving. Serve with mashed potatoes or crusty bread.']
+        ingredients: [
+            '1.5 kg beef chuck (casserole steak), cut into 4cm chunks',
+            '2 large onions, roughly chopped',
+            '4 carrots, peeled and cut into chunks',
+            '4 cups (1L) beef stock',
+            '3 cloves garlic, crushed',
+            '2 tbsp tomato paste (concentrate)',
+            '2 bay leaves',
+            '1 tsp dried thyme',
+            'Salt and pepper to taste',
+            '2 tbsp olive oil (for browning)'
+        ],
+        method: [
+            'Season the beef chunks generously with salt and pepper.',
+            'Heat the olive oil in a large Dutch oven or heavy-based pot over high heat. Brown the beef in batches, searing on all sides until a deep dark crust forms. This is the foundation of the stew\'s flavour. Transfer the beef to a plate.',
+            'Reduce the heat to medium. Add the onions and carrots to the pot and cook for 5-6 minutes until they begin to soften. Add the garlic and cook for 1 minute until fragrant.',
+            'Stir in the tomato paste and cook for 1 minute. Return the beef to the pot.',
+            'Pour in the beef stock, bay leaves, and thyme. Stir well, scraping the bottom of the pan to deglaze any browned bits.',
+            'Bring the stew to a simmer, then cover the pot with a lid and reduce the heat to the lowest possible setting.',
+            'Cook for 3-4 hours, stirring occasionally, until the beef is meltingly tender and the sauce has thickened. If the sauce is too thin, remove the lid for the last 30 minutes to reduce.',
+            'Taste and adjust seasoning before serving. Remove the bay leaves and serve the stew over creamy mashed potatoes or buttery egg noodles.'
+        ]
     },
     // 40
     {
@@ -521,8 +1281,24 @@ const RECIPES = [
         serves: 4,
         description: 'Crispy golden roast potatoes with garlic and fresh herbs.',
         image: 'assets/images/garlic-herb-roast-potatoes.png',
-        ingredients: ['1 kg potatoes (sebago or desiree), peeled and cut into chunks', '4 garlic cloves, crushed', '2 tbsp fresh rosemary and thyme, chopped', '2 tbsp olive oil', '1 tsp salt', '1/2 tsp black pepper'],
-        method: ['Preheat your oven to 200°C (fan-forced).', 'Parboil the potatoes in salted water for 8-10 minutes, until just tender on the outside. Drain well and steam dry for 5 minutes.', 'Return the potatoes to the pot, cover with a lid, and shake vigorously to rough up the edges – this creates extra crispiness.', 'In a large bowl, combine the potatoes, garlic, herbs, olive oil, salt and pepper. Toss well to coat.', 'Spread the potatoes in a single layer on a baking tray. Roast for 35-40 minutes, turning halfway, until golden and crispy.', 'Serve hot as a side dish.']
+        ingredients: [
+            '1 kg floury potatoes (e.g., Sebago or King Edward)',
+            '4 cloves garlic, crushed (skin on)',
+            '2 tbsp fresh rosemary and thyme leaves, chopped',
+            '2 tbsp olive oil (or duck fat for extra crispiness)',
+            '1 tsp sea salt',
+            '1/2 tsp freshly cracked black pepper'
+        ],
+        method: [
+            'Preheat your oven to 200°C (fan-forced). Place a baking tray in the oven to heat up with the oil in it (this ensures the potatoes crisp up immediately).',
+            'Peel the potatoes and cut them into large, even-sized chunks (about 5cm).',
+            'Place the potatoes in a large pot of cold salted water. Bring to a boil and cook for 8-10 minutes, just until the edges are starting to soften.',
+            'Drain the potatoes in a colander. Let them steam dry for 5 minutes to remove excess moisture.',
+            'Give the colander a good shake to rough up the edges of the potatoes. This creates a fluffy surface that will become extra crispy.',
+            'Carefully remove the hot tray from the oven. Add the potatoes, garlic, herbs, oil, salt, and pepper to the tray. Toss to coat evenly in the hot oil.',
+            'Spread the potatoes into a single layer with some space between them. Roast for 35-40 minutes, turning them over halfway through, until they are golden, crunchy, and crispy on the outside and fluffy on the inside.',
+            'Sprinkle with extra salt before serving. These are the perfect side dish for roasts or grilled meats.'
+        ]
     },
     // 41
     {
@@ -534,8 +1310,26 @@ const RECIPES = [
         serves: 10,
         description: 'No-bake mango cheesecake with a buttery biscuit base.',
         image: 'assets/images/mango-cheesecake.png',
-        ingredients: ['200g plain biscuits (like Digestives), crushed', '100g unsalted butter, melted', '500g cream cheese, softened', '1 cup thickened cream', '1/2 cup caster sugar', '2 mangoes, peeled and puréed', '1 tsp vanilla extract'],
-        method: ['Line the base of a 20cm springform tin with baking paper.', 'Combine the crushed biscuits and melted butter in a bowl. Press the mixture firmly into the base of the tin. Refrigerate while making the filling.', 'In a large bowl, beat the cream cheese and sugar until smooth. Add the vanilla and mango purée, and mix until combined.', 'In a separate bowl, whip the thickened cream to soft peaks. Fold the whipped cream into the cream cheese mixture gently, until no streaks remain.', 'Pour the filling over the biscuit base and smooth the top. Refrigerate for at least 4 hours, or overnight until set.', 'Serve chilled, topped with extra mango slices or passionfruit pulp.']
+        ingredients: [
+            '200g plain digestive biscuits, crushed',
+            '100g unsalted butter, melted',
+            '500g full-fat cream cheese, softened to room temperature',
+            '1 cup (250ml) thickened cream (35% fat)',
+            '1/2 cup (110g) caster sugar',
+            '2 large ripe mangoes, peeled and puréed (about 1.5 cups purée)',
+            '1 tsp vanilla extract'
+        ],
+        method: [
+            'Line the base of a 20cm springform cake tin with baking paper.',
+            'In a bowl, combine the crushed biscuits and melted butter. Press the mixture firmly into the base of the tin using the back of a spoon. Place in the fridge to chill while you prepare the filling.',
+            'In a large mixing bowl, beat the softened cream cheese and caster sugar together until smooth, creamy, and free of lumps.',
+            'Add the mango purée and vanilla extract to the cream cheese mixture and mix until fully combined and a beautiful orange colour.',
+            'In a separate bowl, whip the thickened cream until it holds stiff peaks (be careful not to over-whip it into butter).',
+            'Gently fold the whipped cream into the mango-cream cheese mixture using a large metal spoon. Fold carefully to retain the air from the whipped cream, ensuring a light, mousse-like texture.',
+            'Pour the filling over the chilled biscuit base and smooth the top with a spatula.',
+            'Cover the tin with plastic wrap and refrigerate for at least 4 hours, preferably overnight, until completely set.',
+            'To serve, remove the cheesecake from the tin. Top with extra fresh mango slices or passionfruit pulp for a beautiful presentation.'
+        ]
     },
     // 42
     {
@@ -547,8 +1341,22 @@ const RECIPES = [
         serves: 12,
         description: 'Tangy passionfruit slice with a coconut biscuit base.',
         image: 'assets/images/passionfruit-slice.png',
-        ingredients: ['200g plain biscuits, crushed', '100g unsalted butter, melted', '1 cup icing sugar', '1/2 cup passionfruit pulp (about 4-5 passionfruit)', '1 cup desiccated coconut'],
-        method: ['Line a 20cm x 30cm slice tin with baking paper.', 'Combine the crushed biscuits and melted butter in a bowl. Press into the base of the tin and refrigerate while making the topping.', 'In a bowl, mix the icing sugar, passionfruit pulp and coconut until well combined.', 'Spread the passionfruit mixture evenly over the biscuit base.', 'Refrigerate for at least 2 hours, or until firm. Cut into slices and serve chilled.']
+        ingredients: [
+            '200g plain biscuits (e.g., Arnott\'s Marie), crushed to fine crumbs',
+            '100g unsalted butter, melted',
+            '1 cup (150g) icing sugar (confectioners sugar)',
+            '1/2 cup (125ml) passionfruit pulp (from about 4-5 passionfruit)',
+            '1 cup (90g) desiccated coconut'
+        ],
+        method: [
+            'Line a 20cm x 30cm slice tin with baking paper, leaving an overhang on two sides for easy lifting.',
+            'Combine the crushed biscuits and melted butter in a bowl until the mixture looks like wet sand. Press this into the base of the tin and chill in the fridge while you make the topping.',
+            'In a separate bowl, sift the icing sugar to remove any lumps. Add the passionfruit pulp and desiccated coconut. Mix until a thick, sticky paste forms.',
+            'Spread the passionfruit mixture evenly over the chilled biscuit base, smoothing it to the edges.',
+            'Refrigerate for at least 2 hours, or until the slice is firm to the touch.',
+            'Lift the slice out of the tin using the paper overhang. Use a large, sharp knife to cut it into 12 neat squares or fingers.',
+            'Store the slice in the refrigerator in an airtight container. Serve chilled for the best texture.'
+        ]
     },
     // 43
     {
@@ -560,8 +1368,23 @@ const RECIPES = [
         serves: 8,
         description: 'Classic apple crumble with a golden oat topping.',
         image: 'assets/images/apple-crumble.png',
-        ingredients: ['6 apples (Granny Smith or Pink Lady), peeled and sliced', '1/2 cup caster sugar', '1 cup plain flour', '1 cup rolled oats', '125g unsalted butter, cold and cubed', '1 tsp ground cinnamon'],
-        method: ['Preheat your oven to 180°C (fan-forced). Grease a 20cm x 25cm baking dish.', 'Place the sliced apples in the baking dish and sprinkle with half the sugar and half the cinnamon.', 'In a large bowl, combine the flour, rolled oats, remaining sugar and cinnamon. Rub in the cold butter cubes with your fingers until the mixture resembles coarse breadcrumbs.', 'Sprinkle the crumble topping evenly over the apples.', 'Bake for 35-40 minutes, until the topping is golden and the apple filling is bubbling.', 'Serve warm with custard, cream or vanilla ice cream.']
+        ingredients: [
+            '6 large Granny Smith or Pink Lady apples, peeled, cored and sliced',
+            '1/2 cup (100g) caster sugar',
+            '1 cup (150g) plain flour',
+            '1 cup (90g) rolled oats',
+            '125g unsalted butter, cold and cubed',
+            '1 tsp ground cinnamon'
+        ],
+        method: [
+            'Preheat your oven to 180°C (fan-forced). Lightly grease a 20cm x 25cm (or similar) baking dish.',
+            'Place the sliced apples in the baking dish. Sprinkle with half of the sugar and half of the cinnamon. Toss the apples to coat them evenly.',
+            'In a large bowl, combine the plain flour, rolled oats, the remaining sugar, and the remaining cinnamon.',
+            'Add the cold, cubed butter to the flour mixture. Rub the butter into the dry ingredients using your fingertips until the mixture resembles coarse breadcrumbs (with some larger chunks for texture).',
+            'Sprinkle the crumble topping evenly over the apples, ensuring it covers the fruit completely.',
+            'Bake for 35-40 minutes, or until the crumble is a deep golden brown and the apple juices are bubbling up at the edges.',
+            'Remove from the oven and let it rest for 5-10 minutes. Serve the apple crumble warm with a generous scoop of vanilla ice cream, thick custard, or pouring cream.'
+        ]
     },
     // 44
     {
@@ -573,8 +1396,28 @@ const RECIPES = [
         serves: 8,
         description: 'Rich and sticky date pudding with caramel sauce.',
         image: 'assets/images/sticky-date-pudding.png',
-        ingredients: ['200g pitted dates, chopped', '1 cup boiling water', '125g unsalted butter, softened', '1 cup brown sugar', '2 eggs', '1 1/2 cups plain flour', '1 tsp baking soda', '1 tsp vanilla extract'],
-        method: ['Preheat your oven to 180°C (fan-forced). Grease a 20cm square cake tin.', 'Place the chopped dates and baking soda in a bowl, pour over the boiling water and set aside for 10 minutes to soften.', 'In a large bowl, cream the butter and brown sugar until pale and fluffy. Add the eggs one at a time, beating well after each addition.', 'Fold in the flour, vanilla, and the date mixture (including the water) until just combined.', 'Pour the batter into the prepared tin and smooth the top. Bake for 30-35 minutes, until a skewer inserted comes out clean.', 'While the pudding bakes, make the sauce: in a small saucepan, heat 1/2 cup brown sugar, 1/2 cup cream and 1/4 cup butter until melted and smooth.', 'Serve the pudding warm with the caramel sauce drizzled over.']
+        ingredients: [
+            '200g pitted dates, roughly chopped',
+            '1 cup (250ml) boiling water',
+            '125g unsalted butter, softened',
+            '1 cup (200g) brown sugar, firmly packed',
+            '2 large eggs',
+            '1 1/2 cups (190g) plain flour',
+            '1 tsp baking soda (bicarb soda)',
+            '1 tsp vanilla extract',
+            'For the sauce: 1/2 cup (100g) brown sugar, 1/2 cup (125ml) cream, 1/4 cup (60g) butter'
+        ],
+        method: [
+            'Preheat your oven to 180°C (fan-forced). Grease a 20cm square or round cake tin.',
+            'Place the chopped dates in a heatproof bowl. Sprinkle the baking soda over them, then pour the boiling water over the top. Set aside for 10 minutes to soften.',
+            'In a large mixing bowl, beat the softened butter and brown sugar together with an electric mixer until light and fluffy (about 3-4 minutes).',
+            'Add the eggs one at a time, beating well after each addition. Stir in the vanilla.',
+            'Gently fold in the flour using a metal spoon. Pour in the date mixture (including the liquid) and fold until just combined. The batter will be quite wet.',
+            'Pour the batter into the prepared tin. Bake for 30-35 minutes, or until a skewer inserted into the centre comes out clean.',
+            'While the pudding bakes, make the sauce: combine the brown sugar, cream, and butter in a small saucepan over medium heat. Stir until melted and smooth. Bring to a gentle simmer for 2-3 minutes.',
+            'When the pudding is done, prick it all over with a skewer and pour half of the sauce over the warm pudding, letting it soak in.',
+            'Serve the sticky date pudding warm in bowls, drizzled with the remaining caramel sauce and a scoop of vanilla ice cream.'
+        ]
     },
     // 45
     {
@@ -586,8 +1429,22 @@ const RECIPES = [
         serves: 4,
         description: 'Chicken with a zesty native Australian lemon myrtle marinade.',
         image: 'assets/images/lemon-myrtle-chicken.png',
-        ingredients: ['4 chicken breasts (or 8 thighs)', '2 tbsp lemon myrtle leaves (or zest of 2 lemons)', '2 garlic cloves, minced', '1/4 cup olive oil', 'Salt & pepper to taste'],
-        method: ['In a bowl, combine the lemon myrtle, garlic, olive oil, salt and pepper to make a paste.', 'Coat the chicken pieces thoroughly with the marinade. Cover and refrigerate for 30 minutes to 2 hours.', 'Preheat a grill or BBQ to medium-high heat. Grill the chicken for 5-6 minutes per side (depending on thickness), until cooked through and charred.', 'Rest for 5 minutes before serving. Serve with a squeeze of lemon and a fresh salad.']
+        ingredients: [
+            '4 chicken breasts or 8 thigh fillets (bone-in for more flavour)',
+            '2 tbsp dried lemon myrtle leaves (or zest of 2 large lemons)',
+            '2 cloves garlic, crushed',
+            '1/4 cup (60ml) extra virgin olive oil',
+            '1 tsp sea salt',
+            '1/2 tsp freshly ground black pepper'
+        ],
+        method: [
+            'If using lemon myrtle leaves, grind them lightly in a mortar and pestle to release their oils. Combine them in a bowl with the garlic, olive oil, salt, and pepper to form a thick paste.',
+            'Score the chicken pieces lightly with a knife to allow the marinade to penetrate. Rub the lemon myrtle paste all over the chicken, ensuring it is well covered.',
+            'Cover the chicken and place it in the refrigerator to marinate for at least 30 minutes, or up to 4 hours for a more intense flavour.',
+            'Preheat a BBQ or chargrill pan to medium-high heat. Cook the chicken for 5-6 minutes on each side (thighs) or 6-8 minutes (breasts), until the internal temperature reaches 75°C and the outside is charred and golden.',
+            'Remove the chicken from the heat and let it rest for 5 minutes before serving.',
+            'Serve the lemon myrtle chicken with a fresh green salad, a squeeze of lemon juice, and a dollop of natural yoghurt.'
+        ]
     },
     // 46
     {
@@ -599,8 +1456,22 @@ const RECIPES = [
         serves: 4,
         description: 'Perfectly grilled salmon with a medley of fresh herbs and lemon.',
         image: 'assets/images/grilled-salmon-with-herbs.png',
-        ingredients: ['4 salmon fillets', '2 tbsp olive oil', '1 lemon, sliced', 'Fresh dill, parsley and chives, chopped', 'Salt & pepper to taste'],
-        method: ['Pat salmon fillets dry with paper towels. Season with salt and pepper on both sides.', 'Brush each fillet with olive oil.', 'Preheat a grill or barbecue to medium-high heat. Place the salmon skin-side down and cook for 5-6 minutes until the skin is crisp and the fish is easily flipped.', 'Flip and cook for another 3-4 minutes, depending on thickness, until the salmon is cooked to your liking.', 'Sprinkle with fresh herbs and serve with lemon slices on the side.']
+        ingredients: [
+            '4 salmon fillets (about 150g each, skin on)',
+            '2 tbsp light olive oil',
+            '1 lemon, sliced into rounds',
+            'Fresh dill, parsley, and chives, finely chopped (about 1/4 cup total)',
+            'Sea salt and freshly ground black pepper'
+        ],
+        method: [
+            'Remove the salmon fillets from the fridge 15 minutes before cooking to take the chill off. Pat them completely dry with paper towels.',
+            'Brush both sides of the salmon fillets with olive oil. Season generously with salt and pepper on both sides, especially on the skin.',
+            'Preheat a heavy-based grill pan or BBQ to medium-high heat. Ensure the grill is very hot and lightly oiled.',
+            'Place the salmon fillets onto the grill, skin-side down. Cook for 5-6 minutes without moving them, until the skin is crispy and charred and the fish releases easily from the grill.',
+            'Carefully flip the salmon using a fish slice. Cook for a further 3-4 minutes on the flesh side, depending on the thickness, until the fish is cooked to your liking (opaque and flakes easily).',
+            'In the last minute of cooking, place the lemon slices on the grill to char slightly.',
+            'Transfer the salmon to a serving platter. Sprinkle generously with the fresh herbs and arrange the charred lemon slices on the side. Serve immediately with a crisp salad or steamed asparagus.'
+        ]
     },
     // 47
     {
@@ -612,8 +1483,26 @@ const RECIPES = [
         serves: 4,
         description: 'Quick and easy chicken fried rice with egg, peas, and carrots.',
         image: 'assets/images/chicken-fried-rice.png',
-        ingredients: ['3 cups cooked and cooled rice (day-old works best)', '2 chicken breasts, diced', '2 eggs, beaten', '1 onion, diced', '1/2 cup frozen peas', '1/2 cup carrots, diced', '3 tbsp soy sauce', '2 tbsp vegetable oil', '2 spring onions, sliced'],
-        method: ['Heat 1 tablespoon of oil in a wok or large frying pan over high heat. Pour in the beaten eggs and scramble until cooked. Remove and set aside.', 'Add the remaining oil to the pan, then add the chicken and cook until golden and cooked through. Remove and set aside.', 'Add the onion, peas and carrots to the pan. Stir-fry for 2-3 minutes until slightly softened.', 'Add the cooked rice and soy sauce, stirring well to combine. Return the scrambled egg and chicken to the pan.', 'Stir-fry for a further 2-3 minutes until everything is heated through. Add spring onions and serve hot.']
+        ingredients: [
+            '3 cups cooked and cooled jasmine rice (day-old works best)',
+            '2 chicken breasts, diced into small cubes',
+            '2 large eggs, lightly beaten',
+            '1 brown onion, diced',
+            '1/2 cup frozen peas',
+            '1/2 cup carrot, finely diced',
+            '3 tbsp soy sauce (light or tamari)',
+            '2 tbsp vegetable oil (sesame oil for finishing)',
+            '2 spring onions, sliced (for garnish)'
+        ],
+        method: [
+            'Break up any lumps in the cold rice with your fingers and set aside.',
+            'Heat a wok or large frying pan over high heat. Add 1 tablespoon of oil. When smoking hot, pour in the beaten eggs and scramble them quickly. Remove the eggs from the wok and set aside.',
+            'Add the remaining 1 tablespoon of oil to the wok. Add the diced chicken and cook for 4-5 minutes, stirring constantly, until golden and cooked through. Remove the chicken and set aside with the eggs.',
+            'Add the onion, peas, and carrot to the wok. Stir-fry for 2-3 minutes until the vegetables are slightly tender but still crisp.',
+            'Add the cold rice and soy sauce to the wok. Increase the heat to high and stir-fry for 3-4 minutes, tossing the rice constantly until it is heated through and slightly toasted.',
+            'Return the scrambled egg and chicken to the wok. Toss everything together to combine. Stir-fry for another 1-2 minutes until everything is piping hot.',
+            'Remove from the heat, garnish with sliced spring onions, and serve immediately.'
+        ]
     },
     // 48
     {
@@ -625,8 +1514,22 @@ const RECIPES = [
         serves: 6,
         description: 'Creamy Australian-style coleslaw with cabbage and carrot.',
         image: 'assets/images/classic-coleslaw.png',
-        ingredients: ['1/2 green cabbage, finely shredded', '2 carrots, grated', '1/2 cup mayonnaise', '2 tbsp apple cider vinegar', '1 tbsp sugar', 'Salt & pepper to taste'],
-        method: ['In a large bowl, combine the shredded cabbage and grated carrots.', 'In a separate small bowl, whisk together the mayonnaise, vinegar, sugar, salt and pepper until smooth.', 'Pour the dressing over the vegetables and toss well to coat evenly.', 'Cover and refrigerate for at least 30 minutes before serving, to allow the flavours to meld.']
+        ingredients: [
+            '1/2 large green cabbage, cored and finely shredded',
+            '2 large carrots, peeled and grated',
+            '1/2 cup (120g) whole-egg mayonnaise',
+            '2 tbsp apple cider vinegar (or white vinegar)',
+            '1 tbsp caster sugar',
+            'Salt and freshly ground black pepper to taste'
+        ],
+        method: [
+            'Place the finely shredded cabbage and grated carrot into a large colander. Sprinkle with a pinch of salt and let them sit for 10 minutes to draw out excess moisture.',
+            'Press the vegetables with a paper towel to remove the excess liquid, then transfer them to a large salad bowl. This step prevents the coleslaw from becoming watery.',
+            'In a small bowl, whisk together the mayonnaise, apple cider vinegar, sugar, salt, and pepper until smooth and creamy.',
+            'Pour the dressing over the cabbage and carrot mixture. Toss well with tongs until all the vegetables are evenly coated.',
+            'Taste and adjust the seasoning with more salt or vinegar if needed.',
+            'Cover the bowl and refrigerate for at least 30 minutes before serving. This allows the flavours to meld and the cabbage to soften slightly. Serve chilled.'
+        ]
     },
     // 49
     {
@@ -638,8 +1541,24 @@ const RECIPES = [
         serves: 4,
         description: 'Garlic prawn linguine with a touch of chilli and lemon.',
         image: 'assets/images/prawn-linguine.png',
-        ingredients: ['500g linguine pasta', '500g large prawns, peeled and deveined', '4 garlic cloves, sliced', '1 red chilli, finely chopped (optional)', '1/2 cup olive oil', 'Juice of 1 lemon', '1/2 cup fresh parsley, chopped', 'Salt & pepper to taste'],
-        method: ['Cook the linguine in a large pot of salted boiling water according to package directions until al dente. Reserve 1/2 cup of pasta water.', 'While the pasta cooks, heat the olive oil in a large skillet over medium heat. Add the garlic and chilli (if using) and cook until fragrant, about 1 minute.', 'Add the prawns to the pan and cook for 2-3 minutes per side until pink and cooked through.', 'Drain the pasta and add it to the skillet with the prawns. Pour in the lemon juice and toss to combine. If the sauce seems dry, add a splash of the reserved pasta water.', 'Season with salt and pepper, and toss through the fresh parsley. Serve immediately.']
+        ingredients: [
+            '500g linguine pasta (or spaghetti)',
+            '500g large prawns, peeled and deveined (tails on optional)',
+            '4 cloves garlic, finely sliced',
+            '1 red chilli, finely chopped (or 1/2 tsp chilli flakes)',
+            '1/2 cup (125ml) extra virgin olive oil',
+            'Juice of 1 large lemon',
+            '1/2 cup fresh parsley, roughly chopped',
+            'Salt and freshly ground black pepper'
+        ],
+        method: [
+            'Bring a large pot of salted water to a rolling boil. Add the linguine and cook according to package directions until al dente. Reserve 1/2 cup of pasta water before draining.',
+            'While the pasta cooks, heat the olive oil in a large, wide skillet over medium heat. Add the sliced garlic and chilli and cook gently for 1-2 minutes until the garlic is fragrant but has not taken on any colour (don\'t let it burn!).',
+            'Increase the heat to high. Add the prawns to the skillet in a single layer and cook for 2-3 minutes on each side, until they are pink, curled, and cooked through.',
+            'Add the cooked linguine to the skillet with the prawns. Pour in the lemon juice and a splash of the reserved pasta water to create a silky sauce.',
+            'Toss the pasta vigorously to combine, coating the noodles in the garlic and chilli oil. Add the fresh parsley and toss again.',
+            'Season generously with salt and pepper. Serve immediately in warm pasta bowls with an extra wedge of lemon.'
+        ]
     },
     // 50
     {
@@ -651,8 +1570,25 @@ const RECIPES = [
         serves: 16,
         description: 'Fudgy brownies loaded with crunchy macadamia nuts.',
         image: 'assets/images/macadamia-brownies.png',
-        ingredients: ['200g dark chocolate, chopped', '150g unsalted butter', '1 cup caster sugar', '3 eggs', '1 cup plain flour', '1 cup macadamia nuts, roughly chopped', '1 tsp vanilla extract'],
-        method: ['Preheat your oven to 180°C (fan-forced). Grease and line a 20cm x 20cm square tin.', 'Melt the chocolate and butter together in a heatproof bowl over a saucepan of simmering water (or in the microwave in 30-second bursts). Stir until smooth. Allow to cool slightly.', 'Whisk in the sugar and vanilla. Add the eggs one at a time, whisking well after each addition.', 'Fold in the flour and chopped macadamias until just combined – do not overmix.', 'Pour the batter into the prepared tin and smooth the top. Bake for 25-30 minutes, until the top is cracked and a skewer inserted comes out with a few moist crumbs attached.', 'Allow to cool completely in the tin before cutting into squares.']
+        ingredients: [
+            '200g dark chocolate (at least 60% cocoa), chopped',
+            '150g unsalted butter, diced',
+            '1 cup (200g) caster sugar',
+            '3 large eggs, at room temperature',
+            '1 cup (150g) plain flour',
+            '1 cup (120g) macadamia nuts, roughly chopped (toasted if possible)',
+            '1 tsp vanilla extract'
+        ],
+        method: [
+            'Preheat your oven to 180°C (fan-forced). Grease and line a 20cm x 20cm square baking tin with baking paper.',
+            'Place the dark chocolate and diced butter in a heatproof bowl. Set the bowl over a saucepan of barely simmering water (ensure the bowl doesn\'t touch the water). Stir gently until the mixture is melted and completely smooth. Alternatively, melt in the microwave in 30-second bursts.',
+            'Remove the bowl from the heat. Whisk in the caster sugar and vanilla extract until combined.',
+            'Add the eggs one at a time, whisking vigorously after each addition. The mixture will become thick, glossy, and smooth.',
+            'Gently fold in the plain flour until just combined. Be careful not to overmix. Fold in the toasted macadamia nuts, reserving a few for the top.',
+            'Pour the brownie batter into the prepared tin and smooth the top with a spatula. Scatter the reserved macadamia nuts over the surface.',
+            'Bake for 25-30 minutes. The brownies are done when the top is shiny and cracked, and a skewer inserted into the centre comes out with a few moist crumbs attached (not wet batter).',
+            'Allow the brownies to cool completely in the tin before lifting out and cutting into 16 generous squares. The flavour improves as they cool.'
+        ]
     }
 ];
 
