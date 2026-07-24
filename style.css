@@ -1064,3 +1064,99 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 18px;
     }
 }
+/* ===== TESTIMONIALS - FOTOĞRAFLI YORUM KARTLARI ===== */
+.testimonial-card {
+    background: var(--white);
+    padding: 28px 24px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+    position: relative;
+    border-top: 4px solid var(--accent);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Fotoğraf (Avatar) */
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    margin: 0 auto 12px auto;
+    display: block;
+}
+
+.testimonial-avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--cream);
+    border: 3px solid var(--accent-light);
+    margin: 0 auto 12px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: var(--text-light);
+}
+
+.testimonial-card .stars {
+    color: var(--accent);
+    font-size: 20px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.testimonial-card p {
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.testimonial-card p strong {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.testimonial-author {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 15px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.testimonial-tag {
+    display: inline-block;
+    background: var(--cream);
+    color: var(--text-light);
+    font-size: 12px;
+    padding: 2px 14px;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ===== RESPONSIVE (Mobil) ===== */
+@media (max-width: 768px) {
+    .testimonial-avatar {
+        width: 64px;
+        height: 64px;
+    }
+    .testimonial-avatar-placeholder {
+        width: 64px;
+        height: 64px;
+        font-size: 32px;
+    }
+    .testimonial-card p {
+        font-size: 14px;
+    }
+}
