@@ -1,4 +1,4 @@
-// ===== KOREVIR RECIPES - 50 RECIPES (UZUN METHODLAR, .PNG GÖRSELLER) =====
+// ===== KOREVIR RECIPES - 50 RECIPES =====
 
 const AMAZON_LINK = '#'; // Amazon ürün linkinizi buraya ekleyin
 const AMAZON_TEXT = '🛒 Amazon\'da Satın Al';
@@ -1689,21 +1689,6 @@ function showAmazon() {
         window.open(AMAZON_LINK, '_blank');
     }
 }
-
-// ===== NEWSLETTER FORM =====
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('newsletter-form');
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const emailInput = this.querySelector('input[type="email"]');
-            if (emailInput && emailInput.value) {
-                alert('🎉 Thank you! You\'ve been added to our mailing list.');
-                emailInput.value = '';
-            }
-        });
-    }
-});
 
 // ===== MOBILE MENU =====
 document.addEventListener('DOMContentLoaded', function() {
