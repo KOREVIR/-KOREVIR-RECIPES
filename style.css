@@ -367,9 +367,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .recipe-card img {
     width: 100%;
-    height: 220px;
+    height: 180px;  /* 220 → 180 */
     object-fit: cover;
-    background: var(--cream);
+    object-position: center; /* Odak noktası merkez */
+}
 }
 
 .recipe-info {
