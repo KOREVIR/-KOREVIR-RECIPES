@@ -367,10 +367,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .recipe-card img {
     width: 100%;
-    height: 180px;  /* 220 → 180 */
+    height: 180px;
     object-fit: cover;
-    object-position: center; /* Odak noktası merkez */
-}
+    object-position: center;
+    background: var(--cream);
 }
 
 .recipe-info {
@@ -515,6 +515,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 250px;
     object-fit: cover;
+    object-position: center;
     border-radius: 12px;
     margin-bottom: 20px;
     background: var(--cream);
@@ -885,7 +886,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .recipe-card img {
-        height: 180px;
+        height: 150px;
     }
 
     .modal-content {
