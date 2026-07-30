@@ -13,7 +13,6 @@ const RECIPES = [
         cook: '30 min',
         serves: 4,
         description: 'A crispy golden chicken breast topped with rich tomato sauce and melted mozzarella cheese.',
-        image: 'assets/images/chicken-parmigiana.png',
         ingredients: [
             '4 chicken breast fillets (about 180g each)',
             '1 cup plain flour (for dredging)',
@@ -51,7 +50,6 @@ const RECIPES = [
         cook: '25 min',
         serves: 6,
         description: 'A classic Aussie-style meat pie with a rich, savoury filling wrapped in golden, flaky pastry.',
-        image: 'assets/images/meat-pie.png',
         ingredients: [
             '500g premium beef mince (at least 15% fat for flavour)',
             '1 large brown onion, finely chopped',
@@ -92,7 +90,6 @@ const RECIPES = [
         cook: '15 min',
         serves: 4,
         description: 'A light and flavourful Australian favourite with tender barramundi and a zesty lemon butter sauce.',
-        image: 'assets/images/barramundi-with-lemon-butter.png',
         ingredients: [
             '4 barramundi fillets (skin on, about 180g each)',
             'Sea salt & freshly ground white pepper',
@@ -126,7 +123,6 @@ const RECIPES = [
         cook: '35 min',
         serves: 12,
         description: "Australia's iconic sponge cake squares coated in chocolate sauce and rolled in desiccated coconut.",
-        image: 'assets/images/lamingtons.png',
         ingredients: [
             '125g unsalted butter (room temperature)',
             '1 cup (220g) caster sugar',
@@ -166,7 +162,6 @@ const RECIPES = [
         cook: '5 min',
         serves: 2,
         description: 'A true Aussie classic – crispy toast with a thin layer of salty, savoury Vegemite. Simple, iconic, and delicious.',
-        image: 'assets/images/vegemite-on-toast.png',
         ingredients: [
             '4 slices of high-quality white or wholemeal bread (thick-sliced)',
             'Unsalted butter, softened (or salted butter if preferred)',
@@ -190,7 +185,6 @@ const RECIPES = [
         cook: '90 min',
         serves: 8,
         description: 'A light and airy meringue with a crisp crust and soft, marshmallow centre, topped with whipped cream and fresh fruits.',
-        image: 'assets/images/pavlova.png',
         ingredients: [
             '4 large egg whites (at room temperature)',
             '1 cup (220g) caster sugar (superfine)',
@@ -224,7 +218,6 @@ const RECIPES = [
         cook: '20 min',
         serves: 4,
         description: "Australia's favourite crispy battered fish served with golden chips and tartare sauce.",
-        image: 'assets/images/fish-and-chips.png',
         ingredients: [
             '600g firm white fish fillets (cod, hoki, or barramundi)',
             '1 cup (150g) plain flour',
@@ -262,7 +255,6 @@ const RECIPES = [
         cook: '20 min',
         serves: 4,
         description: 'A classic Aussie beef burger with juicy beef patty, melted cheese, fresh veggies and tangy beetroot.',
-        image: 'assets/images/aussie-beef-burger.png',
         ingredients: [
             '500g beef mince (80/20 lean-to-fat ratio for best flavour)',
             '1 tbsp BBQ sauce',
@@ -298,7 +290,6 @@ const RECIPES = [
         cook: '25 min',
         serves: 12,
         description: 'A classic Aussie sausage roll with seasoned beef sausage meat wrapped in golden, flaky pastry.',
-        image: 'assets/images/sausage-roll.png',
         ingredients: [
             '500g beef mince (or sausage meat)',
             '1 small onion, very finely chopped',
@@ -333,7 +324,6 @@ const RECIPES = [
         cook: '3 min',
         serves: 4,
         description: 'A retro classic done right. Juicy prawns with a creamy, tangy sauce, crisp lettuce and a hint of lemon.',
-        image: 'assets/images/prawn-cocktail.png',
         ingredients: [
             '500g large green prawns (or cooked prawns, peeled)',
             '1 tbsp lemon juice',
@@ -369,7 +359,6 @@ const RECIPES = [
         cook: '15 min',
         serves: 4,
         description: 'A true Aussie classic. Golden, crispy and perfectly seasoned. Tender chicken in a crunchy coating.',
-        image: 'assets/images/chicken-schnitzel.png',
         ingredients: [
             '4 chicken breast fillets (skinless, boneless)',
             '1/2 cup (75g) plain flour',
@@ -403,7 +392,6 @@ const RECIPES = [
         cook: '20 min',
         serves: 12,
         description: 'Crispy on the outside, soft and fluffy on the inside. A true Aussie favourite, perfect as a side or snack.',
-        image: 'assets/images/potato-cakes.png',
         ingredients: [
             '1 kg floury potatoes (e.g., Sebago or King Edward), peeled and chopped',
             '1/2 cup (75g) plain flour',
@@ -440,7 +428,6 @@ const RECIPES = [
         cook: '90 min',
         serves: 6,
         description: 'A timeless classic. Tender, juicy lamb infused with garlic and rosemary, roasted to perfection.',
-        image: 'assets/images/roast-lamb-with-rosemary.png',
         ingredients: [
             '1.5 kg lamb leg (bone-in or boneless, fat cap on)',
             '4 cloves garlic, cut into slivers or minced',
@@ -476,7 +463,6 @@ const RECIPES = [
         cook: '18 min',
         serves: 4,
         description: 'Crispy, golden and full of flavour. Delicate white fish topped with a crunchy macadamia crust.',
-        image: 'assets/images/macadamia-crusted-fish.png',
         ingredients: [
             '600g white fish fillets (Barramundi, Snapper, or Ling)',
             '1 tbsp extra virgin olive oil',
@@ -511,7 +497,6 @@ const RECIPES = [
         cook: '30 min',
         serves: 6,
         description: 'A warm and creamy Australian pumpkin soup made with simple ingredients and packed with flavour.',
-        image: 'assets/images/pumpkin-soup.png',
         ingredients: [
             '1 kg butternut or Kent pumpkin, peeled, seeded and chopped',
             '1 large brown onion, roughly chopped',
@@ -543,7 +528,6 @@ const RECIPES = [
         cook: '55 min',
         serves: 10,
         description: 'Moist, flavourful and perfectly sweet. A classic homemade favourite that\'s loved across Australia.',
-        image: 'assets/images/banana-bread.png',
         ingredients: [
             '3 very ripe bananas, mashed (about 1 1/2 cups)',
             '1/3 cup (80ml) vegetable oil or melted unsalted butter',
@@ -578,7 +562,6 @@ const RECIPES = [
         cook: '10 min',
         serves: 4,
         description: 'Lean, tender and packed with protein. A true Aussie delicacy – full of flavour and perfect on the grill.',
-        image: 'assets/images/grilled-kangaroo-steak.png',
         ingredients: [
             '4 kangaroo steaks (about 150-180g each, 2-2.5cm thick)',
             '2 tbsp light olive oil',
@@ -609,7 +592,6 @@ const RECIPES = [
         cook: '20 min',
         serves: 12,
         description: "An iconic Aussie favourite! Soft, fluffy scrolls with a rich Vegemite and cheesy filling.",
-        image: 'assets/images/vegemite-scrolls.png',
         ingredients: [
             '3 cups (375g) plain flour (bread flour is best)',
             '1 tbsp caster sugar',
@@ -641,7 +623,6 @@ const RECIPES = [
         cook: '50 min',
         serves: 20,
         description: 'A bold and flavourful relish made with native Australian ingredients. Perfect with BBQ meats.',
-        image: 'assets/images/australian-bush-tomato-relish.png',
         ingredients: [
             '500g bush tomatoes (or ripe cherry tomatoes), finely chopped',
             '1 red capsicum (bell pepper), finely diced',
@@ -675,7 +656,6 @@ const RECIPES = [
         cook: '20 min',
         serves: 20,
         description: 'A classic Aussie treat with three irresistible layers – crunchy biscuit base, gooey caramel centre and smooth chocolate topping.',
-        image: 'assets/images/chocolate-caramel-slice.png',
         ingredients: [
             '250g plain tea biscuits (or digestive biscuits), crushed to fine crumbs',
             '125g unsalted butter, melted',
@@ -709,7 +689,6 @@ const RECIPES = [
         cook: '10 min',
         serves: 4,
         description: 'Juicy prawns sautéed in rich garlic butter with a hint of lemon. Quick, simple, and full of flavour.',
-        image: 'assets/images/garlic-butter-prawns.png',
         ingredients: [
             '500g large king prawns, peeled and deveined (tails left on)',
             '4 tbsp (60g) unsalted butter, cut into cubes',
@@ -741,7 +720,6 @@ const RECIPES = [
         cook: '0 min',
         serves: 4,
         description: 'A classic Caesar salad wrapped in a soft tortilla with grilled chicken, cos lettuce, and creamy dressing.',
-        image: 'assets/images/chicken-caesar-wrap.png',
         ingredients: [
             '2 large chicken breasts, grilled or pan-seared and cooled',
             '4 large flour tortillas (burrito size)',
@@ -767,7 +745,6 @@ const RECIPES = [
         cook: '12 min',
         serves: 4,
         description: 'Perfectly grilled snapper with a hint of lemon and herbs.',
-        image: 'assets/images/grilled-snapper.png',
         ingredients: [
             '4 whole snapper fillets (skin on, about 180g each)',
             '2 tbsp extra virgin olive oil',
@@ -796,7 +773,6 @@ const RECIPES = [
         cook: '15 min',
         serves: 6,
         description: 'Aussie-style beef patties with herbs and spices, perfect for the BBQ.',
-        image: 'assets/images/beef-rissoles.png',
         ingredients: [
             '500g beef mince',
             '1 large onion, finely chopped',
@@ -825,7 +801,6 @@ const RECIPES = [
         cook: '10 min',
         serves: 6,
         description: 'Crispy golden corn fritters, perfect for breakfast or brunch.',
-        image: 'assets/images/corn-fritters.png',
         ingredients: [
             '2 cups (300g) sweetcorn kernels (drained if canned)',
             '1 cup (150g) plain flour',
@@ -857,7 +832,6 @@ const RECIPES = [
         cook: '30 min',
         serves: 8,
         description: 'Traditional Australian bush bread, simple and hearty.',
-        image: 'assets/images/damper-bread.png',
         ingredients: [
             '3 cups (375g) self-raising flour',
             '1 tsp fine salt',
@@ -885,7 +859,6 @@ const RECIPES = [
         cook: '15 min',
         serves: 24,
         description: 'Classic Australian ANZAC biscuits, chewy and full of oats and coconut.',
-        image: 'assets/images/anzac-biscuits.png',
         ingredients: [
             '1 cup (90g) rolled oats',
             '1 cup (150g) plain flour',
@@ -917,7 +890,6 @@ const RECIPES = [
         cook: '2 hours 15 min',
         serves: 6,
         description: 'Rich, hearty beef pie with a deep, malty flavour from Guinness, wrapped in golden puff pastry.',
-        image: 'assets/images/beef-and-guinness-pie.png',
         ingredients: [
             '800g beef chuck, cut into 3cm cubes',
             '1 large onion, chopped',
@@ -953,7 +925,6 @@ const RECIPES = [
         cook: '5 min',
         serves: 4,
         description: 'Crispy salt and pepper squid with a zesty dipping sauce.',
-        image: 'assets/images/salt-and-pepper-squid.png',
         ingredients: [
             '500g squid tubes, cleaned and sliced into rings (1.5cm thick)',
             '1 cup (120g) cornflour',
@@ -982,7 +953,6 @@ const RECIPES = [
         cook: '10 min',
         serves: 4,
         description: 'Grilled chicken skewers with a creamy peanut satay sauce.',
-        image: 'assets/images/chicken-satay-skewers.png',
         ingredients: [
             '500g chicken thigh fillets, cut into 2cm strips',
             '1/4 cup (60ml) soy sauce',
@@ -1012,7 +982,6 @@ const RECIPES = [
         cook: '20 min',
         serves: 4,
         description: 'Sticky honey soy chicken with garlic and ginger.',
-        image: 'assets/images/honey-soy-chicken.png',
         ingredients: [
             '4 chicken thighs (bone-in, skin-on preferred for flavour)',
             '1/4 cup (60ml) soy sauce (light or all-purpose)',
@@ -1041,7 +1010,6 @@ const RECIPES = [
         cook: '2 hours',
         serves: 4,
         description: 'Slow-cooked BBQ pork ribs, tender and full of smoky flavour.',
-        image: 'assets/images/bbq-pork-ribs.png',
         ingredients: [
             '1.5 kg American-style pork ribs (baby back or St. Louis)',
             '1 cup (250ml) BBQ sauce (your favourite brand)',
@@ -1073,7 +1041,6 @@ const RECIPES = [
         cook: '10 min',
         serves: 4,
         description: 'Hearty steak sandwich with caramelised onions and cheese.',
-        image: 'assets/images/steak-sandwich.png',
         ingredients: [
             '4 beef sirloin steaks (about 150g each, 2cm thick)',
             '4 crusty bread rolls or sourdough slices',
@@ -1103,7 +1070,6 @@ const RECIPES = [
         cook: '0 min',
         serves: 4,
         description: 'Fresh and healthy chicken salad with creamy avocado and a zesty dressing.',
-        image: 'assets/images/chicken-avocado-salad.png',
         ingredients: [
             '2 large cooked chicken breasts, diced (rotisserie chicken works well)',
             '2 ripe avocados, peeled, pitted, and diced',
@@ -1131,7 +1097,6 @@ const RECIPES = [
         cook: '30 min',
         serves: 6,
         description: 'Rich and creamy seafood chowder with prawns, fish and mussels.',
-        image: 'assets/images/seafood-chowder.png',
         ingredients: [
             '500g mixed seafood (prawns, firm white fish chunks, mussels)',
             '1 large onion, chopped',
@@ -1161,7 +1126,6 @@ const RECIPES = [
         cook: '20 min',
         serves: 4,
         description: 'Rich and creamy pasta with mushrooms and Parmesan.',
-        image: 'assets/images/creamy-mushroom-pasta.png',
         ingredients: [
             '500g fettuccine or tagliatelle pasta',
             '300g portobello or button mushrooms, sliced',
@@ -1191,7 +1155,6 @@ const RECIPES = [
         cook: '10 min',
         serves: 4,
         description: 'Classic Aussie bacon and egg roll, perfect for breakfast.',
-        image: 'assets/images/bacon-and-egg-roll.png',
         ingredients: [
             '4 soft bread rolls (brioche or milk buns)',
             '8 rashers of streaky bacon',
@@ -1217,7 +1180,6 @@ const RECIPES = [
         cook: '35 min',
         serves: 6,
         description: 'Greek-style spinach and feta quiche in flaky pastry.',
-        image: 'assets/images/spinach-and-feta-quiche.png',
         ingredients: [
             '500g fresh spinach, roughly chopped (or 250g frozen, thawed and squeezed)',
             '200g Greek feta cheese, crumbled',
@@ -1247,7 +1209,6 @@ const RECIPES = [
         cook: '4 hours',
         serves: 6,
         description: 'Fall-apart tender slow cooked beef stew with hearty vegetables.',
-        image: 'assets/images/slow-cooked-beef-stew.png',
         ingredients: [
             '1.5 kg beef chuck (casserole steak), cut into 4cm chunks',
             '2 large onions, roughly chopped',
@@ -1280,7 +1241,6 @@ const RECIPES = [
         cook: '40 min',
         serves: 4,
         description: 'Crispy golden roast potatoes with garlic and fresh herbs.',
-        image: 'assets/images/garlic-herb-roast-potatoes.png',
         ingredients: [
             '1 kg floury potatoes (e.g., Sebago or King Edward)',
             '4 cloves garlic, crushed (skin on)',
@@ -1309,7 +1269,6 @@ const RECIPES = [
         cook: '0 min',
         serves: 10,
         description: 'No-bake mango cheesecake with a buttery biscuit base.',
-        image: 'assets/images/mango-cheesecake.png',
         ingredients: [
             '200g plain digestive biscuits, crushed',
             '100g unsalted butter, melted',
@@ -1340,7 +1299,6 @@ const RECIPES = [
         cook: '0 min',
         serves: 12,
         description: 'Tangy passionfruit slice with a coconut biscuit base.',
-        image: 'assets/images/passionfruit-slice.png',
         ingredients: [
             '200g plain biscuits (e.g., Arnott\'s Marie), crushed to fine crumbs',
             '100g unsalted butter, melted',
@@ -1367,7 +1325,6 @@ const RECIPES = [
         cook: '40 min',
         serves: 8,
         description: 'Classic apple crumble with a golden oat topping.',
-        image: 'assets/images/apple-crumble.png',
         ingredients: [
             '6 large Granny Smith or Pink Lady apples, peeled, cored and sliced',
             '1/2 cup (100g) caster sugar',
@@ -1395,7 +1352,6 @@ const RECIPES = [
         cook: '35 min',
         serves: 8,
         description: 'Rich and sticky date pudding with caramel sauce.',
-        image: 'assets/images/sticky-date-pudding.png',
         ingredients: [
             '200g pitted dates, roughly chopped',
             '1 cup (250ml) boiling water',
@@ -1428,7 +1384,6 @@ const RECIPES = [
         cook: '25 min',
         serves: 4,
         description: 'Chicken with a zesty native Australian lemon myrtle marinade.',
-        image: 'assets/images/lemon-myrtle-chicken.png',
         ingredients: [
             '4 chicken breasts or 8 thigh fillets (bone-in for more flavour)',
             '2 tbsp dried lemon myrtle leaves (or zest of 2 large lemons)',
@@ -1455,7 +1410,6 @@ const RECIPES = [
         cook: '10 min',
         serves: 4,
         description: 'Perfectly grilled salmon with a medley of fresh herbs and lemon.',
-        image: 'assets/images/grilled-salmon-with-herbs.png',
         ingredients: [
             '4 salmon fillets (about 150g each, skin on)',
             '2 tbsp light olive oil',
@@ -1482,7 +1436,6 @@ const RECIPES = [
         cook: '10 min',
         serves: 4,
         description: 'Quick and easy chicken fried rice with egg, peas, and carrots.',
-        image: 'assets/images/chicken-fried-rice.png',
         ingredients: [
             '3 cups cooked and cooled jasmine rice (day-old works best)',
             '2 chicken breasts, diced into small cubes',
@@ -1513,7 +1466,6 @@ const RECIPES = [
         cook: '0 min',
         serves: 6,
         description: 'Creamy Australian-style coleslaw with cabbage and carrot.',
-        image: 'assets/images/classic-coleslaw.png',
         ingredients: [
             '1/2 large green cabbage, cored and finely shredded',
             '2 large carrots, peeled and grated',
@@ -1540,7 +1492,6 @@ const RECIPES = [
         cook: '15 min',
         serves: 4,
         description: 'Garlic prawn linguine with a touch of chilli and lemon.',
-        image: 'assets/images/prawn-linguine.png',
         ingredients: [
             '500g linguine pasta (or spaghetti)',
             '500g large prawns, peeled and deveined (tails on optional)',
@@ -1569,7 +1520,6 @@ const RECIPES = [
         cook: '30 min',
         serves: 16,
         description: 'Fudgy brownies loaded with crunchy macadamia nuts.',
-        image: 'assets/images/macadamia-brownies.png',
         ingredients: [
             '200g dark chocolate (at least 60% cocoa), chopped',
             '150g unsalted butter, diced',
@@ -1592,14 +1542,14 @@ const RECIPES = [
     }
 ];
 
-// ===== RENDER RECIPES =====
+// ===== RENDER RECIPES (Görsel yolları düzeltildi) =====
 function renderRecipes(recipes) {
     const grid = document.getElementById('recipesGrid');
     if (!grid) return;
 
     grid.innerHTML = recipes.map(recipe => `
         <div class="recipe-card" data-id="${recipe.id}" onclick="openModal('${recipe.id}')">
-            <img src="${recipe.image}" alt="${recipe.title}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22320%22 height=%22220%22%3E%3Crect fill=%22%23fdf8f0%22 width=%22320%22 height=%22220%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23d4a24c%22 font-size=%2240%22%3E🍽️%3C/text%3E%3C/svg%3E'">
+            <img src="assets/images/${recipe.id}.png" alt="${recipe.title}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22320%22 height=%22220%22%3E%3Crect fill=%22%23fdf8f0%22 width=%22320%22 height=%22220%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23d4a24c%22 font-size=%2240%22%3E🍽️%3C/text%3E%3C/svg%3E'">
             <div class="recipe-info">
                 <h2>${recipe.title}</h2>
                 <div class="recipe-meta">
@@ -1623,7 +1573,7 @@ function renderRecipes(recipes) {
     }
 }
 
-// ===== OPEN MODAL =====
+// ===== OPEN MODAL (Görsel yolları düzeltildi) =====
 function openModal(recipeId) {
     const recipe = RECIPES.find(r => r.id === recipeId);
     if (!recipe) return;
@@ -1639,7 +1589,7 @@ function openModal(recipeId) {
             <span>🍳 Cook ${recipe.cook}</span>
             <span>👨‍👩‍👧 Serves ${recipe.serves}</span>
         </div>
-        <img src="${recipe.image}" alt="${recipe.title}" class="modal-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22300%22%3E%3Crect fill=%22%23fdf8f0%22 width=%22700%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23d4a24c%22 font-size=%2260%22%3E🍽️%3C/text%3E%3C/svg%3E'">
+        <img src="assets/images/${recipe.id}.png" alt="${recipe.title}" class="modal-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22300%22%3E%3Crect fill=%22%23fdf8f0%22 width=%22700%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23d4a24c%22 font-size=%2260%22%3E🍽️%3C/text%3E%3C/svg%3E'">
         <h3>📋 Ingredients</h3>
         <ul>${recipe.ingredients.map(i => `<li>${i}</li>`).join('')}</ul>
         <h3>👨‍🍳 Method</h3>
