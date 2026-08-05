@@ -1,7 +1,8 @@
 // ===== KOREVIR RECIPES - 50 RECIPES =====
 
-const AMAZON_LINK = '#'; // Amazon ürün linkinizi buraya ekleyin
-const AMAZON_TEXT = '🛒 Amazon\'da Satın Al';
+// ✅ AMAZON LİNKİNİZ EKLENDİ
+const AMAZON_LINK = 'https://www.amazon.com.au/dp/B0HCZRBFY7';
+const AMAZON_TEXT = '🛒 Shop on Amazon';
 
 const RECIPES = [
     // 1
@@ -1542,7 +1543,7 @@ const RECIPES = [
     }
 ];
 
-// ===== RENDER RECIPES (Görsel yolları düzeltildi) =====
+// ===== RENDER RECIPES =====
 function renderRecipes(recipes) {
     const grid = document.getElementById('recipesGrid');
     if (!grid) return;
@@ -1567,125 +1568,4 @@ function renderRecipes(recipes) {
         </div>
     `).join('');
 
-    const count = document.getElementById('resultsCount');
-    if (count) {
-        count.textContent = `${recipes.length} recipes found`;
-    }
-}
-
-// ===== OPEN MODAL (Görsel yolları düzeltildi) =====
-function openModal(recipeId) {
-    const recipe = RECIPES.find(r => r.id === recipeId);
-    if (!recipe) return;
-
-    const modal = document.getElementById('recipeModal');
-    const body = document.getElementById('modalBody');
-    if (!modal || !body) return;
-
-    body.innerHTML = `
-        <h2>${recipe.title}</h2>
-        <div class="modal-meta">
-            <span>⏱ Prep ${recipe.prep}</span>
-            <span>🍳 Cook ${recipe.cook}</span>
-            <span>👨‍👩‍👧 Serves ${recipe.serves}</span>
-        </div>
-        <img src="assets/images/${recipe.id}.png" alt="${recipe.title}" class="modal-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22300%22%3E%3Crect fill=%22%23fdf8f0%22 width=%22700%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23d4a24c%22 font-size=%2260%22%3E🍽️%3C/text%3E%3C/svg%3E'">
-        <h3>📋 Ingredients</h3>
-        <ul>${recipe.ingredients.map(i => `<li>${i}</li>`).join('')}</ul>
-        <h3>👨‍🍳 Method</h3>
-        <ol>${recipe.method.map((step, index) => `<li>${step}</li>`).join('')}</ol>
-        <div class="modal-shop">
-            <p>🍽️ Make this recipe perfect with <strong>KOREVIR</strong> wooden spoons</p>
-            <a href="#" class="btn-primary" onclick="showAmazon();">
-                🛒 Shop KOREVIR on Amazon AU
-            </a>
-        </div>
-    `;
-
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-
-// ===== CLOSE MODAL =====
-function closeModal() {
-    const modal = document.getElementById('recipeModal');
-    if (modal) {
-        modal.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    }
-}
-
-// ===== SEARCH & FILTER =====
-function filterRecipes() {
-    const searchTerm = document.getElementById('search')?.value.toLowerCase().trim() || '';
-    const activeCategory = document.querySelector('.filter-btn.active')?.dataset.category || 'all';
-
-    const filtered = RECIPES.filter(recipe => {
-        const matchesSearch = recipe.title.toLowerCase().includes(searchTerm) ||
-                             recipe.description.toLowerCase().includes(searchTerm) ||
-                             recipe.category.toLowerCase().includes(searchTerm);
-        const matchesCategory = activeCategory === 'all' || recipe.category === activeCategory;
-        return matchesSearch && matchesCategory;
-    });
-
-    renderRecipes(filtered);
-}
-
-// ===== AMAZON SHOW =====
-function showAmazon() {
-    if (AMAZON_LINK === '#') {
-        alert('🍽️ KOREVIR Wooden Spoons are coming soon to Amazon AU!\n\nBe the first to know when we launch. Follow us for updates!');
-    } else {
-        window.open(AMAZON_LINK, '_blank');
-    }
-}
-
-// ===== MOBILE MENU =====
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('mobile-menu');
-    const nav = document.querySelector('.header-nav');
-    if (menuToggle && nav) {
-        menuToggle.addEventListener('click', function() {
-            nav.classList.toggle('active');
-        });
-    }
-});
-
-// ===== EVENT LISTENERS & INIT =====
-document.addEventListener('DOMContentLoaded', function() {
-    // Modal Close
-    const closeBtn = document.getElementById('closeModal');
-    const modal = document.getElementById('recipeModal');
-
-    if (closeBtn) closeBtn.addEventListener('click', closeModal);
-    if (modal) modal.addEventListener('click', function(e) { if (e.target === this) closeModal(); });
-    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
-
-    // Search
-    const searchInput = document.getElementById('search');
-    if (searchInput) searchInput.addEventListener('input', filterRecipes);
-
-    // Category Filters
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
-            filterRecipes();
-        });
-    });
-
-    // Smooth Scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href && href.startsWith('#')) {
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        });
-    });
-
-    // Initial Render
-    renderRecipes(RECIPES);
-});
+   
