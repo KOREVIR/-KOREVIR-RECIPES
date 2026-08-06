@@ -1,4 +1,4 @@
-/* ===== KOREVIR - YENİ TASARIM (MINIMALIST & YATAY KARTLAR) ===== */
+/* ===== KOREVIR - YENİ TASARIM (YATAY KARTLAR, DOKULU ARKA PLAN) ===== */
 
 :root {
     --primary: #2E4A35;
@@ -27,7 +27,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ===== ARKA PLAN (Hafif Doku) ===== */
 body {
     font-family: 'Lato', sans-serif;
     background-color: #f7f2ec;
