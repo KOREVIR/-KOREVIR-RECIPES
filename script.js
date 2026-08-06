@@ -1543,7 +1543,6 @@ const RECIPES = [
     }
 ]; // <- DİZİNİN SONU (BURADA VİRGÜL YOK!)
 
-// ===== RENDER RECIPES (Yatay Kartlar + Kategori Etiketi) =====
 function renderRecipes(recipes) {
     const grid = document.getElementById('recipesGrid');
     if (!grid) return;
