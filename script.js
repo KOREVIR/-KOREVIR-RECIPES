@@ -1091,28 +1091,10 @@ function isFavorite(recipeId) {
 }
 
 // ============================================================
-// FEATURED RECIPE
+// FEATURED RECIPE (KALDIRILDI – BOŞ FONKSİYON)
 // ============================================================
 function renderFeatured() {
-    const container = document.getElementById('featuredCard');
-    if (!container || RECIPES.length === 0) return;
-    const featured = RECIPES[0];
-    container.innerHTML = `
-        <div class="featured-card-image">
-            <i class="fas fa-utensils"></i>
-        </div>
-        <div class="featured-card-content">
-            <span class="category-tag">${featured.category}</span>
-            <h3>${featured.title}</h3>
-            <p>${featured.description}</p>
-            <div class="featured-meta">
-                <span>⏱ Prep ${featured.prep}</span>
-                <span>🍳 Cook ${featured.cook}</span>
-                <span>👨‍👩‍👧 Serves ${featured.serves}</span>
-            </div>
-            <a href="#" class="view-recipe" onclick="openModal('${featured.id}')">View Full Recipe →</a>
-        </div>
-    `;
+    // Featured recipe kaldırıldı
 }
 
 // ============================================================
@@ -1148,7 +1130,7 @@ function renderRecipes(recipes) {
 }
 
 // ============================================================
-// OPEN MODAL
+// OPEN MODAL (BUTONLAR KALDIRILDI)
 // ============================================================
 function openModal(recipeId) {
     const recipe = RECIPES.find(r => r.id === recipeId);
@@ -1170,14 +1152,6 @@ function openModal(recipeId) {
         </div>
         <img src="assets/images/${recipe.id}.png" alt="${recipe.title}" class="modal-image" loading="lazy" 
              onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22300%22%3E%3Crect fill=%22%23efe7dc%22 width=%22700%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23a67c52%22 font-size=%2260%22%3E🍽️%3C/text%3E%3C/svg%3E'">
-        
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;">
-            <button class="btn-primary" onclick="startCookMode('${recipe.id}')">👨‍🍳 Start Cooking</button>
-            <button class="btn-secondary" onclick="toggleFavorite('${recipe.id}')" 
-                    style="${isFavorite(recipe.id) ? 'background:#A67C52;color:white;' : ''}">
-                ${isFavorite(recipe.id) ? '❤️ Saved' : '♡ Save Recipe'}
-            </button>
-        </div>
 
         <h3>Ingredients</h3>
         <ul>${recipe.ingredients.map(i => `<li>${i}</li>`).join('')}</ul>
@@ -1326,5 +1300,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // INITIAL RENDER
     renderRecipes(RECIPES);
-    renderFeatured();
+    // Featured kaldırıldığı için renderFeatured çağrılmıyor
 });
