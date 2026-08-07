@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍽️%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
@@ -49,11 +49,32 @@
     <section class="hero" id="home">
         <div class="hero-inner">
             <div class="hero-content">
-                <span class="hero-label">KOREVIR Kitchen</span>
-                <h1 class="hero-title">Cook Beautifully.<br>Live <span class="highlight">Naturally</span>.</h1>
-                <p class="hero-description">Premium teak kitchenware paired with over 50 carefully curated Australian recipes.</p>
+                <span class="hero-badge">✦ Welcome to KOREVIR</span>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Cook Beautifully.</span>
+                    <span class="hero-title-line">Live <span class="highlight">Naturally</span>.</span>
+                </h1>
+                <p class="hero-description">
+                    Premium teak kitchenware paired with over 50 carefully curated Australian recipes.
+                    Designed for those who appreciate quality, craftsmanship, and the art of cooking.
+                </p>
                 <div class="hero-actions">
-                    <a href="#recipes" class="btn-primary">Explore Recipes</a>
+                    <a href="#recipes" class="btn-primary">Explore Recipes <i class="fas fa-arrow-right"></i></a>
+                    <a href="#story" class="btn-secondary">Our Story</a>
+                </div>
+                <div class="hero-trust">
+                    <span>✦ Handcrafted Teak</span>
+                    <span>✦ 50+ Recipes</span>
+                    <span>✦ Australian Made</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-content">
+                    <div class="hero-image-placeholder">
+                        <i class="fas fa-utensils"></i>
+                        <span>KOREVIR Collection</span>
+                    </div>
+                    <div class="hero-image-badge">Premium Teak</div>
                 </div>
             </div>
         </div>
@@ -82,9 +103,7 @@
                 <i class="fas fa-search search-icon"></i>
                 <input type="text" id="search" placeholder="Search recipes by name or ingredient...">
             </div>
-            <div class="recipes-list" id="recipesList">
-                <!-- JS ile doldurulacak -->
-            </div>
+            <div class="recipes-list" id="recipesList"></div>
         </div>
     </section>
 
@@ -94,7 +113,7 @@
             <button class="modal-close" id="closeModal"><i class="fas fa-times"></i></button>
             <div class="modal-body" id="modalBody"></div>
         </div>
-    </div>
+    </section>
 
     <!-- CARE GUIDE -->
     <section class="care-section" id="care">
@@ -102,7 +121,6 @@
             <span class="section-label">Care Guide</span>
             <h2 class="care-title">Caring for Your <span class="highlight">KOREVIR</span> Spoons</h2>
             <p class="care-description">Premium Teak wood requires simple, mindful care to maintain its beauty for generations.</p>
-            
             <div class="care-timeline">
                 <div class="care-step">
                     <div class="care-step-number">01</div>
@@ -125,14 +143,14 @@
                     <div class="care-step-icon"><i class="fas fa-oil-can"></i></div>
                     <div class="care-step-content">
                         <h4>Oil</h4>
-                        <p>When the wood looks dry or dull, apply a thin, even layer of food-grade mineral oil. Allow the oil to penetrate for a few hours, then wipe off any excess with a clean, dry cloth. Regular oiling—ideally every 4 to 6 weeks—nourishes the wood, brings out its rich natural color, and prevents cracking.</p>
+                        <p>When the wood appears dry or dull, apply a thin, even layer of food-grade mineral oil. Allow the oil to penetrate for a few hours, then wipe away any excess with a clean, dry cloth. Regular oiling – ideally every 4 to 6 weeks – keeps the wood nourished, enhances its rich natural colour, and prevents cracking.</p>
                     </div>
                 </div>
                 <div class="care-step">
                     <div class="care-step-number">04</div>
                     <div class="care-step-icon"><i class="fas fa-home"></i></div>
                     <div class="care-step-content">
-                        <h4>preservation</h4>
+                        <h4>Store</h4>
                         <p>Store your KOREVIR spoons upright in a utensil holder or lay them flat in a cool, dry drawer. Avoid placing them near stovetops, ovens, or in direct sunlight, as extreme heat and UV rays can dry out the wood, causing it to warp or fade over time. A well-ventilated area is ideal for preserving the natural beauty of the teak.</p>
                     </div>
                 </div>
@@ -140,7 +158,7 @@
                     <div class="care-step-number">05</div>
                     <div class="care-step-icon"><i class="fas fa-heart"></i></div>
                     <div class="care-step-content">
-                        <h4>Lifetime</h4>
+                        <h4>Enjoy</h4>
                         <p>With proper care, your KOREVIR spoons will last a lifetime, becoming more beautiful with each use. The natural oils in teak wood deepen with age, giving each piece a unique, warm patina that tells the story of your cooking journey. Treat them with the same care you would a fine wooden instrument, and they will reward you with years of reliable service.</p>
                     </div>
                 </div>
@@ -151,28 +169,39 @@
     <!-- WHY TEAK -->
     <section class="teak-section" id="teak">
         <div class="teak-container">
-            <span class="section-label">Why Teak</span>
-            <h2 class="teak-title">The <span class="highlight">Natural</span> Choice</h2>
+            <div class="teak-header">
+                <span class="section-label">Why Teak</span>
+                <h2 class="teak-title">The <span class="highlight">Natural</span> Choice</h2>
+                <p class="teak-subtitle">Teak is more than just wood — it's a material that embodies strength, beauty, and timeless elegance. Here's why we chose it for your KOREVIR spoons.</p>
+            </div>
             <div class="teak-grid">
                 <div class="teak-feature">
-                    <i class="fas fa-leaf teak-icon"></i>
-                    <h4>Natural Beauty</h4>
-                    <p>Teak is prized for its warm, golden-brown tones that deepen and enrich with age, developing a unique patina that only improves over time. Each spoon carries its own grain pattern, making every piece one-of-a-kind.</p>
+                    <div class="teak-feature-icon"><i class="fas fa-leaf"></i></div>
+                    <div class="teak-feature-content">
+                        <h4>Natural Beauty</h4>
+                        <p>Teak is prized for its warm, golden-brown tones that deepen and enrich with age, developing a unique patina that only improves over time. Each spoon carries its own grain pattern, making every piece one-of-a-kind.</p>
+                    </div>
                 </div>
                 <div class="teak-feature">
-                    <i class="fas fa-water teak-icon"></i>
-                    <h4>Water Resistant</h4>
-                    <p>Thanks to its natural oil content, teak is highly resistant to moisture, warping, and water damage. Unlike other woods, it won't easily absorb liquids or stains, making it ideal for the humid, splatter-filled environment of a busy kitchen.</p>
+                    <div class="teak-feature-icon"><i class="fas fa-water"></i></div>
+                    <div class="teak-feature-content">
+                        <h4>Water Resistant</h4>
+                        <p>Thanks to its natural oil content, teak is highly resistant to moisture, warping, and water damage. Unlike other woods, it won't easily absorb liquids or stains, making it ideal for the humid environment of a busy kitchen.</p>
+                    </div>
                 </div>
                 <div class="teak-feature">
-                    <i class="fas fa-hand-peace teak-icon"></i>
-                    <h4>Gentle on Cookware</h4>
-                    <p>Teak is surprisingly gentle on your most delicate cookware. It won't scratch non-stick coatings, enamel, or stainless steel surfaces, allowing you to stir, scrape, and serve with confidence, without worrying about damaging your favourite pots and pans.</p>
+                    <div class="teak-feature-icon"><i class="fas fa-hand-peace"></i></div>
+                    <div class="teak-feature-content">
+                        <h4>Gentle on Cookware</h4>
+                        <p>Teak is surprisingly gentle on your most delicate cookware. It won't scratch non-stick coatings, enamel, or stainless steel surfaces, allowing you to stir, scrape, and serve with confidence.</p>
+                    </div>
                 </div>
                 <div class="teak-feature">
-                    <i class="fas fa-clock teak-icon"></i>
-                    <h4>Made to Last</h4>
-                    <p>Teak is one of the most durable hardwoods in the world. With proper care, KOREVIR spoons will remain in excellent condition for decades. Their inherent strength and natural resistance to rot and insects ensure they become family heirlooms, passed down through generations.</p>
+                    <div class="teak-feature-icon"><i class="fas fa-clock"></i></div>
+                    <div class="teak-feature-content">
+                        <h4>Made to Last</h4>
+                        <p>Teak is one of the most durable hardwoods in the world. With proper care, KOREVIR spoons will remain in excellent condition for decades, becoming family heirlooms passed down through generations.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -206,7 +235,7 @@
         </div>
     </section>
 
-       <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer" id="footer">
         <div class="footer-inner">
             <div class="footer-brand">
