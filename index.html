@@ -6,6 +6,8 @@
     <title>KOREVIR | Premium Wooden Utensils & Recipes</title>
     <meta name="description" content="Discover KOREVIR premium wooden kitchen utensils and over 50 exclusive recipes. Quality, innovation, and trust for your kitchen." />
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    
+    <!-- Open Graph / Social -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://korevir.github.io/-KOREVIR-RECIPES/" />
     <meta property="og:title" content="KOREVIR | Premium Wooden Utensils & Recipes" />
@@ -16,9 +18,12 @@
     <meta property="twitter:title" content="KOREVIR | Premium Wooden Utensils & Recipes" />
     <meta property="twitter:description" content="Discover KOREVIR premium wooden kitchen utensils and over 50 exclusive recipes." />
     <meta property="twitter:image" content="https://korevir.github.io/-KOREVIR-RECIPES/assets/images/og-image.jpg" />
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -29,24 +34,24 @@
         <div class="header-inner">
             <div class="logo">
                 <svg class="logo-svg" width="44" height="44" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="2" y="2" width="46" height="46" rx="23" stroke="#C49A6C" stroke-width="2"/>
-                    <text x="25" y="32" font-family="'Playfair Display', serif" font-size="24" font-weight="500" fill="#2C1810" text-anchor="middle">K</text>
+                    <rect x="2" y="2" width="46" height="46" rx="23" stroke="#B89568" stroke-width="1.5"/>
+                    <text x="25" y="32" font-family="'Playfair Display', serif" font-size="24" font-weight="400" fill="#171715" text-anchor="middle">K</text>
                 </svg>
                 <div class="logo-text">
                     <span class="logo-main">KOREVIR</span>
                     <span class="logo-sub">RECIPES</span>
                 </div>
             </div>
-            <nav class="header-nav">
+            <nav class="header-nav" id="headerNav">
                 <a href="#home" class="active">Home</a>
                 <a href="#recipes">Recipes</a>
                 <a href="#about">About</a>
                 <a href="#care">Care</a>
                 <a href="#" class="btn-amazon" onclick="showAmazon()">Shop</a>
             </nav>
-            <div class="menu-toggle" id="mobile-menu">
+            <button class="menu-toggle" id="mobileMenu" aria-label="Menu">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </div>
     </header>
 
@@ -54,23 +59,56 @@
     <section class="hero" id="home">
         <div class="hero-inner">
             <div class="hero-content">
-                <span class="hero-badge">Since 2024</span>
-                <h1>From Our <span class="highlight">Hands</span><br>to Your Table</h1>
+                <span class="hero-badge">KOREVIR</span>
+                <h1>Welcome to <span class="highlight">KOREVIR</span><br>Kitchen</h1>
                 <p class="hero-description">Premium wooden kitchen utensils and exclusive recipes, crafted for those who appreciate quality.</p>
                 <div class="hero-actions">
                     <a href="#recipes" class="btn-primary">Explore Recipes</a>
                     <a href="#" class="btn-secondary" onclick="showAmazon()">Shop on Amazon</a>
                 </div>
             </div>
+            <div class="hero-image">
+                <div class="hero-image-placeholder">
+                    <i class="fas fa-utensils"></i>
+                    <span>KOREVIR Collection</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- SEARCH & FILTER -->
-    <section class="search-section" id="recipes">
-        <div class="search-container">
+    <!-- FEATURED RECIPE -->
+    <section class="featured-section" id="featured">
+        <div class="featured-container">
+            <span class="section-label">Featured</span>
+            <h2 class="section-title">This Week's <span class="highlight">Pick</span></h2>
+            <div class="featured-card" id="featuredCard">
+                <!-- JS ile doldurulacak -->
+            </div>
+        </div>
+    </section>
+
+    <!-- RECIPE CATEGORIES -->
+    <section class="categories-section" id="categories">
+        <div class="categories-container">
+            <span class="section-label">Categories</span>
+            <h2 class="section-title">Explore by <span class="highlight">Cuisine</span></h2>
+            <div class="categories-grid" id="categoriesGrid">
+                <button class="category-pill" data-category="Main Dishes">Main Dishes</button>
+                <button class="category-pill" data-category="Desserts">Desserts</button>
+                <button class="category-pill" data-category="Soups">Soups</button>
+                <button class="category-pill" data-category="Snacks">Snacks</button>
+                <button class="category-pill" data-category="Salads">Salads</button>
+                <button class="category-pill" data-category="Breakfast">Breakfast</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH & RECIPES GRID -->
+    <section class="recipes-section" id="recipes">
+        <div class="recipes-container">
             <div class="search-wrapper">
                 <i class="fas fa-search search-icon"></i>
-                <input type="text" id="search" placeholder="Search recipes...">
+                <input type="text" id="search" placeholder="Search recipes by name or ingredient...">
             </div>
             <div class="category-filters" id="categoryFilters">
                 <button class="filter-btn active" data-category="all">All</button>
@@ -82,13 +120,11 @@
                 <button class="filter-btn" data-category="Breakfast">Breakfast</button>
             </div>
             <div class="results-count" id="resultsCount">50 recipes found</div>
+            <div class="recipes-grid" id="recipesGrid"></div>
         </div>
     </section>
 
-    <!-- RECIPES GRID -->
-    <main class="recipes-grid" id="recipesGrid"></main>
-
-    <!-- MODAL -->
+    <!-- MODAL (Recipe Detail) -->
     <div class="modal" id="recipeModal">
         <div class="modal-content">
             <button class="modal-close" id="closeModal"><i class="fas fa-times"></i></button>
@@ -96,77 +132,110 @@
         </div>
     </div>
 
-    <!-- ABOUT -->
-    <section class="about-section" id="about">
-        <div class="about-container">
-            <div class="about-text">
-                <span class="about-badge">About</span>
-                <h2>From Our <span class="highlight">Hands</span> to Your Table</h2>
-                <p>KOREVIR brings together the finest Australian recipes and handcrafted wooden spoons. Every recipe is tested, perfected, and designed to inspire home cooks across Australia.</p>
-                <p>Our spoons are handcrafted from premium <strong>Teak wood</strong>, known for its durability, natural beauty, and resistance to moisture. Perfect for everyday cooking.</p>
-                <a href="#" class="btn-primary" onclick="showAmazon()">Discover Our Spoons</a>
-            </div>
-            <div class="about-image">
-                <div class="about-image-placeholder">
+    <!-- KOREVIR PRODUCT / EDITORIAL -->
+    <section class="editorial-section" id="editorial">
+        <div class="editorial-container">
+            <div class="editorial-image">
+                <div class="editorial-image-placeholder">
                     <i class="fas fa-tree"></i>
-                    <span>Sustainable Teak</span>
+                    <span>Handcrafted Teak</span>
+                </div>
+            </div>
+            <div class="editorial-text">
+                <span class="section-label">Craftsmanship</span>
+                <h2>Made with <span class="highlight">Purpose</span></h2>
+                <p>Every KOREVIR spoon is handcrafted from premium Teak wood, chosen for its durability, natural beauty, and resistance to moisture.</p>
+                <p>Our artisans shape each piece with care, creating utensils that feel as good in your hand as they look on your counter.</p>
+                <a href="#" class="btn-primary" onclick="showAmazon()">Discover the Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARE GUIDE TEASER -->
+    <section class="care-teaser" id="care">
+        <div class="care-teaser-container">
+            <span class="section-label">Care Guide</span>
+            <h2 class="section-title">Caring for Your <span class="highlight">KOREVIR</span> Spoons</h2>
+            <p class="care-teaser-description">Premium Teak wood requires simple, mindful care to maintain its beauty for generations.</p>
+            <div class="care-steps">
+                <div class="care-step">
+                    <div class="care-step-icon"><i class="fas fa-hand-sparkles"></i></div>
+                    <h4>Wash & Dry</h4>
+                    <p>Hand wash with mild soap, dry immediately.</p>
+                </div>
+                <div class="care-step">
+                    <div class="care-step-icon"><i class="fas fa-oil-can"></i></div>
+                    <h4>Oil</h4>
+                    <p>Apply mineral oil when dry.</p>
+                </div>
+                <div class="care-step">
+                    <div class="care-step-icon"><i class="fas fa-home"></i></div>
+                    <h4>Store</h4>
+                    <p>Keep in cool, dry place.</p>
+                </div>
+                <div class="care-step">
+                    <div class="care-step-icon"><i class="fas fa-ban"></i></div>
+                    <h4>Avoid</h4>
+                    <p>Never dishwasher or soak.</p>
+                </div>
+            </div>
+            <a href="#care-detail" class="btn-secondary">View Full Guide</a>
+        </div>
+    </section>
+
+    <!-- WHY TEAK -->
+    <section class="why-teak" id="why-teak">
+        <div class="why-teak-container">
+            <div class="why-teak-text">
+                <span class="section-label">Why Teak</span>
+                <h2>The <span class="highlight">Natural</span> Choice</h2>
+                <p>Teak is one of the most durable and beautiful woods in the world. Its natural oils protect against water, stains, and warping, making it the ideal material for kitchen utensils.</p>
+                <p>Every KOREVIR spoon is crafted from sustainably sourced Teak, ensuring both quality and environmental responsibility.</p>
+                <ul class="why-teak-list">
+                    <li><i class="fas fa-check"></i> Naturally water-resistant</li>
+                    <li><i class="fas fa-check"></i> Rich, warm color</li>
+                    <li><i class="fas fa-check"></i> Long-lasting durability</li>
+                    <li><i class="fas fa-check"></i> Sustainable sourcing</li>
+                </ul>
+            </div>
+            <div class="why-teak-image">
+                <div class="why-teak-image-placeholder">
+                    <i class="fas fa-tree"></i>
+                    <span>Teak Wood</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CARE -->
-    <section class="care-section" id="care">
-        <div class="care-container">
-            <div class="care-header">
-                <span class="care-badge">Care</span>
-                <h2>Caring for Your <span class="highlight">KOREVIR</span> Teak Spoons</h2>
-                <p class="care-subtitle">Your KOREVIR wooden spoons are made from premium Teak wood – durable, beautiful, and built to last.</p>
-            </div>
-            <div class="care-grid">
-                <div class="care-card">
-                    <div class="care-icon"><i class="fas fa-leaf"></i></div>
-                    <h3>Why Teak</h3>
-                    <p>Naturally rich in oils, resistant to water and warping.</p>
-                </div>
-                <div class="care-card">
-                    <div class="care-icon"><i class="fas fa-hand-sparkles"></i></div>
-                    <h3>First Use</h3>
-                    <p>Wash, dry, apply mineral oil, and let absorb overnight.</p>
-                </div>
-                <div class="care-card">
-                    <div class="care-icon"><i class="fas fa-water"></i></div>
-                    <h3>Daily Cleaning</h3>
-                    <p>Hand wash with mild soap. Never soak. Dry immediately.</p>
-                </div>
-                <div class="care-card">
-                    <div class="care-icon"><i class="fas fa-oil-can"></i></div>
-                    <h3>Oiling</h3>
-                    <p>Apply food-grade mineral oil when dry. Wipe excess.</p>
-                </div>
-                <div class="care-card">
-                    <div class="care-icon"><i class="fas fa-home"></i></div>
-                    <h3>Storage</h3>
-                    <p>Keep in a cool, dry place away from sunlight.</p>
-                </div>
-                <div class="care-card">
-                    <div class="care-icon"><i class="fas fa-ban"></i></div>
-                    <h3>Avoid</h3>
-                    <p>Never dishwasher, microwave, or soak in water.</p>
-                </div>
-            </div>
+    <!-- BRAND STORY -->
+    <section class="brand-story" id="about">
+        <div class="brand-story-container">
+            <span class="section-label">Our Story</span>
+            <h2>From Our <span class="highlight">Hands</span> to Your Table</h2>
+            <p>KOREVIR brings together the finest Australian recipes and handcrafted wooden spoons. Every recipe is tested, perfected, and designed to inspire home cooks across Australia.</p>
+            <p>Our spoons are handcrafted from premium <strong>Teak wood</strong>, known for its durability, natural beauty, and resistance to moisture. Perfect for everyday cooking.</p>
+            <a href="#" class="btn-primary" onclick="showAmazon()">Discover Our Spoons</a>
+        </div>
+    </section>
+
+    <!-- AMAZON CTA -->
+    <section class="amazon-cta" id="shop">
+        <div class="amazon-cta-container">
+            <h2>Shop the <span class="highlight">Collection</span></h2>
+            <p>Explore KOREVIR premium wooden utensils on Amazon AU.</p>
+            <a href="#" class="btn-primary" onclick="showAmazon()"><i class="fas fa-shopping-bag"></i> Shop on Amazon</a>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-inner">
             <div class="footer-brand">
                 <div class="footer-logo">
                     <span class="footer-logo-main">KOREVIR</span>
                     <span class="footer-logo-sub">Premium Wooden Kitchen Utensils</span>
                 </div>
-                <p class="footer-copy">&copy; 2024 KOREVIR. All rights reserved.</p>
+                <p class="footer-copy">&copy; <span id="currentYear">2024</span> KOREVIR. All rights reserved.</p>
             </div>
             <div class="footer-links">
                 <a href="#home">Home</a>
