@@ -1168,6 +1168,11 @@ function openModal(recipeId) {
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
 }
+    `;
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
 
 // ============================================================
 // CLOSE MODAL
