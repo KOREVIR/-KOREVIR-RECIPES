@@ -460,7 +460,7 @@ img { max-width: 100%; display: block; }
     color: var(--ivory);
 }
 
-/* ===== RECIPES (Görseller küçültüldü) ===== */
+/* ===== RECIPES (Görseller tam boyut) ===== */
 .recipes-section {
     padding: 0 24px 60px;
     max-width: 1200px;
@@ -527,9 +527,9 @@ img { max-width: 100%; display: block; }
 
 .recipe-item-image {
     width: 100%;
-    height: 200px;
-    min-height: 200px;
-    object-fit: cover;
+    height: 260px;
+    min-height: 260px;
+    object-fit: contain;
     background: var(--warm);
     transition: var(--transition);
 }
@@ -606,7 +606,7 @@ img { max-width: 100%; display: block; }
     font-weight: 500;
 }
 
-/* ===== MODAL (İçindekiler ve yöntem uzun ve okunaklı) ===== */
+/* ===== MODAL (İçindekiler ve yöntem uzun) ===== */
 .modal {
     display: none;
     position: fixed;
@@ -678,7 +678,7 @@ img { max-width: 100%; display: block; }
 .modal-image {
     width: 100%;
     height: 280px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 8px;
     margin-bottom: 20px;
     background: var(--warm);
@@ -1086,7 +1086,7 @@ img { max-width: 100%; display: block; }
     .recipe-item { grid-template-columns: 1fr; }
     .recipe-item:nth-child(even) .recipe-item-image { order: 0; }
     .recipe-item:nth-child(even) .recipe-item-content { order: 1; }
-    .recipe-item-image { height: 180px; min-height: 180px; }
+    .recipe-item-image { height: 220px; min-height: 220px; }
     .recipe-item-content { padding: 24px 20px; }
     .recipe-item-content h3 { font-size: 20px; }
 
@@ -1130,7 +1130,7 @@ img { max-width: 100%; display: block; }
     .hero-actions .btn-primary,
     .hero-actions .btn-secondary { font-size: 13px; padding: 10px 20px; }
 
-    .recipe-item-image { height: 160px; min-height: 160px; }
+    .recipe-item-image { height: 180px; min-height: 180px; }
     .recipe-item-content h3 { font-size: 18px; }
     .recipe-item-meta { font-size: 11px; gap: 12px; }
 
