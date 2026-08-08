@@ -615,18 +615,16 @@ const RECIPES = [
 // FONKSİYONLAR
 // ============================================================
 
-function renderFeatured() { /* Kaldırıldı */ }
-
 function renderRecipes(recipes) {
     const container = document.getElementById('recipesList');
     if (!container) return;
 
     container.innerHTML = recipes.map(recipe => `
-        <div class="recipe-item" data-id="${recipe.id}">
+        <article class="recipe-item" data-id="${recipe.id}" onclick="openModal('${recipe.id}')" tabindex="0" role="button" aria-label="View ${recipe.title} recipe">
             <img src="assets/images/${recipe.id}.png" alt="${recipe.title}" class="recipe-item-image" 
                  loading="lazy" 
                  onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22300%22%3E%3Crect fill=%22%23efe7dc%22 width=%22600%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23a67c52%22 font-size=%2240%22%3E🍽️%3C/text%3E%3C/svg%3E'">
-            <div class="recipe-item-content" onclick="openModal('${recipe.id}')">
+            <div class="recipe-item-content">
                 <span class="category-tag">${recipe.category}</span>
                 <h3>${recipe.title}</h3>
                 <div class="recipe-item-meta">
@@ -642,12 +640,12 @@ function renderRecipes(recipes) {
                     </span>
                 </div>
             </div>
-        </div>
+        </article>
     `).join('');
 }
 
 // ============================================================
-// OPEN MODAL
+// OPEN MODAL (İçerik zenginleştirildi)
 // ============================================================
 function openModal(recipeId) {
     const recipe = RECIPES.find(r => r.id === recipeId);
@@ -663,7 +661,32 @@ function openModal(recipeId) {
         return;
     }
 
-    const difficulty = ['Easy', 'Medium', 'Hard'][Math.floor(Math.random() * 3)];
+    // Rastgele zorluk ve ipucu
+    const difficultyOptions = ['Easy', 'Medium', 'Hard'];
+    const difficulty = difficultyOptions[Math.floor(Math.random() * difficultyOptions.length)];
+    
+    const chefTips = [
+        '🔑 For extra flavour, marinate the protein overnight.',
+        '🧂 Season each layer of your dish – it makes a huge difference.',
+        '🔥 Always preheat your pan or oven for even cooking.',
+        '🌿 Fresh herbs add brightness – add them at the end.',
+        '🧀 Let cheese come to room temperature for better melting.',
+        '🥩 Rest meat after cooking to keep juices inside.',
+        '🍋 Acidity (lemon/vinegar) balances richness perfectly.',
+        '🌶️ Add a pinch of chilli for a subtle kick.',
+        '🧅 Caramelise onions slowly for deep sweetness.',
+        '🥄 Taste and adjust seasoning at every stage.'
+    ];
+    const tip = chefTips[Math.floor(Math.random() * chefTips.length)];
+
+    const servingSuggestions = [
+        'Serve with a crisp green salad and a glass of white wine.',
+        'Pair with crusty bread and a side of roasted vegetables.',
+        'Perfect with steamed rice or creamy mashed potatoes.',
+        'Garnish with fresh parsley and lemon wedges for extra zest.',
+        'Enjoy with a dollop of Greek yoghurt or sour cream.'
+    ];
+    const serving = servingSuggestions[Math.floor(Math.random() * servingSuggestions.length)];
 
     const ingredientsList = recipe.ingredients && recipe.ingredients.length > 0
         ? recipe.ingredients.map(i => `<li>${i}</li>`).join('')
@@ -689,6 +712,14 @@ function openModal(recipeId) {
 
         <h3>👨‍🍳 Method</h3>
         <ol>${methodList}</ol>
+
+        <div class="chef-tip">
+            <strong>💡 Chef’s Tip:</strong> ${tip}
+        </div>
+
+        <div class="serving-suggestion">
+            <strong>🍽️ Serving Suggestion:</strong> ${serving}
+        </div>
 
         <div class="modal-shop">
             <p>🍽️ Make this recipe perfect with <strong>KOREVIR</strong> wooden spoons</p>
@@ -728,7 +759,7 @@ function showAmazon() {
     if (AMAZON_LINK === '#') {
         alert('🍽️ KOREVIR Wooden Spoons are coming soon to Amazon AU!');
     } else {
-        window.open(AMAZON_LINK, '_blank');
+        window.open(AMAZON_LINK, '_blank', 'noopener,noreferrer');
     }
 }
 
