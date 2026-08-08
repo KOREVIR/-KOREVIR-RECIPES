@@ -2,10 +2,12 @@
 // KOREVIR – PREMIUM BRAND EXPERIENCE
 // ============================================================
 
+'use strict';
+
 const AMAZON_LINK = 'https://www.amazon.com.au/dp/B0HCZRBFY7';
 
 // ============================================================
-// 50 TARİF – Method'lar elle 8-9 adımlık dizi olarak tanımlandı
+// 50 TARİF – method'lar elle 8-9 adımlık dizi olarak tanımlandı
 // ============================================================
 const RECIPES = [
     // 1
@@ -1128,7 +1130,6 @@ function openModal(recipeId) {
             ? recipe.ingredients.map(i => `<li>${i}</li>`).join('')
             : '<li>No ingredients listed</li>';
 
-        // method doğrudan dizi olduğu için direkt kullanıyoruz
         const methodList = recipe.method && recipe.method.length > 0
             ? recipe.method.map(step => `<li>${step}</li>`).join('')
             : '<li>No method provided</li>';
