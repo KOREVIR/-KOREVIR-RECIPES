@@ -1056,7 +1056,7 @@ function renderRecipes(recipes) {
             <article class="recipe-item" data-id="${recipe.id}" onclick="openModal('${recipe.id}')" tabindex="0" role="button" aria-label="View ${recipe.title} recipe">
                 <img src="assets/images/${recipe.id}.png" alt="${recipe.title}" class="recipe-item-image" 
                      loading="lazy" 
-                     onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22300%22%3E%3Crect fill=%22%23efe7dc%22 width=%22600%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23a67c52%22 font-size=%2240%22%3E🍽️%3C/text%3E%3C/svg%3E'">
+                     onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22300%22%3E%3Crect fill=%22%23EFE7DC%22 width=%22600%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.35em%22 font-size=%2260%22 fill=%22%23A67C52%22%3E🍽️%3C/text%3E%3C/svg%3E'">
                 <div class="recipe-item-content">
                     <span class="category-tag">${recipe.category}</span>
                     <h3>${recipe.title}</h3>
@@ -1143,7 +1143,7 @@ function openModal(recipeId) {
                 <span>📊 ${difficulty}</span>
             </div>
             <img src="assets/images/${recipe.id}.png" alt="${recipe.title}" class="modal-image" loading="lazy" 
-                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22300%22%3E%3Crect fill=%22%23efe7dc%22 width=%22700%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23a67c52%22 font-size=%2260%22%3E🍽️%3C/text%3E%3C/svg%3E'">
+                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22300%22%3E%3Crect fill=%22%23EFE7DC%22 width=%22700%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.35em%22 font-size=%2270%22 fill=%22%23A67C52%22%3E🍽️%3C/text%3E%3C/svg%3E'">
 
             <h3>📋 Ingredients</h3>
             <ul>${ingredientsList}</ul>
