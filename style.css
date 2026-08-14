@@ -811,6 +811,54 @@ img { max-width: 100%; display: block; }
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
+}/* ===== WHY TEAK ===== */
+.teak-section {
+    padding: 80px 24px;
+    /* Görsel burada arka plana ekleniyor */
+    background-image: url('assets/images/teak-beauty.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Yazıların okunması için görselin üzerine hafif saydam bir siyah tabaka ekliyoruz */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay; 
+    border-top: 1px solid rgba(29, 29, 29, 0.04);
+    border-bottom: 1px solid rgba(29, 29, 29, 0.04);
+}
+
+/* İçeriği biraz daha genişletip ortalamak için ekledik */
+.teak-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.teak-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 36px;
+    /* Yazıların görsel üzerinde okunması için beyaz yapıyoruz */
+    color: #ffffff; 
+}
+
+.teak-header .section-label {
+    color: #ffffff;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.teak-title, .teak-title .highlight {
+    color: #ffffff;
+}
+
+.teak-subtitle {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.teak-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
 }
 
 .teak-feature {
