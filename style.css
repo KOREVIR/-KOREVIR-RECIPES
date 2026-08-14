@@ -363,7 +363,7 @@ img { max-width: 100%; display: block; }
     position: relative; 
     width: 100%; 
     max-width: 600px; 
-    height: 520px;    
+    aspect-ratio: 4 / 3; /* Genişlik ve yüksekliğin otomatik oranını ayarlar */
     border-radius: 30px; 
     overflow: hidden;
     border: 6px solid #ffffff;
