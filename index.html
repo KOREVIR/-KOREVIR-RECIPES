@@ -11,7 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍽️%3C/text%3E%3C/svg%3E">
+    
+    <!-- SADECE BURADA BİR TANE CSS BAĞLANTISI VAR -->
     <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <meta property="og:type" content="website" />
@@ -46,30 +49,37 @@
     </header>
 
     <!-- HERO -->
-<section class="hero" id="home" style="background-image: url('hero-image.png'); background-size: cover; background-position: center; min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 2rem;">
-    <div class="hero-inner" style="max-width: 1200px; width: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
-        <div class="hero-content" style="flex: 1; min-width: 300px; background-color: rgba(44, 44, 44, 0.65); padding: 3rem 2.5rem; border-radius: 20px; backdrop-filter: blur(2px);">
-            <span class="hero-badge" style="color: #D4A24C; font-weight: 600; letter-spacing: 2px;">✦ Welcome to KOREVIR</span>
-            <h1 class="hero-title" style="font-size: 3.5rem; font-weight: 700; margin: 0.5rem 0;">
-                <span class="hero-title-line">Cook Beautifully.</span>
-                <span class="hero-title-line">Live <span class="highlight" style="color: #D4A24C;">Naturally</span>.</span>
-            </h1>
-            <p class="hero-description" style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem; max-width: 600px;">
-                Premium teak kitchenware paired with over 50 carefully curated Australian recipes.
-                Designed for those who appreciate quality, craftsmanship, and the art of cooking.
-            </p>
-            <div class="hero-actions" style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <a href="#recipes" class="btn-primary" style="background-color: #D4A24C; color: #2C2C2C; padding: 0.8rem 2.2rem; border-radius: 60px; text-decoration: none; font-weight: 700; display: inline-block;">Explore Recipes <i class="fas fa-arrow-right"></i></a>
-                <a href="#story" class="btn-secondary" style="background-color: transparent; color: #D4A24C; padding: 0.8rem 2.2rem; border-radius: 60px; text-decoration: none; font-weight: 600; border: 2px solid #D4A24C; display: inline-block;">Our Story</a>
+    <section class="hero" id="home">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <span class="hero-badge">✦ Welcome to KOREVIR</span>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Cook Beautifully.</span>
+                    <span class="hero-title-line">Live <span class="highlight">Naturally</span>.</span>
+                </h1>
+                <p class="hero-description">
+                    Premium teak kitchenware paired with over 50 carefully curated Australian recipes.
+                    Designed for those who appreciate quality, craftsmanship, and the art of cooking.
+                </p>
+                <div class="hero-actions">
+                    <a href="#recipes" class="btn-primary">Explore Recipes <i class="fas fa-arrow-right"></i></a>
+                    <a href="#story" class="btn-secondary">Our Story</a>
+                </div>
+                <div class="hero-trust">
+                    <span>✦ Handcrafted Teak</span>
+                    <span>✦ 50+ Recipes</span>
+                </div>
             </div>
-            <div class="hero-trust" style="display: flex; gap: 2rem; margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
-                <span>✦ Handcrafted Teak</span>
-                <span>✦ 50+ Recipes</span>
+            <div class="hero-image">
+                <div class="hero-image-content">
+                    <div class="hero-image-placeholder">
+                        <i class="fas fa-utensils"></i>
+                        <span>Handcrafted Teak</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Hero görseli kaldırıldı, çünkü arka plana görsel ekledik -->
-    </div>
-</section>
+    </section>
 
     <!-- CATEGORIES -->
     <section class="categories-section" id="categories">
