@@ -765,10 +765,14 @@ img { max-width: 100%; display: block; }
     max-width: 480px;
 }
 
-/* ===== WHY TEAK (ESKİ TEMİZ HALİ) ===== */
+/* ===== WHY TEAK ===== */
 .teak-section {
-    padding: 60px 24px;
-    background: var(--ivory);
+    padding: 80px 24px;
+    /* Yeni üçlü panel görseli burada arka plana ekleniyor */
+    background-image: url('assets/images/teak-bg-panels.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-top: 1px solid rgba(29, 29, 29, 0.04);
     border-bottom: 1px solid rgba(29, 29, 29, 0.04);
 }
