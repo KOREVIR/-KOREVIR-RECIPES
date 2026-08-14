@@ -362,10 +362,13 @@ img { max-width: 100%; display: block; }
 .hero-image-content { 
     position: relative; 
     width: 100%; 
-    max-width: 480px; 
-    height: 380px;
-    border-radius: 20px;
+    max-width: 600px; /* Genişliği artırdık */
+    height: 520px;    /* Yüksekliği artırdık (Alt kısmın kesilmesini önler) */
+    border-radius: 30px; /* Köşeleri daha yuvarlak ve şık yaptık */
     overflow: hidden;
+    /* Çerçeve (Border) ve Gölge Eklemesi: */
+    border: 6px solid #ffffff;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.10);
 }
 
 /* ===== CATEGORIES ===== */
