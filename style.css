@@ -363,7 +363,7 @@ img { max-width: 100%; display: block; }
     position: relative; 
     width: 100%; 
     max-width: 600px; 
-    aspect-ratio: 4 / 3; /* Mobilde ve PC'de tam görünmesi için oran ayarı */
+    aspect-ratio: 4 / 3; 
     border-radius: 30px; 
     overflow: hidden;
     border: 6px solid #ffffff;
@@ -765,14 +765,10 @@ img { max-width: 100%; display: block; }
     max-width: 480px;
 }
 
-/* ===== WHY TEAK (ARKA PLAN GÖRSELİ BURADA) ===== */
+/* ===== WHY TEAK ===== */
 .teak-section {
     padding: 80px 24px;
-    /* Buraya sadece üçlü panel (orman, el, kütükler) görseli ekleniyor */
-    background-image: url('assets/images/teak-bg-panels.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: var(--ivory); /* Üstteki yeşil alan bej kalır */
     border-top: 1px solid rgba(29, 29, 29, 0.04);
     border-bottom: 1px solid rgba(29, 29, 29, 0.04);
 }
@@ -813,8 +809,12 @@ img { max-width: 100%; display: block; }
     gap: 24px;
 }
 
+/* İŞTE BURASI DEĞİŞTİ: SADECE KUTULARIN ARKA PLANI */
 .teak-feature {
-    background: var(--white);
+    background-image: url('assets/images/teak-bg-panels.png'); /* Görsel burada */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: var(--radius);
     padding: 28px 24px;
     box-shadow: var(--shadow);
@@ -903,8 +903,8 @@ img { max-width: 100%; display: block; }
 
 .story-image-full {
     width: 100%;
-    height: 450px;         /* Görselin yüksekliğini sabitliyoruz */
-    object-fit: cover;     /* Bu kutuya sığdırır ve taşan kısımları otomatik kırpar */
+    height: 450px;
+    object-fit: cover;
     display: block;
     border-radius: var(--radius);
     box-shadow: var(--shadow-hover);
