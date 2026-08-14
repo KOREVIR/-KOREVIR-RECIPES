@@ -765,10 +765,15 @@ img { max-width: 100%; display: block; }
     max-width: 480px;
 }
 
-/* ===== WHY TEAK ===== */
+/* ===== WHY TEAK (ARKA PLAN GÖRSELİ TÜM BÖLÜME EKLENDİ) ===== */
 .teak-section {
     padding: 80px 24px;
-    background: var(--ivory); /* Üstteki yeşil alan bej kalır */
+    background-image: url('assets/images/teak-bg-panels.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5); /* Yazılar okunsun diye siyah perde */
+    background-blend-mode: overlay; 
     border-top: 1px solid rgba(29, 29, 29, 0.04);
     border-bottom: 1px solid rgba(29, 29, 29, 0.04);
 }
@@ -782,25 +787,20 @@ img { max-width: 100%; display: block; }
     text-align: center;
     max-width: 680px;
     margin: 0 auto 36px;
+    color: #ffffff; 
 }
 
-.teak-header .section-label { margin-bottom: 8px; }
-
-.teak-title {
-    font-family: var(--font-serif);
-    font-size: clamp(28px, 4vw, 34px);
-    font-weight: 400;
-    color: var(--text);
-    margin-bottom: 8px;
+.teak-header .section-label {
+    color: #ffffff;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
 }
 
-.teak-title .highlight { color: var(--accent); }
+.teak-title, .teak-title .highlight {
+    color: #ffffff;
+}
 
 .teak-subtitle {
-    font-size: 16px;
-    color: rgba(29, 29, 29, 0.7);
-    font-weight: 300;
-    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .teak-grid {
@@ -809,25 +809,21 @@ img { max-width: 100%; display: block; }
     gap: 24px;
 }
 
-/* İŞTE BURASI DEĞİŞTİ: SADECE KUTULARIN ARKA PLANI */
 .teak-feature {
-    background-image: url('assets/images/teak-bg-panels.png'); /* Görsel burada */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgba(255, 255, 255, 0.92); /* Şeffaf beyaz kutu */
+    backdrop-filter: blur(4px);
     border-radius: var(--radius);
     padding: 28px 24px;
-    box-shadow: var(--shadow);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     transition: var(--transition);
     display: flex;
     gap: 16px;
     align-items: flex-start;
-    border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 .teak-feature:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-hover);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 .teak-feature-icon {
