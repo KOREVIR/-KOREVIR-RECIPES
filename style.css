@@ -765,10 +765,10 @@ img { max-width: 100%; display: block; }
     max-width: 480px;
 }
 
-/* ===== WHY TEAK ===== */
+/* ===== WHY TEAK (ARKA PLAN GÖRSELİ BURADA) ===== */
 .teak-section {
     padding: 80px 24px;
-    /* Yeni üçlü panel görseli burada arka plana ekleniyor */
+    /* Buraya sadece üçlü panel (orman, el, kütükler) görseli ekleniyor */
     background-image: url('assets/images/teak-bg-panels.png');
     background-size: cover;
     background-position: center;
@@ -901,7 +901,6 @@ img { max-width: 100%; display: block; }
     font-weight: 500;
 }
 
-/* ===== OUR STORY GÖRSEL (YATAY HALE GETİRİLDİ) ===== */
 .story-image-full {
     width: 100%;
     height: 450px;         /* Görselin yüksekliğini sabitliyoruz */
