@@ -901,9 +901,11 @@ img { max-width: 100%; display: block; }
     font-weight: 500;
 }
 
+/* ===== OUR STORY GÖRSEL (YATAY HALE GETİRİLDİ) ===== */
 .story-image-full {
     width: 100%;
-    height: auto;
+    height: 450px;         /* Görselin yüksekliğini sabitliyoruz */
+    object-fit: cover;     /* Bu kutuya sığdırır ve taşan kısımları otomatik kırpar */
     display: block;
     border-radius: var(--radius);
     box-shadow: var(--shadow-hover);
