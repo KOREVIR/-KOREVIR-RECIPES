@@ -191,10 +191,7 @@ img { max-width: 100%; display: block; }
     align-items: center;
     padding: 100px 24px 40px;
     position: relative;
-    background-image: url('assets/images/hero-img.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: var(--ivory);
     overflow: hidden;
 }
 
@@ -362,59 +359,13 @@ img { max-width: 100%; display: block; }
 
 /* ===== HERO GÖRSEL ===== */
 .hero-image { display: flex; justify-content: center; align-items: center; }
-.hero-image-content { position: relative; width: 100%; max-width: 480px; }
-.hero-image-placeholder {
-    width: 100%;
-    aspect-ratio: 4/3;
-    background: linear-gradient(145deg, #E8DFD3, #DDD4C8);
+.hero-image-content { 
+    position: relative; 
+    width: 100%; 
+    max-width: 480px; 
+    height: 380px;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    color: var(--accent);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.04);
-    position: relative;
     overflow: hidden;
-}
-
-.hero-image-placeholder::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -30%;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(166, 124, 82, 0.06) 0%, transparent 70%);
-    border-radius: 50%;
-}
-
-.hero-image-placeholder span {
-    font-size: 14px;
-    font-weight: 300;
-    color: rgba(29, 29, 29, 0.4);
-    margin-top: 10px;
-    letter-spacing: 1px;
-    position: relative;
-    z-index: 1;
-}
-
-.hero-image-placeholder i { position: relative; z-index: 1; }
-.hero-image-badge {
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
-    background: var(--text);
-    color: var(--ivory);
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 4px 14px;
-    border-radius: 50px;
-    opacity: 0.8;
 }
 
 /* ===== CATEGORIES ===== */
@@ -460,7 +411,7 @@ img { max-width: 100%; display: block; }
     color: var(--ivory);
 }
 
-/* ===== RECIPES – Görseller düzeltildi ===== */
+/* ===== RECIPES ===== */
 .recipes-section {
     padding: 0 24px 60px;
     max-width: 1200px;
@@ -611,7 +562,7 @@ img { max-width: 100%; display: block; }
     font-weight: 500;
 }
 
-/* ===== MODAL – Görsel düzeltildi ===== */
+/* ===== MODAL ===== */
 .modal {
     display: none;
     position: fixed;
@@ -816,12 +767,8 @@ img { max-width: 100%; display: block; }
 .teak-section {
     padding: 60px 24px;
     background: var(--ivory);
-    background-image: url('assets/images/hero-img.png');
-    background-size: cover;
-    background-position: center;
     border-top: 1px solid rgba(29, 29, 29, 0.04);
     border-bottom: 1px solid rgba(29, 29, 29, 0.04);
-}
 }
 
 .teak-container {
@@ -1091,8 +1038,7 @@ img { max-width: 100%; display: block; }
     .hero-actions .btn-primary,
     .hero-actions .btn-secondary { width: 100%; text-align: center; justify-content: center; }
     .hero-trust { gap: 14px; justify-content: center; }
-    .hero-image-placeholder { aspect-ratio: 4/3; font-size: 32px; }
-    .hero-image-badge { bottom: 10px; right: 10px; font-size: 9px; padding: 3px 10px; }
+    .hero-image-content { max-width: 100%; height: 250px; }
     .hero::before { width: 250px; height: 250px; top: -10%; right: -20%; }
     .hero::after { width: 150px; height: 150px; bottom: -10%; left: -10%; }
 
@@ -1141,8 +1087,6 @@ img { max-width: 100%; display: block; }
     .hero-badge { font-size: 10px; padding: 3px 12px; }
     .hero-description { font-size: 14px; }
     .hero-trust span { font-size: 11px; }
-    .hero-image-placeholder { font-size: 28px; }
-    .hero-image-placeholder span { font-size: 12px; }
     .hero-actions .btn-primary,
     .hero-actions .btn-secondary { font-size: 13px; padding: 10px 20px; }
 
