@@ -899,8 +899,8 @@ img { max-width: 100%; display: block; }
 
 .story-image-full {
     width: 100%;
-    height: 700px;       /* Yüksekliği 650'den 700'e çıkardık */
-    object-fit: cover;   
+    height: 700px;             /* Çerçevenin yüksekliği */
+    object-fit: contain;       /* Resmi orantılı olarak küçültüp kutunun içine sığdırır (hiçbir yeri kesilmez) */
     display: block;
     border-radius: var(--radius);
     box-shadow: var(--shadow-hover);
