@@ -1108,30 +1108,32 @@ img { max-width: 100%; display: block; }
 }
 /* ===== CONTACT US (İLETİŞİM) ===== */
 .contact-section {
-    padding: 80px 24px;
+    padding: 40px 24px 60px; /* Üst boşluğu azalttık */
     background: var(--ivory);
     text-align: center;
 }
 
 .contact-container {
-    max-width: 700px;
+    max-width: 520px; /* Kutuyu daralttık */
     margin: 0 auto;
 }
 
 .contact-container h2 {
-    font-size: clamp(28px, 4vw, 34px);
+    font-size: clamp(24px, 3vw, 30px);
     font-family: var(--font-serif);
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .contact-container p {
+    font-size: 14px;
     color: rgba(29, 29, 29, 0.7);
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .contact-container form input,
 .contact-container form textarea {
     font-family: var(--font-sans);
+    font-size: 14px; /* Yazı boyutlarını küçülttük */
 }
 
 .contact-container form button {
