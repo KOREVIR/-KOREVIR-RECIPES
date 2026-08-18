@@ -1106,3 +1106,34 @@ img { max-width: 100%; display: block; }
     .logo-text { font-size: 18px; }
     .logo-svg { width: 32px; height: 32px; }
 }
+/* ===== CONTACT US (İLETİŞİM) ===== */
+.contact-section {
+    padding: 80px 24px;
+    background: var(--ivory);
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-container h2 {
+    font-size: clamp(28px, 4vw, 34px);
+    font-family: var(--font-serif);
+    margin-bottom: 12px;
+}
+
+.contact-container p {
+    color: rgba(29, 29, 29, 0.7);
+    margin-bottom: 24px;
+}
+
+.contact-container form input,
+.contact-container form textarea {
+    font-family: var(--font-sans);
+}
+
+.contact-container form button {
+    cursor: pointer;
+}
