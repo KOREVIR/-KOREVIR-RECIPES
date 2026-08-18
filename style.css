@@ -898,9 +898,9 @@ img { max-width: 100%; display: block; }
 }
 
 .story-image-full {
-    width: 100%;
-    height: 700px;             /* Çerçevenin yüksekliği */
-    object-fit: contain;       /* Resmi orantılı olarak küçültüp kutunun içine sığdırır (hiçbir yeri kesilmez) */
+    width: 100%;           /* Genişlik kapsayıcıya tam oturur */
+    height: auto;          /* Yükseklik resmin boyutuna göre otomatik ayarlanır */
+    max-height: 700px;     /* Çok uzamaması için bir üst sınır koyduk */
     display: block;
     border-radius: var(--radius);
     box-shadow: var(--shadow-hover);
