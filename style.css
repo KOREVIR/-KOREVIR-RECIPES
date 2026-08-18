@@ -363,8 +363,7 @@ img { max-width: 100%; display: block; }
     position: relative; 
     width: 100%; 
     max-width: 600px; 
-    height: auto;           /* Yüksekliği resmin kendi boyutuna bıraktık */
-    max-height: 480px;      /* Çok uzamasın diye maksimum sınır koyduk */
+    height: auto;            /* Resmin tam boyutuna göre ayarlanır */
     border-radius: 30px; 
     overflow: hidden;
     border: 6px solid #ffffff;
@@ -373,10 +372,9 @@ img { max-width: 100%; display: block; }
 
 .hero-image-content img {
     width: 100%;
-    height: 100%;
-    object-fit: contain;    /* Resmi bozmadan kapsayıcıya sığdırır, kenarlarda boşluk kalmaz */
+    height: auto;            /* Yükseklik de resme göre otomatik ayarlanır */
+    object-fit: cover;       /* Bu sayede resim kapsayıcıya tam oturur */
     display: block;
-}
 }
 
 /* ===== CATEGORIES ===== */
